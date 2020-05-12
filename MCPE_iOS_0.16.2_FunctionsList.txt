@@ -1,0 +1,194 @@
+////////////////////////////////////////
+//List of functions in the iOS version//
+// of Minecraft Pocket Edition v0.16.2//
+//		Created by DarkShuper //
+////////////////////////////////////////
+
+0x100108428(0x8505e4)
+GuiData::addMessage
+
+0x10010881c(0x850d7c)
+GuiData::displayChatMessage
+
+0x100108794(0x850c80)
+GuiData::displayClientMessage
+
+0x100108fa4(0x851a18)
+GuiData::showTipMessage
+
+0x100108988(0x851038)
+GuiData::displayWhisperMessage
+
+0x100109b40(0x8523a0)
+GuiData::postError
+
+0x10049816c(0xcdaf94)
+I18n::get std::string const&
+
+0x1004980e0(0xcdaea4)
+I18n::get std::string const&, std::vector<std::string, std::allocator<std::string> > const&
+
+0x1008528fc(0x10d32a0)
+Dimmension::getTimeOfDay
+
+0x1007a5de4(0x10d995c)
+Level::isDayCycleActive
+
+0x1008e2eec(0x117d26a)
+LevelData::getStopTime
+
+0x1007a6db0(0x10da826)
+Level::getTime
+
+0x1007a6d38(0x10da7ca)
+Level::setTime//Maybe not
+
+0x1007a74d4(0x10db032)
+Level::getLevelData
+
+0x1008e2eec(0x117d26a)
+LevelData::getStopTime
+
+0x1008e2f0c(0x117d286)
+Level::clearLoadedPlayerTag
+
+0x100757b60(0x102ee48)
+ItemInstance::getAuxValue
+
+0x100757b68(0x102ee4e)
+ItemInstance::operator=
+
+0x1007579f0(0x102ed28)
+ItemInstance::useAsFuel
+
+0x100658034(0xf22dd4)
+Entity::getRegion
+
+0x100107fc4(0x850104)
+GuiData::tick
+
+0x1000855a8(0x7b6ae2)
+MinecraftClient::getFont
+
+0x10007ba50(0x7a942c)
+MinecraftClient::onResourcesLoaded
+
+0x1000832b8(0x7b43d0)
+MinecraftClient::onPlayerLoaded
+
+0x1007aa610(0x10ddd86)
+Level::isClientSide
+
+0x100722000(0xfae9dc)
+SurvivalMode::tick
+
+0x10072192c(0xfae68a)
+GameMode::tick
+
+0x100774f40(0xfd1390)
+Recipes::init
+
+0x10012eb58(0x102df0c)
+ItemInstance::ItemInstance()
+
+0x1007569a4(0x102e2e4)
+ItemInstance::ItemInstance(Item const*, int);
+
+0x10075684c(0x102e1bc)
+ItemInstance::ItemInstance(Block const*, int, int);
+
+0x1007567b0(0x102e13c)
+ItemInstance::ItemInstance(Block const*, int);
+
+0x100781794(0xfe5604)
+Recipes::addShapedRecipe(ItemInstance const&, std::string const&, std::vector<Recipes::Type, std::allocator<Recipes::Type> > const&);
+
+0x100781ca0(0xfe5b80)
+Recipes::addShapedRecipe(ItemInstance const&, std::string const&, std::string const&, std::vector<Recipes::Type, std::allocator<Recipes::Type> > const&);
+
+0x100781d74(0xfe5ca8)
+Recipes::addShapedRecipe(ItemInstance const&, std::string const&, std::string const&, std::string const&, std::vector<Recipes::Type, std::allocator<Recipes::Type> > const&);
+
+0x10078308c(0xfe7a54)
+Recipes::addShapedRecipe(ItemInstance const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<Recipes::Type, std::allocator<Recipes::Type> > const&);
+
+0x100782a74(0xfe73c0)
+Recipes::addShapedRecipe(std::vector<ItemInstance, std::allocator<ItemInstance> > const&, std::vector<std::string, std::allocator<std::string> > const&, std::vector<Recipes::Type, std::allocator<Recipes::Type> > const&);
+
+0x1007818a0(0xfe5784)
+Recipes::addShapelessRecipe(ItemInstance const&, std::vector<Recipes::Type, std::allocator<Recipes::Type> > const&);
+
+0x1007717d8(0xfce0d6)
+FurnaceRecipes::getResult
+
+0x1007168f8(0xf9fb7c)
+PlayerInventoryProxy::getSelectedItem
+
+0x100713a28
+Player::canUseCarriedItemWhileMoving
+
+0x1007138f0(0xf9cfac)
+Player::isHiddenFrom
+
+0x100713ab8(0xf9d0dc)
+Player::_addLevels
+
+0x100713c94(0xf9d280)
+Player::sendInventory
+
+0x1007144c8(0xf9d868)
+Player::tickWorld
+
+0x1007125e4(0xf9c088)
+Player::attack
+
+0x1007120e0(0xf9bcb0)
+Player::hurt
+
+0x100713a04(0xf9d064)
+Player::setSpeed//Maybe not
+
+0x100713a0c(0xf9d06a)
+Player::hasResource//Maybe not
+
+0x100713a14(0xf9d072)
+Player::setRespawnDimensionId//Maybe not
+
+0x10035c584(0xb02410)
+LocalPlayer::playSynchronizedSound
+
+0x10065965c(0xf24418)
+Entity::playSound
+
+0x10035caac(0xb026dc)
+EntityEventPacket::read
+
+0x10070ec64(0xf97014)
+Player::normalTick
+
+0x10065b088(0xf25d60)
+Entity::tick
+
+0x10035eba4(0xb03446)
+Player::displayLocalizebleMessage
+
+0x10035eba8(0xb03448)
+Player::displayWhisperMessage
+
+0x100746be0(0x10219a0)
+Item::useOn
+
+0x100746b5c(0x1021958)
+Item::use
+
+0x100746b0c(0x1021924)
+Item::setIcon
+
+0x100746a88(0x10218cc)
+Item::setMaxStackSize
+
+0x1007a6db8(0x10da82c)
+Level::_backgroundTickSeasons
+
+0x10070f5cc(0xf979bc)
+Player::getInventory
