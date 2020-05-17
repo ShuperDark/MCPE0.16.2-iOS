@@ -192,3 +192,17 @@ Level::_backgroundTickSeasons
 
 0x10070f5cc(0xf979bc)
 Player::getInventory
+
+0x100656278(0xf2137a)
+Entity::getLevel
+0x100657df8(0xf22c4e)
+Entity::getLevel() const
+
+0x10070dfe0(0xf96594)
+Player::prepareRegion
+
+0x1006a5e04(0xf7ff50)
+Mob::spawnEatParticle
+
+0x1006a6110(0xf801f4)
+Mob::setSpeed
