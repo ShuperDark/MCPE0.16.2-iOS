@@ -145,14 +145,8 @@ Player::attack
 0x1007120e0(0xf9bcb0)
 Player::hurt
 
-0x100713a04(0xf9d064)
-Player::setSpeed//Maybe not
-
 0x100713a0c(0xf9d06a)
 Player::hasResource//Maybe not
-
-0x100713a14(0xf9d072)
-Player::setRespawnDimensionId//Maybe not
 
 0x10035c584(0xb02410)
 LocalPlayer::playSynchronizedSound
