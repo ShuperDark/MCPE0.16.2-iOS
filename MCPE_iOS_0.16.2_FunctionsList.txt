@@ -222,3 +222,5 @@ Item::setCategory
 0x100726a44(0xfc1e30)
 Item::setIsGlint
 
+0x100745f10(0x101ee00)
+Item::addCreativeItem(ItemInstance const&)  //Maybe there is no addCreativeItem whose argument is not "ItemInstance const&".
