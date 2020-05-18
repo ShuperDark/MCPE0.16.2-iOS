@@ -216,4 +216,9 @@ Item::initServerData
 0x100734d00(0x100a0a4)
 Item::initCreativeItems
 
+0x100746dd0(0x1021ace)
+Item::setCategory
+
+0x100726a44(0xfc1e30)
+Item::setIsGlint
 
