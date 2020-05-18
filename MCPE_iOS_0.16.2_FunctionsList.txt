@@ -200,3 +200,20 @@ Mob::spawnEatParticle
 
 0x1006a6110(0xf801f4)
 Mob::setSpeed
+
+0x1012ae238(0x1c7fde0)
+Item::mItems
+
+0x10074689c(0x1021650)
+Item::Item
+
+0x10074242c(0x1016870)
+Item::initClientData
+
+0x1007421e0(0x1016368)
+Item::initServerData
+
+0x100734d00(0x100a0a4)
+Item::initCreativeItems
+
+
