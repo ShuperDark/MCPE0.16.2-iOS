@@ -224,3 +224,18 @@ Item::setIsGlint
 
 0x100745f10(0x101ee00)
 Item::addCreativeItem(ItemInstance const&)  //Maybe there is no addCreativeItem whose argument is not "ItemInstance const&".
+
+0x100746ed0(0x1021b60)
+Item::buildDescriptionName
+
+0x100747974(0x10228a0)
+Item::setStackedByData
+
+0x10074797c(0x10228a6)
+Item::setMaxDamage
+
+0x100747984(0x10228ac)
+Item::getTextureUVCoordinateSet
+
+0x100759748(0x10309d8)
+ItemInstance::getIcon
