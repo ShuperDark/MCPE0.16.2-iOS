@@ -298,6 +298,30 @@ Block::getMobToSpawn(BlockSource&, BlockPos const&) const
 0x1007d9bc0(0x106ab3c)
 Block::getMobToSpawn(BlockSource&, BlockPos const&, std::map<EntityType, int, std::less<EntityType>, std::allocator<std::pair<EntityType const, int> > >, bool&) const
 
+0x1007d9d20(0x106abfa)
+Block::isSolidBlockingBlock
+
+0x1007d9d84(0x106ac30)
+Block::isWaterBlocking
+
+0x1007d9e58(0x106acc4)
+Block::getVisualShape(BlockSource&, BlockPos const&, AABB&, bool)
+
+0x1007d9eb0(0x106acec)
+Block::getCollisionShape
+
+0x1007d9fcc(0x106add0)
+Block::lookupByName
+
+0x1007da280(0x106b11c)
+Block::getDebugText
+
+0x1007d8148(0x10695a8)
+Block::tick
+
+0x1007d814c(0x10695aa)
+Block::animateTick
+
 0x1008c6e50(0x1150d60)
 Material::getTranslucency
 
@@ -306,6 +330,9 @@ Material::getMaterial
 
 0x1008c6e28(0x1150d48)
 Material::getBlocksMotion
+
+0x1008c6e08(0x1150d34)
+Material::isSolidBlocking
 
 0x1007994a0(0x10c1b46)
 BlockSource::getLevel()
@@ -374,6 +401,9 @@ BlockSource::getBrightness
 
 0x10079a898(0x10c288c)
 BlockSource::getRawBrightness
+
+0x10079a0fc(0x10c23f0)
+BlockSource::getData
 
 0x1007aa608(0x10ddd82)
 Level::getPlayers
