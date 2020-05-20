@@ -316,12 +316,6 @@ Block::lookupByName
 0x1007da280(0x106b11c)
 Block::getDebugText
 
-0x1007d8148(0x10695a8)
-Block::tick
-
-0x1007d814c(0x10695aa)
-Block::animateTick
-
 0x1008c6e50(0x1150d60)
 Material::getTranslucency
 
