@@ -260,11 +260,52 @@ Block::init
 0x1007d451c(0x10569a0)
 Block::initBlocks
 
+0x1007d94c8(0x106a66c)
+Block::playerDestroy
+
+0x1007d8c98(0x106a080)
+Block::popResource
+
+0x1007d961c(0x106a73c)
+Block::getSilkTouchItemInstance
+
+0x1007d9678(0x106a76c)
+Block::buildDescriptionName
+
+0x1007d9738(0x106a8ca)
+Block::setDestroyTime
+
+0x1007d9728(0x106a8b8)
+Block::setExplodeable
+
+0x1007d987c(0x106a998)
+Block::tryToPlace
+
+0x1007d991c(0x106a9ee)
+Block::checkIsPathable
+
+0x1007d9944(0x106aa02)
+Block::onRemove
+
+0x1007d9998(0x106aa30)
+Block::onFallOn
+
+0x1007d9a1c(0x106aa82)
+Block::getTypeToSpawn
+
+0x1007d9b6c(0x106ab08)
+Block::getMobToSpawn(BlockSource&, BlockPos const&) const
+0x1007d9bc0(0x106ab3c)
+Block::getMobToSpawn(BlockSource&, BlockPos const&, std::map<EntityType, int, std::less<EntityType>, std::allocator<std::pair<EntityType const, int> > >, bool&) const
+
 0x1008c6e50(0x1150d60)
 Material::getTranslucency
 
 0x1008c6e74(0x1150d78)
 Material::getMaterial
+
+0x1008c6e28(0x1150d48)
+Material::getBlocksMotion
 
 0x1007994a0(0x10c1b46)
 BlockSource::getLevel()
@@ -281,6 +322,9 @@ AABB::AABB()
 0x1008ec200(0x1188528)
 AABB::translated
 
+0x1008edaa8(0x118a59c)
+AABB::isEmpty
+
 0x1008ee0a8(0x118ade0)
 Vec3::Vec3(BlockPos const&)
 
@@ -289,3 +333,56 @@ Player::getDestroySpeed
 
 0x100710e04(0xf98ff4)
 Player::canDestroy
+
+0x10070f5c4(0xf979b4)
+Player::getSelectedItem
+
+0x10070f8b8(0xf97c1c)
+Player::causeFoodExhaustion
+
+0x10079971c(0x10c1cd0)
+BlockSource::getBlock
+
+0x10079a014(0x10c2358)
+BlockSource::getBlockID
+
+0x10079affc(0x10c2dec)
+BlockSource::mayPlace
+
+0x10079c3d8(0x10c3b90)
+BlockSource::getEntities
+
+0x10079bb6c(0x10c3644)
+BlockSource::setBlockAndData(BlockPos const&, BlockID, unsigned char, int)
+0x10079b854(0x10c33f8)
+BlockSource::setBlockAndData(BlockPos const&, FullBlock, int, std::unique_ptr<BlockEntity, std::default_delete<BlockEntity> >)
+
+0x10079975c(0x10c1d04)
+BlockSource::getDimension()
+
+0x10079d25c(0x10c2f74)
+BlockSource::getMobsAt
+
+0x10079f2cc(0x10c6654)
+BlockSource::getBiome
+
+0x10079f1f4(0x10c65de)
+BlockSource::tryGetBiome
+
+0x10079a858(0x10c2868)
+BlockSource::getBrightness
+
+0x10079a898(0x10c288c)
+BlockSource::getRawBrightness
+
+0x1007aa608(0x10ddd82)
+Level::getPlayers
+
+0x1007aa8c0(0x10ddf56)
+Level::getGameRules
+
+0x10065b818(0xf26266)
+Entity::isRemoved
+
+0x1008dded4(0x1175aac)
+GameRules::getBool
