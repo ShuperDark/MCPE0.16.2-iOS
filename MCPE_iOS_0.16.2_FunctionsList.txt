@@ -413,3 +413,9 @@ Entity::isRemoved
 
 0x1008dded4(0x1175aac)
 GameRules::getBool
+
+0x1003845e0(0xb60c90)
+BlockGraphics::initBlocks
+
+0x100388338(0xb6c0d8)
+BlockGraphics::BlockGraphics(std::string const&)
