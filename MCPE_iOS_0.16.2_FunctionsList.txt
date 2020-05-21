@@ -432,6 +432,9 @@ BlockGraphics::setBlockShape(BlockGraphics&, Json::Value const&)
 0x100384358(0xb60954)
 BlockGraphics::setSoundType(BlockGraphics&, Json::Value const&)
 
+0x10126a100(0x1c1cf28)
+BlockGraphics::mBlocks
+
 0x10004db54(0x163634e)
 Json::Value::isNull
 
