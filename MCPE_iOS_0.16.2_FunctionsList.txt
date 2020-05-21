@@ -425,3 +425,18 @@ BlockGraphics::setTextureItem(std::string const&, std::string const&, std::strin
 
 0x100382f0c(0xb5ee58)
 BlockGraphics::setCarriedTextureItem(std::string const&, std::string const&, std::string const&)
+
+0x10038365c(0xb5fc60)
+BlockGraphics::setBlockShape(BlockGraphics&, Json::Value const&)
+
+0x100384358(0xb60954)
+BlockGraphics::setSoundType(BlockGraphics&, Json::Value const&)
+
+0x10004db54(0x163634e)
+Json::Value::isNull
+
+0x10004d538(0x1635e58)
+Json::Value::asString
+
+0x100381ca8(0xb5c388)
+BlockSoundTypeFromString(std::string const&)//normal, gravel, wood, grass, metal, stone, cloth, glass, sand, snow, ladder, anvil, slime, silent, default
