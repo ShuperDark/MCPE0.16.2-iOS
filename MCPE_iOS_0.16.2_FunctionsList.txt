@@ -240,6 +240,9 @@ Item::getTextureUVCoordinateSet
 0x100759748(0x10309d8)
 ItemInstance::getIcon
 
+0x1012d1860(0x1c82f78)
+Block::mBlocks
+
 0x1007d8980(0x1069e44)
 Block::clip(BlockSource&, BlockPos const&, Vec3 const&, Vec3 const&, bool, int)
 0x1007d824c(0x106968c)
