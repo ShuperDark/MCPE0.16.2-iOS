@@ -175,8 +175,10 @@ Item::useOn
 0x100746b5c(0x1021958)
 Item::use
 
+0x100746b04(0x102191e)
+Item::setIcon(TextureUVCoordinateSet const&)
 0x100746b0c(0x1021924)
-Item::setIcon
+Item::setIcon(std::string const&, int)
 
 0x100746a88(0x10218cc)
 Item::setMaxStackSize
@@ -205,7 +207,10 @@ Mob::setSpeed
 Item::mItems
 
 0x10074689c(0x1021650)
-Item::Item
+Item::Item(std::string const&, short)
+
+0x1007281e0(0xfc35c8)
+BlockItem::BlockItem(std::string const&, int)
 
 0x10074242c(0x1016870)
 Item::initClientData
@@ -334,6 +339,15 @@ Material::getBlocksMotion
 0x1008c6e08(0x1150d34)
 Material::isSolidBlocking
 
+0x1008c6de8(0x1150d20)
+Material::isType
+
+0x1008c6e40(0x1150d58)
+Material::isReplaceable
+
+0x1008c6e48(0x1150d5c)
+Material::isLiquid
+
 0x1007994a0(0x10c1b46)
 BlockSource::getLevel()
 
@@ -366,6 +380,9 @@ Player::getSelectedItem
 
 0x10070f8b8(0xf97c1c)
 Player::causeFoodExhaustion
+
+0x10070f5d4(0xf979c2)
+Player::useItem
 
 0x10079971c(0x10c1cd0)
 BlockSource::getBlock
@@ -405,11 +422,29 @@ BlockSource::getRawBrightness
 0x10079a0fc(0x10c23f0)
 BlockSource::getData
 
+0x1007994b0(0x10c1b4e)
+BlockSource::checkBlockPermissions
+
+0x100799564(0x10c1bd0)
+BlockSource::_getBlockPermissions
+
+0x100799660(0x10c1c6c)
+BlockSource::hasBorderBlock
+
+0x10079ecb8(0x10c620c)
+BlockSource::canProvideSupport
+
 0x1007aa608(0x10ddd82)
 Level::getPlayers
 
 0x1007aa8c0(0x10ddf56)
 Level::getGameRules
+
+0x1007aa8a8(0x10dd5f0)
+Level::getAdventureSettings
+
+0x1007a9334(0x10dc954)
+Level::denyEffect
 
 0x10065b818(0xf26266)
 Entity::isRemoved
@@ -435,6 +470,9 @@ BlockGraphics::setBlockShape(BlockGraphics&, Json::Value const&)
 0x100384358(0xb60954)
 BlockGraphics::setSoundType(BlockGraphics&, Json::Value const&)
 
+0x100388ea0(0xb6cdf2)
+BlockGraphics::getTexture(signed char)
+
 0x10126a100(0x1c1cf28)
 BlockGraphics::mBlocks
 
@@ -446,3 +484,9 @@ Json::Value::asString
 
 0x100381ca8(0xb5c388)
 BlockSoundTypeFromString(std::string const&)//normal, gravel, wood, grass, metal, stone, cloth, glass, sand, snow, ladder, anvil, slime, silent, default
+
+0x100798fc0(0x10c1888)
+BlockPos::relative
+
+0x10065be28(0xf26840)
+Entity::getRotation
