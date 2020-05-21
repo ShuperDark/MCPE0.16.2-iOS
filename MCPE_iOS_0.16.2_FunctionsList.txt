@@ -248,6 +248,9 @@ Item::getTextureUVCoordinateSet
 0x100759748(0x10309d8)
 ItemInstance::getIcon
 
+0x1007d7dc8(0x1069180)
+Block::Block(std::string const&, int, Material const&)
+
 0x1012d1860(0x1c82f78)
 Block::mBlocks
 
