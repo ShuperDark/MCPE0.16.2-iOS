@@ -419,3 +419,9 @@ BlockGraphics::initBlocks
 
 0x100388338(0xb6c0d8)
 BlockGraphics::BlockGraphics(std::string const&)
+
+0x1003829c8(0xb5e480)
+BlockGraphics::setTextureItem(std::string const&, std::string const&, std::string const&, std::string const&, std::string const&, std::string const&)
+
+0x100382f0c(0xb5ee58)
+BlockGraphics::setCarriedTextureItem(std::string const&, std::string const&, std::string const&)
