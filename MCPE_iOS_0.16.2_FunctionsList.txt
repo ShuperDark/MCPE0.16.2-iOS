@@ -526,8 +526,14 @@ ItemEnchants::isEmpty
 0x100795724(0xffb298)
 ItemEnchants::_toList
 
+0x10079571c(0xffb292)
+ItemEnchants::getSlot
+
 0x100757cf4(0x102ef44)
 ItemInstance::saveEnchantsToUserData
+
+0x100794770(0xff8762)
+EnchantmentInstance::EnchantmentInstance(int, int)
 
 0x100794778(0xff8768)
 EnchantmentInstance::getEnchantType
@@ -543,6 +549,22 @@ EnchantUtils::determineActivation
 
 0x100790de4(0xff8ce4)
 EnchantUtils::applyEnchant(ItemInstance&, ItemEnchants const&)
+0x100790ba8(0xff8bec)
+EnchantUtils::applyEnchant(ItemInstance&, int, int)
+0x100791360(0xff905c)
+EnchantUtils::applyEnchant(ItemInstance&, EnchantmentInstance const&)
+
+0x100790be0(0xff8c08)
+EnchantUtils::randomlyEnchant(ItemInstance&, int, int)
+
+0x100790fe8(0xff8db8)
+EnchantUtils::selectEnchantments(Item*, int, int)
+
+0x10079184c(0xff92f4)
+EnchantUtils::getAvailableEnchantmentResults
+
+0x100790a68(0xff8a50)
+EnchantUtils::getLegalEnchants
 
 0x10078de6c(0xff56b8)
 Enchant::canEnchant(int) const
