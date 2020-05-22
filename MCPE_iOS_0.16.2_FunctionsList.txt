@@ -399,6 +399,9 @@ Player::causeFoodExhaustion
 0x10070f5d4(0xf979c2)
 Player::useItem
 
+0x100713770(0xf9ce70)
+Player::respawn
+
 0x10079971c(0x10c1cd0)
 BlockSource::getBlock
 
