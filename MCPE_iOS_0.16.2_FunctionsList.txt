@@ -518,10 +518,40 @@ ItemInstance::getStrippedNetworkItem
 0x10075700c(0x102e790)
 ItemInstance::getId
 
+0x100758ca8(0x102fc40)
+ItemInstance::save
+
+0x100758ba8(0x102fb8c)
+ItemInstance::cloneSafe
+
+0x100758b0c(0x102fb40)
+ItemInstance::clone
+
+0x1007587dc(0x102f7dc)
+ItemInstance::getIdAuxEnchanted
+
+0x1007586a4(0x102f650)
+ItemInstance::getCustomName
+ 
+0x100758638(0x102f604)
+ItemInstance::hasCustomHoverName
+
+0x1007585b4(0x102f59c)
+ItemInstance::getName
+
+0x100757738(0x102ebbc)
+ItemInstance::hasUserData
+
+0x100757890(0x102ec64)
+ItemInstance::getUserData
+
+0x100758530(0x102f54a)
+ItemInstance::sameItemAndAux
+
 0x10049aeec(0xcde19e)
 CompoundTag::contains(std::string const&, Tag::Type) const
-0x10049bfd8(0xcde19e)
-CompoundTag::contains(std::string const&, Tag::Type) const
+0x10049aebc(0xcde112)
+CompoundTag::contains(std::string const&) const
 
 0x10049b3d8(0xcde894)
 CompoundTag::getList
@@ -530,7 +560,10 @@ CompoundTag::getList
 CompoundTag::rawView
 
 0x10049b8a0(0xcdee60)
-CompoundTag::clone()
+CompoundTag::clone
+
+0x10049b1f8(0xcde5ac)
+CompoundTag::getString
 
 0x100794860(0xffa84c)
 ItemEnchants::ItemEnchants(int)
@@ -626,8 +659,17 @@ CompoundTag::CompoundTag()
 0x10049aa24(0xcddd3a)
 CompoundTag::putShort
 
+0x10049a9a0(0xcddcf6)
+CompoundTag::putByte
+
 0x10049a928(0xcddcbe)
 CompoundTag::put
+
+0x10049ad84(0xcde00c)
+CompoundTag::putCompound
+
+0x10049b344(0xcde800)
+CompoundTag::getCompound
 
 0x10049ee8c(0xce2028)
 Tag::Tag(std::string const&)
@@ -640,6 +682,9 @@ ListTag::ListTag(std::string const&)
 
 0x10049dd20(0xce1108)
 ListTag::add(std::unique_ptr<Tag, std::default_delete<Tag> >)
+
+0x10049a254(0xcdd370)
+ByteTag::ByteTag(std::string const&, unsigned char)
 
 0x10049e5d8(0xce1854)
 ShortTag::ShortTag(std::string const&, short)
