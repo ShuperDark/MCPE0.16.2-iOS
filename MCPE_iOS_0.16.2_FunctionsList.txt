@@ -529,8 +529,14 @@ ItemEnchants::_toList
 0x10079571c(0xffb292)
 ItemEnchants::getSlot
 
+0x1007956a0(0xffb258)
+ItemEnchants::hasEnchant
+
 0x100757cf4(0x102ef44)
 ItemInstance::saveEnchantsToUserData
+
+0x100757c20(0x102eea8)
+ItemInstance::isEnchanted
 
 0x100794770(0xff8762)
 EnchantmentInstance::EnchantmentInstance(int, int)
@@ -540,6 +546,9 @@ EnchantmentInstance::getEnchantType
 
 0x100794780(0xff8770)
 EnchantmentInstance::getEnchantLevel
+
+0x100794780(0xff876c)
+EnchantmentInstance::setEnchantType
 
 0x100794788(0xff8774)
 EnchantmentInstance::setEnchantLevel
@@ -565,6 +574,18 @@ EnchantUtils::getAvailableEnchantmentResults
 
 0x100790a68(0xff8a50)
 EnchantUtils::getLegalEnchants
+
+0x100790678(0xff88ae)
+EnchantUtils::hasEnchant
+
+0x100790804(0xff892a)
+EnchantUtils::getRandomItemWith
+
+0x1007903f4(0xff87da)
+EnchantUtils::getEnchantLevel
+
+0x1007902f8(0xff8778)
+EnchantUtils::getBestEnchantLevel
 
 0x10078de6c(0xff56b8)
 Enchant::canEnchant(int) const
