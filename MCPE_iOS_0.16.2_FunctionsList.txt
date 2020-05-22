@@ -91,8 +91,20 @@ Recipes::init
 0x10012eb58(0x102df0c)
 ItemInstance::ItemInstance()
 
+0x100756c6c(0x102e500)
+ItemInstance::ItemInstance(int, int, int)
+
+0x100756d24(0x102e5a0)
+ItemInstance::ItemInstance(int, int, int, CompoundTag const*)
+
+0x100756e7c(0x102e684)
+ItemInstance::ItemInstance(ItemInstance const&)
+
 0x1007569a4(0x102e2e4)
 ItemInstance::ItemInstance(Item const*, int);
+
+0x100756b14(0x102e420)
+ItemInstance::ItemInstance(Item const*, int, int, CompoundTag const*)
 
 0x10075684c(0x102e1bc)
 ItemInstance::ItemInstance(Block const*, int, int);
@@ -497,6 +509,15 @@ Entity::getRotation
 0x100757c50(0x102eecc)
 ItemInstance::getEnchantsFromUserData
 
+0x10075719c(0x102e884)
+ItemInstance::getNetworkUserData
+
+0x100757048(0x102e7b8)
+ItemInstance::getStrippedNetworkItem
+
+0x10075700c(0x102e790)
+ItemInstance::getId
+
 0x10049aeec(0xcde19e)
 CompoundTag::contains(std::string const&, Tag::Type) const
 0x10049bfd8(0xcde19e)
@@ -504,6 +525,12 @@ CompoundTag::contains(std::string const&, Tag::Type) const
 
 0x10049b3d8(0xcde894)
 CompoundTag::getList
+
+0x10049bc28(0xcdf076)
+CompoundTag::rawView
+
+0x10049b8a0(0xcdee60)
+CompoundTag::clone()
 
 0x100794860(0xffa84c)
 ItemEnchants::ItemEnchants(int)
@@ -604,6 +631,9 @@ CompoundTag::put
 
 0x10049ee8c(0xce2028)
 Tag::Tag(std::string const&)
+
+0x10049d6ec(0xce0908)
+ListTag::ListTag()
 
 0x10049d76c(0xce0a0c)
 ListTag::ListTag(std::string const&)
