@@ -553,8 +553,20 @@ Enchant::isCompatibleWith
 0x10049a40c(0xcdd4dc)
 CompoundTag::CompoundTag()
 
+0x10049aa24(0xcddd3a)
+CompoundTag::putShort
+
+0x10049a928(0xcddcbe)
+CompoundTag::put
+
 0x10049ee8c(0xce2028)
 Tag::Tag(std::string const&)
 
 0x10049d76c(0xce0a0c)
 ListTag::ListTag(std::string const&)
+
+0x10049dd20(0xce1108)
+ListTag::add(std::unique_ptr<Tag, std::default_delete<Tag> >)
+
+0x10049e5d8(0xce1854)
+ShortTag::ShortTag(std::string const&, short)
