@@ -493,3 +493,68 @@ BlockPos::relative
 
 0x10065be28(0xf26840)
 Entity::getRotation
+
+0x100757c50(0x102eecc)
+ItemInstance::getEnchantsFromUserData
+
+0x10049aeec(0xcde19e)
+CompoundTag::contains(std::string const&, Tag::Type) const
+0x10049bfd8(0xcde19e)
+CompoundTag::contains(std::string const&, Tag::Type) const
+
+0x10049b3d8(0xcde894)
+CompoundTag::getList
+
+0x100794860(0xffa84c)
+ItemEnchants::ItemEnchants(int)
+
+0x100794ed0(0xfface4)
+ItemEnchants::addEnchants
+
+0x100794e08(0xffac68)
+ItemEnchants::addEnchant
+
+0x100794c68(0xffab3c)
+ItemEnchants::canEnchant
+
+0x100794fa8(0xffad3e)
+ItemEnchants::getAllEnchants
+
+0x1007953c4(0xffb03a)
+ItemEnchants::isEmpty
+
+0x100795724(0xffb298)
+ItemEnchants::_toList
+
+0x100757cf4(0x102ef44)
+ItemInstance::saveEnchantsToUserData
+
+0x100794778(0xff8768)
+EnchantmentInstance::getEnchantType
+
+0x100794780(0xff8770)
+EnchantmentInstance::getEnchantLevel
+
+0x100794788(0xff8774)
+EnchantmentInstance::setEnchantLevel
+
+0x100791a7c(0xff9414)
+EnchantUtils::determineActivation
+
+0x100790de4(0xff8ce4)
+EnchantUtils::applyEnchant(ItemInstance&, ItemEnchants const&)
+
+0x10078de6c(0xff56b8)
+Enchant::canEnchant(int) const
+
+0x10078de40(0xff5664)
+Enchant::isCompatibleWith
+
+0x10049a40c(0xcdd4dc)
+CompoundTag::CompoundTag()
+
+0x10049ee8c(0xce2028)
+Tag::Tag(std::string const&)
+
+0x10049d76c(0xce0a0c)
+ListTag::ListTag(std::string const&)
