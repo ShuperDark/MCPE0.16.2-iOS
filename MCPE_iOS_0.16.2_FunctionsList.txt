@@ -363,6 +363,9 @@ Material::isReplaceable
 0x1008c6e48(0x1150d5c)
 Material::isLiquid
 
+0x1008c6e28(0x1150d48)
+Material::getBlocksMotion
+
 0x1007994a0(0x10c1b46)
 BlockSource::getLevel()
 
@@ -724,6 +727,39 @@ Entity::isFree(Vec3 const&)
 0x1006580ec(0xf22e84)
 Entity::isFree(Vec3 const&, float)
 
+0x100658048(0xf22de4)
+Entity::isInLava
+
+0x100657fa0(0xf22d76)
+Entity::isInWaterOrRain
+
+0x100657f3c(0xf22d38)
+Entity::isInWall
+
+0x100657ea4(0xf22cd0)
+Entity::setSitting
+
+0x100657e74(0xf22cb4)
+Entity::isSitting
+
+0x100657e0c(0xf22c66)
+Entity::setOwner
+
+0x100657bd4(0xf228d8)
+Entity::initParams
+
+0x100657960(0xf22492)
+Entity::getUniqueID
+
+0x10066049c(0xf2ce5c)
+Entity::getOwnerEntityType
+
+0x1006604f0(0xf2ce90)
+Entity::_playStepSound
+
+0x1006606a4(0xf2cfb0)
+Entity::onSynchedDataUpdate
+
 0x1007a13ac(0x10d2458)
 ChunkPos::ChunkPos(BlockPos const&)
 0x1007a13c8(0x10d2466)
@@ -751,6 +787,15 @@ LevelChunk::addEntity
 
 0x10084cac8(0x10d00ac)
 LevelChunk::isReadOnly
+
+0x100847ce0(0x10cc898)
+LevelChunk::isSkyLit
+
+0x10084c644(0x10cfd94)
+LevelChunk::getTopRainBlockPos
+
+0x10084c208(0x10cf92e)
+LevelChunk::getBiome
 
 0x100843d60(0x10c9018)
 ChunkSource::getGeneratedChunk
@@ -806,6 +851,30 @@ BlockSource::hasBlock
 0x10079d734(0x10c4ea8)
 BlockSource::containsAnyLiquid
 
+0x10079da70(0x10c51ec)
+BlockSource::containsMaterial
+
+0x10079975c(0x10c1d04)
+BlockSource::getDimension()
+
+0x10079aca0(0x10c2b8a)
+BlockSource::canSeeSky
+
+0x10079f6c8(0x10c6900)
+BlockSource::getTopRainBlockPos
+
+0x10079f2cc(0x10c6654)
+BlockSource::getBiome
+
+0x10079f1f4(0x10c65de)
+BlockSource::tryGetBiome
+
+0x10079faac(0x10c6d2c)
+BlockSource::isSnowTemperature
+
+0x10079ed20(0x10c6250)
+BlockSource::isInWall
+
 0x100810374(0x10a7d8c)
 LiquidBlock::getHeightFromData
 
@@ -818,8 +887,38 @@ Level::getLocalPlayer
 0x1007aae38(0x10de3ee)
 Level::getNewUniqueID
 
+0x1007a8920(0x10dbfc0)
+Level::fetchEntity
+
 0x1008ed2bc(0x1189bf8)
 AABB::getCenter
 
 0x1007d8150(0x10695ac)
 Block::isType
+
+0x1007d8fdc(0x106a31c)
+Block::isSolid
+
+0x100852ae4(0x10d3530)
+Dimension::getWeather
+
+0x1007bdac8(0x11852bc)
+Weather::isRainingAt
+
+0x1007a1330(0x10d2424)
+ChunkBlockPos::ChunkBlockPos(BlockPos const&)
+
+0x1007c278c(0x1047b54)
+Biome::getBiome(int)
+
+0x1008533f4(0x10d3e2e)
+Dimension::fetchEntity
+
+0x1006e5a30(0xf0c114)
+ContainerComponent::ContainerComponent(Entity&)
+
+0x1006add18(0xfac1ba)
+SynchedEntityData::_get(short)
+
+0x1006adc80(0xfac160)
+SynchedEntityData::_find(short)
