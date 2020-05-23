@@ -374,6 +374,8 @@ Random::genrand_int32
 
 0x1008ebd48(0x1187f20)
 AABB::AABB()
+0x1008ebc88(0x1187fd4)
+AABB::AABB(Vec3 const&, Vec3 const&)
 
 0x1008ec200(0x1188528)
 AABB::translated
@@ -438,7 +440,9 @@ BlockSource::getBrightness
 BlockSource::getRawBrightness
 
 0x10079a0fc(0x10c23f0)
-BlockSource::getData
+BlockSource::getData(BlockPos const&)
+0x10079ddd0(0x10c563c)
+BlockSource::getData(int, int, int)
 
 0x1007994b0(0x10c1b4e)
 BlockSource::checkBlockPermissions
@@ -691,3 +695,131 @@ ByteTag::ByteTag(std::string const&, unsigned char)
 
 0x10049e5d8(0xce1854)
 ShortTag::ShortTag(std::string const&, short)
+
+0x100659d40(0xf24aa8)
+Entity::setPos(EntityPos const&)
+0x100659fc8(0xf24d10)
+Entity::setPos(Vec3 const&)
+
+0x100659c40(0xf249e0)
+Entity::_updateOwnerChunk
+
+0x100659abc(0xf24888)
+Entity::isUnderLiquid
+
+0x1006591a8(0xf23eb0)
+Entity::_getBlockOnPos
+
+0x100659448(0xf24230)
+Entity::_playMovementSound
+
+0x1006590b4(0xf23bf8)
+Entity::testForEntityStacking
+
+0x1006581d4(0xf22f18)
+Entity::move
+
+0x100658170(0xf22ed8)
+Entity::isFree(Vec3 const&)
+0x1006580ec(0xf22e84)
+Entity::isFree(Vec3 const&, float)
+
+0x1007a13ac(0x10d2458)
+ChunkPos::ChunkPos(BlockPos const&)
+0x1007a13c8(0x10d2466)
+ChunkPos::ChunkPos(Vec3 const&)
+
+0x100798f08(0xf249e0)
+BlockPos::BlockPos(Vec3 const&)
+0x100798f40(0x10c17fe)
+BlockPos::BlockPos(ChunkPos const&, int)
+
+0x100799804(0x10c1df6)
+BlockSource::getChunk(ChunkPos const&)
+
+0x10084cac0(0x10d00a8)
+LevelChunk::getPosition
+
+0x10084c7b8(0x10cfe7e)
+LevelChunk::getState
+
+0x100847b40(0x10cc6f4)
+LevelChunk::removeEntity
+
+0x100847a9c(0x10cc686)
+LevelChunk::addEntity
+
+0x10084cac8(0x10d00ac)
+LevelChunk::isReadOnly
+
+0x100843d60(0x10c9018)
+ChunkSource::getGeneratedChunk
+
+0x10084438c(0x10c98ce)
+ChunkSource::getAvailableChunk
+
+0x1008ed2e8(0x1189c46)
+AABB::contains
+
+0x1008ec350(0x11886c4)
+AABB::grow
+
+0x1008ec9a4(0x1188f26)
+AABB::intersects
+
+0x1008ec2a0(0x11885e0)
+AABB::merge
+
+0x1008ed0cc(0x11899a4)
+AABB::move(Vec3 const&)
+
+0x1008ec3f0(0x118879c)
+AABB::cloneMove
+
+0x1008ec040(0x1188368)
+AABB::expanded
+
+0x1008ec490(0x1188854)
+AABB::clipCollide
+
+0x1008edc18(0x118aa84)
+AABB::flooredCeiledCopy
+
+0x10079da30(0x10c51b8)
+BlockSource::getMaterial
+
+0x10079d364(0x10c4b64)
+BlockSource::fetchCollisionShapes
+
+0x10079cf00(0x10c45b4)
+BlockSource::addUnloadedChunksAABBs
+
+0x10079cc6c(0x10c43d4)
+BlockSource::fetchAABBs
+
+0x100665aa8(0x10c47d4)
+BlockSource::addVoidFloor
+
+0x100799964(0x10c1f04)
+BlockSource::hasBlock
+
+0x10079d734(0x10c4ea8)
+BlockSource::containsAnyLiquid
+
+0x100810374(0x10a7d8c)
+LiquidBlock::getHeightFromData
+
+0x1007a76f0(0x10db150)
+Level::playSound
+
+0x1007a79e8(0x10db338)
+Level::getLocalPlayer
+
+0x1007aae38(0x10de3ee)
+Level::getNewUniqueID
+
+0x1008ed2bc(0x1189bf8)
+AABB::getCenter
+
+0x1007d8150(0x10695ac)
+Block::isType
