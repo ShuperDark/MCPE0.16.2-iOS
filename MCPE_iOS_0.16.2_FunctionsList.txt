@@ -760,6 +760,30 @@ Entity::_playStepSound
 0x1006606a4(0xf2cfb0)
 Entity::onSynchedDataUpdate
 
+0x1006576a4(0xf22272)
+Entity::hasCategory
+
+0x100660870(0xf2d0b0)
+Entity::isInsideBorderBlock
+
+0x100660a4c(0xf2d2c0)
+Entity::checkBlockCollisions
+
+0x100660d44(0xf2d4e0)
+Entity::setLeashHolder
+
+0x100660e54(0xf2d5ac)
+Entity::dropLeash
+
+0x100661018(0xf2d6fc)
+Entity::canBeLeashed
+
+0x100661068(0xf2d728)
+Entity::getAirSupply
+
+0x100661084(0xf2d734)
+Entity::getTotalAirSupply
+
 0x1007a13ac(0x10d2458)
 ChunkPos::ChunkPos(BlockPos const&)
 0x1007a13c8(0x10d2466)
@@ -769,6 +793,8 @@ ChunkPos::ChunkPos(Vec3 const&)
 BlockPos::BlockPos(Vec3 const&)
 0x100798f40(0x10c17fe)
 BlockPos::BlockPos(ChunkPos const&, int)
+0x100798f28(0x10c17ae)
+BlockPos::BlockPos(float, float, float)
 
 0x100799804(0x10c1df6)
 BlockSource::getChunk(ChunkPos const&)
@@ -802,6 +828,9 @@ ChunkSource::getGeneratedChunk
 
 0x10084438c(0x10c98ce)
 ChunkSource::getAvailableChunk
+
+0x10084415c(0x10c97b4)
+ChunkSource::getChunkSide
 
 0x1008ed2e8(0x1189c46)
 AABB::contains
@@ -875,6 +904,9 @@ BlockSource::isSnowTemperature
 0x10079ed20(0x10c6250)
 BlockSource::isInWall
 
+0x100799bc4(0x10c2068)
+BlockSource::hasChunksAt
+
 0x100810374(0x10a7d8c)
 LiquidBlock::getHeightFromData
 
@@ -917,8 +949,26 @@ Dimension::fetchEntity
 0x1006e5a30(0xf0c114)
 ContainerComponent::ContainerComponent(Entity&)
 
+0x1006e5b28(0xf0c1ca)
+ContainerComponent::rebuildContainer(ContainerType, int, int, bool)
+
+0x100723268(0xfb1164)
+FillingContainer::FillingContainer(Player*, int, int, ContainerType)
+
+0x10060f710(0xe9feb0)
+Container::getContainerType
+
+0x100757488(0x102ea60)
+ItemInstance::isNull
+
+0x1006e3c50(0xf09c24)
+BreathableComponent::getTotalAirSupply
+
 0x1006add18(0xfac1ba)
 SynchedEntityData::_get(short)
 
 0x1006adc80(0xfac160)
 SynchedEntityData::_find(short)
+
+0x1006add80(0xfac1e8)
+SynchedEntityData::getShort(short)
