@@ -1009,6 +1009,15 @@ Level::setXBLBroadcast
 0x1007a94bc(0x10dca48)
 Level::extinguishFire
 
+0x1007a9414(0x10dc9e4)
+Level::potionSplash
+
+0x1007a9118(0x10dc774)
+Level::explode
+
+0x1007a8fe8(0x10dc678)
+Level::setDayCycleActive
+
 0x1008ed2bc(0x1189bf8)
 AABB::getCenter
 
@@ -1105,8 +1114,32 @@ MapItemSavedData::getMapId
 0x1008e30f4(0x117d40a)
 LevelData::setCommandsEnabled
 
+0x1008e2efc(0x117d27c)
+LevelData::setTime
+
 0x100798f58(0x10c1810)
 BlockPos::neighbor
 
 0x100798f98(0x10c184)
 BlockPos::center
+
+0x10079c000(0x10c390e)
+BlockSource::removeBlock
+
+0x100009030(0x1691760)
+Color::toARGB
+
+0x1007a14b8(0x10d5bd8)
+Explosion::Explosion(BlockSource&, Entity*, Vec3 const&, float)
+
+0x1007a2308(0x10d69de)
+Explosion::setFire
+
+0x1007a2310(0x10d69e4)
+Explosion::setBreaking
+
+0x1007a2320(0x10d69ee)
+Explosion::setMaxResistance
+
+0x1007a2318(0x10d69ea)
+Explosion::getToBlow
