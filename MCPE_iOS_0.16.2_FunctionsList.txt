@@ -1593,3 +1593,15 @@ MinecraftEventing::fireEventFileTransmissionCancelled(std::string const&, std::s
 
 0x100064be0(0xcd93cc)
 MinecraftEventing::fireEventFileTransmissionCompleted(std::string const&, std::string const&, unsigned long long, bool)
+
+0x1004978b0(0xcda240)
+I18n::loadLanguages(ResourcePackManager&)
+
+0x100497dbc(0xcdab04)
+I18n::_setLanguageSupportsHypenSplitting(Localization const&)
+
+0x100497e64(0xcdac44)
+I18n::chooseLanguage(std::string const&)
+
+0x100497e80(0xcdac64)
+I18n::getLocaleFor(std::string const&)
