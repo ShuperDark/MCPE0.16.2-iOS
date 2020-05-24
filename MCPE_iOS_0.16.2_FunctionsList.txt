@@ -1156,6 +1156,12 @@ MobEffect::getId
 0x10064d7fc(0xed3d1a)
 MobEffectInstance::operator!=(MobEffectInstance const&) const
 
+0x1007a9a8c(0x10dd0ac)
+Level::hasLevelStorage
+
+0x1007a9a9c(0x10dd0b6)
+Level::getLevelStorage
+
 0x10006364c(0xcd621c)
 MinecraftEventing::fireEventPlayerMessage(std::string const&, std::string const&, std::string const&, std::string const&)
 
@@ -1215,3 +1221,69 @@ MinecraftEventing::fireEventPlayerDied(Player*, int, int)
 
 0x10005c3d0(0xcc50c8)
 MinecraftEventing::fireEventPortalBuilt(Player*, DimensionId)
+
+0x10005c5c0(0xcc54bc)
+MinecraftEventing::fireEventPortalUsed(Player*, DimensionId, DimensionId)
+
+0x10005c808(0xcc5a18)
+MinecraftEventing::fireEventPotionBrewed(Player*, ItemInstance const&, unsigned int)
+
+0x10005caa0(0xcc5db8)
+MinecraftEventing::fireEventCauldronUsed(Player*, short, unsigned int, short)
+
+0x10005cde4(0xcc653c)
+MinecraftEventing::fireEventConnectionFailed(MinecraftEventing::ConnectionFailureReason)
+
+0x10005cf98(0xcc6724)
+MinecraftEventing::fireEventSignInToXboxLive(std::string const&, bool, MinecraftEventing::SignInStage)
+
+0x10005d1f8(0xcc6d1c)
+MinecraftEventing::fireEventSignOutOfXboxLive()
+
+0x10005d3a0(0xcc7204)
+MinecraftEventing::fireEventVehicleExited(Player*, unsigned int, unsigned long long)
+
+0x10005d628(0xcc759c)
+MinecraftEventing::fireEventWorldGenerated(std::string const&, LevelSettings const&)
+
+0x10005d908(0xcc7e98)
+MinecraftEventing::fireEventWorldLoaded(Player*, Level&, ResourcePackManager&, ResourcePacksInfoData&)
+
+0x10005dd20(0xcc861c)
+MinecraftEventing::fireEventSetValidForAchievements(Player*, bool)
+
+0x10005de28(0xcc8fc4)
+MinecraftEventing::fireEventAwardAchievement(Player*, MinecraftEventing::AchievementIds)
+
+0x10005e01c(0xcc91d8)
+MinecraftEventing::fireEventMultiplayerRoundStart(Player*, Level&, std::string const&, int, std::string const&, int, Realms::World const&)
+
+0x10005e7c8(0xcca86c)
+MinecraftEventing::fireEventMultiplayerRoundEnd(Player*, int)
+
+0x10005ef6c(0xccbac8)
+MinecraftEventing::fireEventMultiplayerConnectionStateChanged(bool, std::string const&, std::string const&, unsigned int, unsigned int, unsigned int, std::string const&)
+
+0x10005f308(0xccc268)
+MinecraftEventing::fireEventStartWorld(std::string const&, std::string const&)
+
+0x10005f558(0xccc61c)
+MinecraftEventing::anonymizeIPAddress(std::string const&)
+
+0x10005f6dc(0xccc88c)
+MinecraftEventing::fireEventJoinCanceled(LoadingState)
+
+0x10005f8cc(0xcccc44)
+MinecraftEventing::fireEventStartClient()
+
+0x10005faf8(0xcccfa0)
+MinecraftEventing::fireEventAppPaused()
+
+0x10005fc60(0xccd0bc)
+MinecraftEventing::fireEventAppSuspended()
+
+0x10005fdc8(0xccd1d8)
+MinecraftEventing::fireEventAppResumed()
+
+0x10005ff30(0xccd2f4)
+MinecraftEventing::fireEventFocusGained()
