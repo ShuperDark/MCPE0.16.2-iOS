@@ -1393,6 +1393,24 @@ Options::getVRRollTurningSensitivity
 0x10033fc3c(0xae462a)
 Options::getVRStickyMining
 
+0x1003409dc(0xae5fa0)
+Options::getStutterConstantTimeMode
+
+0x1003409ac(0xae5f7a)
+Options::getStutterTurnSound
+
+0x10034055c(0xae576c)
+Options::getVRTapTurn
+
+0x100340564(0xae5778)
+Options::getVRTapTurningSensitivity
+
+0x1003406c4(0xae5a26)
+Options::getVRMSAA
+
+0x100340914(0xae5efc)
+Options::getXboxLiveVisible
+
 0x1007aac68(0x10de290)
 Level::getDifficulty
 
