@@ -1563,3 +1563,33 @@ MinecraftEventing::fireEventPerformanceMetrics(ProfilerLiteTelemetry const&)
 
 0x100061c10(0xcd0f80)
 MinecraftEventing::fireEventOptionsUpdated(Options&)
+
+0x100062f94(0xcd4578)
+MinecraftEventing::fireEventScreenChanged(std::string const&, std::string const&, std::string const&)
+
+0x1000631fc(0xcd4b8c)
+MinecraftEventing::fireEventPlayerTransform(Player&)
+
+0x100063594(0xcd6078)
+MinecraftEventing::fireEventPlayerMessageSay(std::string const&, std::string const&)
+
+0x100063a2c(0xcd75fc)
+MinecraftEventing::fireEventStoreOfferPurchaseAttempt(std::string const&, std::string const&)
+
+0x100063c70(0xcd7968)
+MinecraftEventing::fireEventStoreOfferPurchaseResolved(std::string const&, std::string const&, bool)
+
+0x100063efc(0xcd7dac)
+MinecraftEventing::fireEventAdditionalContentLoaded(Player const*, ResourcePack const*, int, int)
+
+0x10006429c(0xcd868c)
+MinecraftEventing::fireEventRespondedToAcceptContent(ResourcePacksInfoData const&, bool)
+
+0x100064710(0xcd8c24)
+MinecraftEventing::fireEventFileTransmissionStarted(std::string const&, std::string const&)
+
+0x100064954(0xcd8f90)
+MinecraftEventing::fireEventFileTransmissionCancelled(std::string const&, std::string const&, float)
+
+0x100064be0(0xcd93cc)
+MinecraftEventing::fireEventFileTransmissionCompleted(std::string const&, std::string const&, unsigned long long, bool)
