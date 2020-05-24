@@ -1605,3 +1605,12 @@ I18n::chooseLanguage(std::string const&)
 
 0x100497e80(0xcdac64)
 I18n::getLocaleFor(std::string const&)
+
+0x10006ba2c(0xdf7604)
+Common::getGameVersionString()  //If you want to hook this function up and change the version display, I recommend you use "Common::getGameVersionStringNet"
+
+0x10006bae0(0xdf77b0)
+Common::getGameVersionStringNet()
+
+0x10006bc94(0xdf7d50)
+Common::getGameDevVersionString()
