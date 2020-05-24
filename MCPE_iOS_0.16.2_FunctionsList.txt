@@ -1333,6 +1333,33 @@ Options::getParticleViewDistance
 0x100340670(0xae599c)
 Options::getPlayerViewPerspective
 
+0x1003406dc(0xae5a52)
+Options::getSmoothCamera
+
+0x10033f984(0xae42a4)
+Options::getSound
+
+0x10034083c(0xae5d54)
+Options::getSplitControls
+
+0x10033fa3c(0xae4458)
+Options::getStereoRendering
+
+0x10034097c(0xae5f54)
+Options::getStutterTurn
+
+0x100340844(0xae5d60)
+Options::getSwapJumpAndSneak
+
+0x1003406cc(0xae5a3a)
+Options::getTexelAA
+
+0x1003405a4(0xae5802)
+Options::getTransparentLeaves
+
+0x1003405b4(0xae581a)
+Options::getUseMouseForDigging
+
 0x1007aac68(0x10de290)
 Level::getDifficulty
 
