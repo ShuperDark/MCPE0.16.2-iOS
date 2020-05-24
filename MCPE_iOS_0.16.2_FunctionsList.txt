@@ -1144,6 +1144,18 @@ Explosion::setMaxResistance
 0x1007a2318(0x10d69ea)
 Explosion::getToBlow
 
+0x10070f1f8(0xf97730)
+Player::isBouncing
+
+0x1006a1df4(0xf7b8a0)
+Mob::hasEffect
+
+0x10064b1c4(0xed0864)
+MobEffect::getId
+
+0x10064d7fc(0xed3d1a)
+MobEffectInstance::operator!=(MobEffectInstance const&) const
+
 0x10006364c(0xcd621c)
 MinecraftEventing::fireEventPlayerMessage(std::string const&, std::string const&, std::string const&, std::string const&)
 
@@ -1191,3 +1203,15 @@ MinecraftEventing::fireEventBossKilled(Player*, int, long long, int)
 
 0x10005b60c(0xcc3334)
 MinecraftEventing::fireEventEntityInteracted(Player*, Entity&, MinecraftEventing::InteractionType)
+
+0x10005b860(0xcc3620)
+MinecraftEventing::fireEventPlayerTravelled(Player*, float)
+
+0x10005bf14(0xcc488c)
+MinecraftEventing::fireEventPlayerBounced(Player*, FullBlock const&, int)
+
+0x10005c19c(0xcc4e00)
+MinecraftEventing::fireEventPlayerDied(Player*, int, int)
+
+0x10005c3d0(0xcc50c8)
+MinecraftEventing::fireEventPortalBuilt(Player*, DimensionId)
