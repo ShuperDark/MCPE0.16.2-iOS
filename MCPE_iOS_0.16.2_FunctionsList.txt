@@ -1143,3 +1143,51 @@ Explosion::setMaxResistance
 
 0x1007a2318(0x10d69ea)
 Explosion::getToBlow
+
+0x10006364c(0xcd621c)
+MinecraftEventing::fireEventPlayerMessage(std::string const&, std::string const&, std::string const&, std::string const&)
+
+0x1000638ec(0xcd6658)
+MinecraftEventing::fireEventPlayerMessageTell(std::string const&, std::string const&, std::string const&)
+
+0x100063974(0xcd6744)
+MinecraftEventing::fireEventPlayerMessageChat(std::string const&, std::string const&)
+
+0x100058f88(0xcbd318)
+MinecraftEventing::fireEventBlockBroken(Player*, FullBlock&)
+
+0x100059284(0xcbdb6c)
+MinecraftEventing::fireEventBlockPlaced(Player*, FullBlock const&)
+
+0x100059580(0xcbdff8)
+MinecraftEventing::fireEventCraftingSessionEnd(Player*)
+
+0x10005987c(0xcbe538)
+MinecraftEventing::fireEventCraftingSessionStart(Player*, unsigned int)
+
+0x100059a64(0xcbee2c)
+MinecraftEventing::fireEventEndOfDay(Player*, Level&)
+
+0x100059d6c(0xcbf504)
+MinecraftEventing::fireEventItemAcquired(Player*, ItemInstance const&, unsigned int, MinecraftEventing::AcquisitionMethod)
+
+0x10005a05c(0xcbfb88)
+MinecraftEventing::fireEventItemCrafted(Player*, ItemInstance const&)
+
+0x10005a454(0xcc0a04)
+MinecraftEventing::fireEventItemDropped(Player*, ItemInstance const&)
+
+0x10005a6a0(0xcc0cdc)
+MinecraftEventing::fireEventItemSmelted(Player*, ItemInstance const&, ItemInstance const&)
+
+0x10005a990(0xcc1170)
+MinecraftEventing::fireEventItemUsed(Player*, ItemInstance const&, MinecraftEventing::UseMethod)
+
+0x10005ac80(0xcc1e90)
+MinecraftEventing::fireEventMobKilled(Player*, Entity*, Mob&, unsigned int)
+
+0x10005b384(0xcc2db8)
+MinecraftEventing::fireEventBossKilled(Player*, int, long long, int)
+
+0x10005b60c(0xcc3334)
+MinecraftEventing::fireEventEntityInteracted(Player*, Entity&, MinecraftEventing::InteractionType)
