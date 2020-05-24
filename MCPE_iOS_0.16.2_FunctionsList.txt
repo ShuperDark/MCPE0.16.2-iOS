@@ -704,6 +704,42 @@ Entity::setPos(EntityPos const&)
 0x100659fc8(0xf24d10)
 Entity::setPos(Vec3 const&)
 
+0x10065a064(0xf24da0)
+Entity::getPos
+
+0x10065a06c(0xf24da4)
+Entity::getPosOld
+
+0x10065a074(0xf24da8)
+Entity::getPosExtrapolated
+
+0x10065a108(0xf24e2a)
+Entity::getVelocity
+
+0x10065a110(0xf24e2e)
+Entity::setPreviousPosRot
+
+0x10065a148(0xf24e5e)
+Entity::getRadius()
+
+0x10065a160(0xf24e78)
+Entity::isSkyLit
+
+0x10065a1d4(0xf24ed0)
+Entity::getCenter
+
+0x10065a288(0xf24fa8)
+Entity::getBrightness
+
+0x10065a330(0xf25044)
+Entity::getViewVector
+
+0x10065a428(0xf25184)
+Entity::getViewVector2
+
+0x10065a3d0(0xf25110)
+Entity::getInterpolatedRotation
+
 0x100659c40(0xf249e0)
 Entity::_updateOwnerChunk
 
@@ -784,6 +820,21 @@ Entity::getAirSupply
 0x100661084(0xf2d734)
 Entity::getTotalAirSupply
 
+0x1006579cc(0xf22510)
+Entity::getTarget
+
+0x1006579f4(0xf22548)
+Entity::setTarget
+
+0x10065768c(0xf2225c)
+Entity::removeDefinitionGroup
+
+0x100657684(0xf22254)
+Entity::addDefinitionGroup
+
+0x100657958(0xf22484)
+Entity::getRuntimeID
+
 0x1007a13ac(0x10d2458)
 ChunkPos::ChunkPos(BlockPos const&)
 0x1007a13c8(0x10d2466)
@@ -846,6 +897,9 @@ AABB::merge
 
 0x1008ed0cc(0x11899a4)
 AABB::move(Vec3 const&)
+
+0x1008ed1d8(0x1189ac0)
+AABB::getBounds
 
 0x1008ec3f0(0x118879c)
 AABB::cloneMove
@@ -922,6 +976,39 @@ Level::getNewUniqueID
 0x1007a8920(0x10dbfc0)
 Level::fetchEntity
 
+0x1007aa628(0x10ddd9e)
+Level::getPlayerList
+
+0x1007a9aa4(0x10dd312)
+Level::getPlayer(mce::UUID const&)
+
+0x1007aa63c(0x10dddac)
+Level::getPacketSender
+
+0x1007a9a34(0x10dd086)
+Level::broadcastBossEvent
+
+0x1007a98cc(0x10dcee4)
+Level::broadcastEntityEvent
+
+0x1007a780c(0x10db208)
+Level::broadcastSoundEvent
+
+0x1007a9790(0x10dcd90)
+Level::animateTick
+
+0x1007a55a8(0x10d91c8)
+Level::_saveMapData
+
+0x1007a96fc(0x10dcd40)
+Level::setCommandsEnabled
+
+0x1007a9684(0x10dccfc)
+Level::setXBLBroadcast
+
+0x1007a94bc(0x10dca48)
+Level::extinguishFire
+
 0x1008ed2bc(0x1189bf8)
 AABB::getCenter
 
@@ -933,6 +1020,9 @@ Block::isSolid
 
 0x100852ae4(0x10d3530)
 Dimension::getWeather
+
+0x100854778(0x10d4f88)
+Dimension::sendPacketForPosition
 
 0x1007bdac8(0x11852bc)
 Weather::isRainingAt
@@ -972,3 +1062,51 @@ SynchedEntityData::_find(short)
 
 0x1006add80(0xfac1e8)
 SynchedEntityData::getShort(short)
+
+0x100679d28(0xf4f7b8)
+EntityDefinitionDescriptor::executeTrigger(Entity&, DefinitionTrigger const&, VariantParameterList const&)
+
+0x100679c40(0xf4f70a)
+EntityDefinitionDescriptor::executeEvent(Entity&, std::string const&, VariantParameterList const&)
+
+0x10064f944(0xf1da7c)
+DefinitionTrigger::canTrigger(Entity const&, VariantParameterList const&) const
+
+0x100679d80(0xf4f7e0)
+EntityDefinitionDescriptor::forceExecuteTrigger(Entity&, DefinitionTrigger const&, VariantParameterList const&)
+
+0x10060e680(0xe946d4)
+VariantParameterList::hasParameter(std::string const&) const
+
+0x10060e69c(0xe946e2)
+VariantParameterList::getParameterType(std::string const&) const
+
+0x10064dfb4(0xf1c6d0)
+DefinitionEvent::evaluateGroups(Entity&, std::vector<DefinitionModifier, std::allocator<DefinitionModifier> >&, VariantParameterList const&)
+
+0x1005a8444(0xe14da0)
+ClassID::getNextID()
+
+0x10067cb7c(0xf1cbbc)
+DefinitionModifier::~DefinitionModifier()
+
+0x1006e39e0(0xf098a0)
+BossComponent::unRegisterPlayer
+
+0x1006e38ac(0xf09710)
+BossComponent::_sendBossEvent
+
+0x10049f78c(0xcf4860)
+NbtIo::write
+
+0x1008d3db0(0x1166702)
+MapItemSavedData::getMapId
+
+0x1008e30f4(0x117d40a)
+LevelData::setCommandsEnabled
+
+0x100798f58(0x10c1810)
+BlockPos::neighbor
+
+0x100798f98(0x10c184)
+BlockPos::center
