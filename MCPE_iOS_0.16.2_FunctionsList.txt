@@ -832,6 +832,15 @@ Entity::removeDefinitionGroup
 0x100657684(0xf22254)
 Entity::addDefinitionGroup
 
+0x100661530(0xf2db30)
+Entity::isGlobal
+
+0x10065b64c(0xf261a8)
+Entity::removeAllRiders
+
+0x10065e800(0xf29990)
+Entity::isRide
+
 0x100657958(0xf22484)
 Entity::getRuntimeID
 
@@ -874,6 +883,9 @@ LevelChunk::getTopRainBlockPos
 0x10084c208(0x10cf92e)
 LevelChunk::getBiome
 
+0x10084410c(0x10c9758)
+ChunkSource::ChunkSource(Level*, Dimension*, int)
+
 0x100843d60(0x10c9018)
 ChunkSource::getGeneratedChunk
 
@@ -882,6 +894,9 @@ ChunkSource::getAvailableChunk
 
 0x10084415c(0x10c97b4)
 ChunkSource::getChunkSide
+
+0x100847a44(0x10cc648)
+LevelChunk::hasEntity
 
 0x1008ed2e8(0x1189c46)
 AABB::contains
@@ -1018,6 +1033,15 @@ Level::explode
 0x1007a8fe8(0x10dc678)
 Level::setDayCycleActive
 
+0x1007a8ba8(0x10dc19c)
+Level::removeEntityReferences
+
+0x1007a8a38(0x10dc07c)
+Level::getRuntimeEntity
+
+0x1007a8978(0x10dbff6)
+Level::takeEntity
+
 0x1008ed2bc(0x1189bf8)
 AABB::getCenter
 
@@ -1126,6 +1150,9 @@ BlockPos::center
 0x10079c000(0x10c390e)
 BlockSource::removeBlock
 
+0x1007ae114(0x10c199c)
+BlockSource::addListener
+
 0x100009030(0x1691760)
 Color::toARGB
 
@@ -1161,6 +1188,18 @@ Level::hasLevelStorage
 
 0x1007a9a9c(0x10dd0b6)
 Level::getLevelStorage
+
+0x1007a98a4(0x10dce8a)
+Level::getSeed
+
+0x1007a8f38(0x10dc5c8)
+Level::removeListener
+
+0x1007a8ec4(0x10dc516)
+Level::addListener
+
+0x1008533bc(0x10d3e08)
+Dimension::getLevel()
 
 0x100079afc(0x7a77b8)
 MinecraftClient::getHoloInput
@@ -1614,3 +1653,78 @@ Common::getGameVersionStringNet()
 
 0x10006bc94(0xdf7d50)
 Common::getGameDevVersionString()
+
+0x10084f3a8(0x10d0f14)
+NetworkChunkSource::NetworkChunkSource(Level*, Dimension*)
+
+0x1008e3070(0x117d3a0)
+LevelData::getStorageVersion
+
+0x100851844(0x10d24b4)
+Dimension::Dimension(Level&, DimensionId, short)
+
+0x100851be0(0x10d28fc)
+Dimension::~Dimension()
+
+0x1008533e4(0x10d3e26)
+Dimension::getEntityIdMap
+
+0x1008522d0(0x10d2e4c)
+Dimension::_createGenerator
+
+0x10085200c(0x10d2c8e)
+Dimension::init
+
+0x10085558c(0x10d5a60)
+NormalDimension::NormalDimension(Level&)
+
+0x100855bdc(0x10d5668)
+HellDimension::HellDimension(Level&)
+
+0x1008ee5e0(0x118b986)
+CircuitSceneGraph::~CircuitSceneGraph()
+
+0x1007ba1f4(0x1167e20)
+Seasons::Seasons(Dimension&)
+
+0x1007ba1fc(0x1167e24)
+Seasons::~Seasons()
+
+0x1007bd3a0(0x1184cc8)
+Weather::Weather(Dimension&)
+
+0x1008e2fb8(0x117d318)
+LevelData::getRainLevel
+
+0x1008e2fc0(0x117d31e)
+LevelData::setRainLevel
+
+0x1008be0b8(0x11477b0)
+PerlinSimplexNoise::PerlinSimplexNoise(unsigned int, int)
+
+0x1008be208
+PerlinSimplexNoise::_init(Random&)
+
+0x1008e4784(0x118455c)
+Storage::set(std::string const&, SavedData*)
+
+0x1008e45ec(0x118433c)
+SavedDataStorage::load(SavedData*, std::string const&)
+
+0x1004afd00(0xcf4934)
+NbtIo::read
+
+0x10049f3c4(0xce2870)
+Tag::readNamedTag
+
+0x10049f538(0xce2a38)
+Tag::newTag
+
+0x100057aa0(0x793408)
+AppPlatformListener::AppPlatformListener()
+
+0x10052b5a8(0xd82f30)
+AppPlatform::singleton
+
+0x10052ce80(0xd84958)
+AppPlatform::addListener
