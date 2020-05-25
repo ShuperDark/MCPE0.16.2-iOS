@@ -1702,6 +1702,17 @@ Dimension::getSunAngle
 0x1008529d4(0x10d33f4)
 Dimension::getSunIntensity
 
+0x100852aec(0x10d3536)
+Dimension::getMoonPhase
+
+0x100852b34(0x10d3560)
+Dimension::getMoonBrightness
+
+0x100852dec(0x10d380c)
+Dimension::getSkyColor(Entity const&, float)
+0x100852e68(0x10d384c)
+Dimension::getSkyColor(BlockSource&, BlockPos const&, float)
+
 0x10085558c(0x10d5a60)
 NormalDimension::NormalDimension(Level&)
 
@@ -1752,6 +1763,15 @@ Weather::setFogLevel
 
 0x1007bda78(0x1185248)
 Weather::getLightningLevel
+
+0x1007bdc2c(0x1185378)
+Weather::getSkyFlashTime
+
+0x1007bdc34(0x118537c)
+Weather::setSkyFlashTime
+
+0x1007bdc3c(0x1185380)
+Weather::stop
 
 0x1008e2fb8(0x117d318)
 LevelData::getRainLevel
