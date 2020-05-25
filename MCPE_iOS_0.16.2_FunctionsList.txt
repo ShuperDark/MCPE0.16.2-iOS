@@ -1719,6 +1719,9 @@ Dimension::getBlockSourceDEPRECATEDUSEPLAYERREGIONINSTEAD
 0x1008532c4(0x10d3d14)
 Dimension::getStarBrightness
 
+1008533b4(0x10d3e04)
+Dimension::getId
+
 0x10085558c(0x10d5a60)
 NormalDimension::NormalDimension(Level&)
 
@@ -1805,6 +1808,9 @@ LevelData::setRainTime
 
 0x1008e2fa8
 LevelData::isRaining
+
+0x10070e194(0xf966b0)
+Player::getDimension
 
 0x1008be0b8(0x11477b0)
 PerlinSimplexNoise::PerlinSimplexNoise(unsigned int, int)
