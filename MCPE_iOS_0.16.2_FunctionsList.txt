@@ -1713,6 +1713,12 @@ Dimension::getSkyColor(Entity const&, float)
 0x100852e68(0x10d384c)
 Dimension::getSkyColor(BlockSource&, BlockPos const&, float)
 
+0x1008533d4(0x10d3e1a)
+Dimension::getBlockSourceDEPRECATEDUSEPLAYERREGIONINSTEAD
+
+0x1008532c4(0x10d3d14)
+Dimension::getStarBrightness
+
 0x10085558c(0x10d5a60)
 NormalDimension::NormalDimension(Level&)
 
