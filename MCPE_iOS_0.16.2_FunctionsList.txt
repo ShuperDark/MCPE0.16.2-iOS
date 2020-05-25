@@ -1141,16 +1141,22 @@ LevelData::setCommandsEnabled
 0x1008e2efc(0x117d27c)
 LevelData::setTime
 
+0x1008e3060(0x117d396)
+LevelData::getWorldCenter
+
 0x100798f58(0x10c1810)
 BlockPos::neighbor
 
 0x100798f98(0x10c184)
 BlockPos::center
 
+0x100799098(0x10c18e0)
+BlockSource::BlockSource(Level&, Dimension&, ChunkSource&, bool, bool)
+
 0x10079c000(0x10c390e)
 BlockSource::removeBlock
 
-0x1007ae114(0x10c199c)
+0x10079fe98(0x10c199c)
 BlockSource::addListener
 
 0x100009030(0x1691760)
@@ -1453,6 +1459,9 @@ Options::getXboxLiveVisible
 0x1007aac68(0x10de290)
 Level::getDifficulty
 
+0x1007a7664(0x10db0e4)
+Level::broadcastLevelEvent(LevelEvent, Vec3 const&, int, Player*)
+
 0x100613490(0x1187798)
 Minecraft::isModded
 
@@ -1675,14 +1684,41 @@ Dimension::_createGenerator
 0x10085200c(0x10d2c8e)
 Dimension::init
 
+0x1008525f8(0x10d3016)
+Dimension::tickRedstone
+
+0x100854830(0x10d4fea)
+Dimension::hasCeiling
+
+0x100854838(0x10d4ff0)
+Dimension::setCeiling
+
+0x100852694(0x10d3070)
+Dimension::getOldSkyDarken
+
+0x10085295c(0x10d32d8)
+Dimension::getSunAngle
+
+0x1008529d4(0x10d33f4)
+Dimension::getSunIntensity
+
 0x10085558c(0x10d5a60)
 NormalDimension::NormalDimension(Level&)
 
 0x100855bdc(0x10d5668)
 HellDimension::HellDimension(Level&)
 
+0x1008ee58c(0x118b6e0)
+CircuitSceneGraph::CircuitSceneGraph()
+
 0x1008ee5e0(0x118b986)
 CircuitSceneGraph::~CircuitSceneGraph()
+
+0x1008f4ba8(0x118f824)
+CircuitSystem::CircuitSystem()
+
+0x1008f4c0c(0x118f856)
+CircuitSystem::evaluate
 
 0x1007ba1f4(0x1167e20)
 Seasons::Seasons(Dimension&)
@@ -1690,14 +1726,59 @@ Seasons::Seasons(Dimension&)
 0x1007ba1fc(0x1167e24)
 Seasons::~Seasons()
 
+0x1007ba200(0x1167e28)
+Seasons::tick
+
 0x1007bd3a0(0x1184cc8)
 Weather::Weather(Dimension&)
+
+0x1007bd57c(0x1184e24)
+Weather::tick
+
+0x1007bd6dc(0x1184f58)
+Weather::serverTick
+
+0x1007bdab8(0x11852a4)
+Weather::isRaining
+
+0x1007bda88(0x1185266)
+Weather::getRainLevel
+
+0x1007bda98(0x1185284)
+Weather::getFogLevel
+
+0x1007bdaa0(0x1185288)
+Weather::setFogLevel
+
+0x1007bda78(0x1185248)
+Weather::getLightningLevel
 
 0x1008e2fb8(0x117d318)
 LevelData::getRainLevel
 
 0x1008e2fc0(0x117d31e)
 LevelData::setRainLevel
+
+0x1008e2f88(0x117d2ee)
+LevelData::getLightningLevel
+
+0x1008e2f90(0x117d2ee)
+LevelData::setLightningLevel
+
+0x1008e2f98(0x117d2f4)
+LevelData::getLightningTime
+
+0x1008e2fa0(0x117d2fa)
+LevelData::setLightningTime
+
+0x1008e2fc8(0x117d324)
+LevelData::getRainTime
+
+0x1008e2fd0(0x117d32a)
+LevelData::setRainTime
+
+0x1008e2fa8
+LevelData::isRaining
 
 0x1008be0b8(0x11477b0)
 PerlinSimplexNoise::PerlinSimplexNoise(unsigned int, int)
