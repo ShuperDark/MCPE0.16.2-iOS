@@ -2125,3 +2125,57 @@ OreFeature::OreFeature(BlockID, unsigned char, int)
 
 0x10085d56c(0x10f14f8)
 OreFeature::place(BlockSource&, BlockPos const&, Random&) const
+
+0x1006a8278(0xf81f88)
+Mob::pushEntities()
+
+0x1006a872c(0xf82438)
+Mob::updateInvisibilityStatus()
+
+0x1006a8a10(0xf82660)
+Mob::onEffectAdded(MobEffectInstance&)
+
+0x1006a8b0c(0xf82708)
+Mob::onEffectRemoved(MobEffectInstance&)
+
+0x10064d5c4(0xed2ba4)
+MobEffectInstance::applyEffects(Mob*) const
+
+0x1006a8ab8(0xf826d8)
+Mob::onEffectUpdated(MobEffectInstance const&)
+
+0x1006a8b7c(0xf8275c)
+Mob::getAllEffects()
+
+0x10064d470(0xed2a9c)
+MobEffectInstance::MobEffectInstance(int)
+
+0x10064d488(0xed2aac)
+MobEffectInstance::MobEffectInstance(int, int)
+
+0x10064d4a0(0xed2aba)
+MobEffectInstance::MobEffectInstance(int, int, int)
+
+0x10064d4b8(0xed2ac8)
+MobEffectInstance::MobEffectInstance(int, int, int, bool, bool)
+
+0x10064d5e8(0xed2bd4)
+MobEffectInstance::removeEffects(Mob*) const
+
+0x10064d4d0(0xed2ae0)
+MobEffectInstance::update(MobEffectInstance const&)
+
+0x10064d52c(0xed2b12)
+MobEffectInstance::getId() const
+
+0x10064dbe4(0xed4670)
+MobEffectInstance::getColorValue(std::vector<MobEffectInstance, std::allocator<MobEffectInstance> > const&)
+
+0x10064bacc(0xed1590)
+MobEffect::getColor() const
+
+0x10064de94(0xed485c)
+MobEffectInstance::areAllEffectsAmbient(std::vector<MobEffectInstance, std::allocator<MobEffectInstance> > const&)
+
+0x1006575dc(0xf22158)
+Entity::setStatusFlag(EntityFlags, bool)
