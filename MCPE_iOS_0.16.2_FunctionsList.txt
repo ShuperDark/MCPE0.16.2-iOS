@@ -1254,11 +1254,65 @@ MinecraftClient::onAppResumed
 0x100536c90(0xd8e580)
 WorkerPool::getWorkersFor
 
+0x100534e9c(0xd8cf78)
+BackgroundWorker::resume
+
 0x100044868(0x16b7070)
 mce::TextureGroup::getLocationFor(DynamicTexture)
 
 0x100044adc(0x16b73b4)
 mce::TextureGroup::getTexturePair(ResourceLocation const&)
+
+0x10003ce34(0x16b376c)
+mce::RenderMaterial::initContext()
+
+0x100034acc(0x16ac780)
+mce::RenderContextImmediate::get()
+
+0x100413ed8(0xc0f19c)
+mce::RenderGraph::clearRenderGraph()
+
+0x100413c24(0xc0efb8)
+mce::RenderGraph::addRenderStage(EyeRenderingModeBit, std::unique_ptr<mce::RenderStage, std::default_delete<mce::RenderStage> >)
+
+0x100034974(0x16ac686)
+mce::RenderContext::clearContextState()
+
+0x100034bac(0x16ac812)
+mce::RenderDevice::getClosestSupportedSampleDescription(mce::TextureFormat, mce::SampleDescription const&) const
+
+0x100418bac(0xc12b40)
+mce::RenderStage::RenderStage()
+
+0x100418cb4(0xc12be8)
+mce::RenderStage::getEyeRenderingModeBits() const
+
+0x100034660(0x16ac4d8)
+mce::FrameBufferObject::FrameBufferObject()
+
+0x100033ec4(0x16abf90)
+mce::FrameBufferDescription::FrameBufferDescription()
+
+0x100033e30(0x16abf10)
+mce::FrameBufferAttachmentDescription::FrameBufferAttachmentDescription()
+
+0x1004135a8(0xc0eac8)
+mce::MultisampledRenderStageWithFrameBufferObject::MultisampledRenderStageWithFrameBufferObject()
+
+0x100048140(0x16b9510)
+mce::TexturePtr::TexturePtr()
+
+0x10040dfcc(0xc08254)
+TickingTextureStage::TickingTextureStage(MinecraftClient&)
+
+0x1003e1344(0xbd7ccc)
+GameRenderer::createRenderGraph()
+
+0x10040b87c(0xc0577c)
+MultisampledGameRenderStageWithFrameBufferObject::MultisampledGameRenderStageWithFrameBufferObject(MinecraftClient&)
+
+0x10041a6f0(0xc13fd0)
+Tessellator::init
 
 0x10037f5f8(0xb5abf0)
 SkinRepository::getSelectedSkin
@@ -1508,6 +1562,9 @@ Level::broadcastLevelEvent(LevelEvent, Vec3 const&, int, Player*)
 
 0x100613490(0x1187798)
 Minecraft::isModded
+
+0x100613478(0x118778c)
+Minecraft::getLevel
 
 0x10006364c(0xcd621c)
 MinecraftEventing::fireEventPlayerMessage(std::string const&, std::string const&, std::string const&, std::string const&)
