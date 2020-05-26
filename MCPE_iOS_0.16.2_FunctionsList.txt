@@ -2088,11 +2088,20 @@ TexturePair::sync
 0x1007a7bec(0x10db444)
 Level::addParticle
 
+0x100858528(0x10ed6ec)
+Feature::~Feature()
+
 0x100858470(0x10ed678)
 Feature::Feature(bool)
 
 0x10085849c(0x10ed69c)
 Feature::_getManuallyPlaced() const
+
+0x1008584a4(0x10ed6a0)
+Feature::_placeBlock(BlockSource&, BlockPos const&, FullBlock const&) const
+
+0x1008584e4(0x10ed6c6)
+Feature::_setBlockAndData(BlockSource&, BlockPos const&, FullBlock const&) const
 
 0x10085d4d0(0x10f14a0)
 OreFeature::OreFeature(BlockID, int)
