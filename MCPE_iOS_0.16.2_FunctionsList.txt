@@ -1290,11 +1290,23 @@ mce::RenderStage::getEyeRenderingModeBits() const
 0x100034660(0x16ac4d8)
 mce::FrameBufferObject::FrameBufferObject()
 
+0x1000346e0(0x16ac522)
+mce::FrameBufferObject::createFrameBuffer(mce::RenderContext&, mce::FrameBufferDescription const&)
+
+0x1000346e8(0x16ac52a)
+mce::FrameBufferObject::createFrameBufferAttachment(mce::RenderContext&, mce::FrameBufferAttachmentDescription const&)
+
+0x100034710(0x16ac542)
+mce::FrameBufferObject::finalizeFrameBuffer()
+
 0x100033ec4(0x16abf90)
 mce::FrameBufferDescription::FrameBufferDescription()
 
 0x100033e30(0x16abf10)
 mce::FrameBufferAttachmentDescription::FrameBufferAttachmentDescription()
+
+0x100033e64(0x16abf80)
+mce::FrameBufferAttachmentDescription::setTextureFormatAndAttachmentType(mce::TextureFormat)
 
 0x1004135a8(0xc0eac8)
 mce::MultisampledRenderStageWithFrameBufferObject::MultisampledRenderStageWithFrameBufferObject()
@@ -1302,17 +1314,44 @@ mce::MultisampledRenderStageWithFrameBufferObject::MultisampledRenderStageWithFr
 0x100048140(0x16b9510)
 mce::TexturePtr::TexturePtr()
 
+0x100044594(0x16b6d50)
+mce::TextureGroup::reloadAll()
+
+0x10003c7d0(0x16b2f10)
+mce::Mesh::isValid
+
 0x10040dfcc(0xc08254)
 TickingTextureStage::TickingTextureStage(MinecraftClient&)
 
 0x1003e1344(0xbd7ccc)
 GameRenderer::createRenderGraph()
 
+0x1003defb0(0xbd52d8)
+DefaultUIRendererCompositorStage::DefaultUIRendererCompositorStage(MinecraftClient&)
+
+0x1003dee08(0xbd50dc)
+DefaultGameRendererCompositorStage::DefaultGameRendererCompositorStage(MinecraftClient&)
+
 0x10040b87c(0xc0577c)
 MultisampledGameRenderStageWithFrameBufferObject::MultisampledGameRenderStageWithFrameBufferObject(MinecraftClient&)
 
+0x1002d13fc(0xa5a874)
+HolographicPlatform::getTransformTranslation(TransformSpace, TransformSpace, TransformSpace)
+
+0x1002cece8(0xa59534)
+HolographicPlatform::getTransform(TransformSpace, TransformSpace, TransformSpace)
+
+0x1002ceeec(0xa595d0)
+HolographicPlatform::_getTransform(TransformSpace, TransformSpace)
+
 0x10041a6f0(0xc13fd0)
 Tessellator::init
+
+0x1003a5c9c(0xb8956e)
+BlockTessellator::getTessellator()
+
+0x100597ac8(0xe002e4)
+OfferRepository::isGameLicensed
 
 0x10037f5f8(0xb5abf0)
 SkinRepository::getSelectedSkin
@@ -1565,6 +1604,18 @@ Minecraft::isModded
 
 0x100613478(0x118778c)
 Minecraft::getLevel
+
+0x1006139b8
+Minecraft::getNetworkHandler
+
+0x100613294(0x118760c)
+Minecraft::getServerNetworkHandler
+
+0x1004a981c(0xced192)
+NetworkHandler::getConnector
+
+0x1004a952c(0xcecede)
+NetworkHandler::isServer
 
 0x10006364c(0xcd621c)
 MinecraftEventing::fireEventPlayerMessage(std::string const&, std::string const&, std::string const&, std::string const&)
@@ -1951,6 +2002,18 @@ LevelRenderer::bobHurt(Matrix&, float)
 
 0x1003fa11c(0xbf4990)
 LevelRenderer::tickRain()
+
+0x1003fa818(0xbf511c)
+LevelRenderer::_finishBuildingChunk(RenderChunk&)
+
+0x1003b2a1c(0xb97d14)
+RenderChunk::isReady
+
+0x1003b1fb0(0xb96d5a)
+RenderChunk::isEmpty
+
+0x1003b1c98(0xb96af4)
+RenderChunk::endRebuild(Vec3 const&)
 
 0x10040f6d4(0xc0a41c)
 WeatherRenderer::tick
