@@ -1913,8 +1913,11 @@ Dimension::getBlockSourceDEPRECATEDUSEPLAYERREGIONINSTEAD
 0x1008532c4(0x10d3d14)
 Dimension::getStarBrightness
 
-1008533b4(0x10d3e04)
+0x1008533b4(0x10d3e04)
 Dimension::getId
+
+0x1008527c8(0x10d318c)
+Dimension::updateLightRamp()
 
 0x10085558c(0x10d5a60)
 NormalDimension::NormalDimension(Level&)
