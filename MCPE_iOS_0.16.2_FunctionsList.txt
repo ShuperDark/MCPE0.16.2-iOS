@@ -421,6 +421,8 @@ BlockSource::getEntities
 
 0x10079bb6c(0x10c3644)
 BlockSource::setBlockAndData(BlockPos const&, BlockID, unsigned char, int)
+0x10079b320(0x10c2fda)
+BlockSource::setBlockAndData(BlockPos const&, FullBlock, int)
 0x10079b854(0x10c33f8)
 BlockSource::setBlockAndData(BlockPos const&, FullBlock, int, std::unique_ptr<BlockEntity, std::default_delete<BlockEntity> >)
 
@@ -2085,3 +2087,18 @@ TexturePair::sync
 
 0x1007a7bec(0x10db444)
 Level::addParticle
+
+0x100858470(0x10ed678)
+Feature::Feature(bool)
+
+0x10085849c(0x10ed69c)
+Feature::_getManuallyPlaced() const
+
+0x10085d4d0(0x10f14a0)
+OreFeature::OreFeature(BlockID, int)
+
+0x10085d518(0x10f14cc)
+OreFeature::OreFeature(BlockID, unsigned char, int)
+
+0x10085d56c(0x10f14f8)
+OreFeature::place(BlockSource&, BlockPos const&, Random&) const
