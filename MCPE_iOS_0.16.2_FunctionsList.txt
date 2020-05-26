@@ -434,6 +434,15 @@ BlockSource::setBlockAndData(BlockPos const&, FullBlock, int, std::unique_ptr<Bl
 0x10079affc(0x10c2dec)
 BlockSource::mayPlace(BlockID, BlockPos const&, signed char, Mob*, bool, Entity*)
 
+0x10079b424(0x10c305c)
+BlockSource::neighborChanged(BlockPos const&, BlockPos const&)
+
+0x1007a03e8(0x10c74d0)
+BlockTickingQueue::isInstaticking() const
+
+0x1007d8100(0x1069576)
+Block::canInstatick()
+
 0x10079975c(0x10c1d04)
 BlockSource::getDimension()
 
