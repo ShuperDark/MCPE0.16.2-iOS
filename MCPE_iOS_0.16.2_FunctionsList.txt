@@ -1320,6 +1320,20 @@ mce::TextureGroup::reloadAll()
 0x10003c7d0(0x16b2f10)
 mce::Mesh::isValid
 
+0x10003c750(0x16b2eb4)
+mce::Mesh::operator=(mce::Mesh&&)
+
+0x10003c5f4(0x16b2d88)
+mce::Mesh::Mesh(mce::Mesh&&)
+0x10003c3dc(0x16b2c40)
+mce::Mesh::Mesh(mce::VertexFormat const&, unsigned int, unsigned int, unsigned char, mce::PrimitiveMode, unsigned char*, bool)
+
+0x10003c5ac(0x16b2d4c)
+mce::Mesh::reset()
+
+0x10003c6d4(0x16b2e64)
+mce::Mesh::~Mesh()
+
 0x10040dfcc(0xc08254)
 TickingTextureStage::TickingTextureStage(MinecraftClient&)
 
@@ -1347,8 +1361,20 @@ HolographicPlatform::_getTransform(TransformSpace, TransformSpace)
 0x10041a6f0(0xc13fd0)
 Tessellator::init
 
+0x10041a8d0(0xc141b8)
+Tessellator::isTessellating() const
+
+0x10041b640(0xc14f14)
+Tessellator::end(char const*, bool)
+
+0x10041b36c(0xc14c10)
+Tessellator::setOffset(float, float, float)
+
 0x1003a5c9c(0xb8956e)
 BlockTessellator::getTessellator()
+
+0x10084598c(0x10ca9ae)
+ChunkViewSource::clear()
 
 0x100597ac8(0xe002e4)
 OfferRepository::isGameLicensed
@@ -2006,6 +2032,9 @@ LevelRenderer::tickRain()
 0x1003fa818(0xbf511c)
 LevelRenderer::_finishBuildingChunk(RenderChunk&)
 
+0x1003fa934(0xbf51f6)
+LevelRenderer::_updateColumnVisibility(BlockPos const&)
+
 0x1003b2a1c(0xb97d14)
 RenderChunk::isReady
 
@@ -2014,6 +2043,15 @@ RenderChunk::isEmpty
 
 0x1003b1c98(0xb96af4)
 RenderChunk::endRebuild(Vec3 const&)
+
+0x1003b1fdc(0xb96d74)
+RenderChunk::updateFaceSortState(BlockPos)
+
+0x1003b2cb0(0xb98178)
+RenderChunk::getPosition() const
+
+0x1003b37f8(0xb98518)
+RenderChunkBuilder::trim()
 
 0x10040f6d4(0xc0a41c)
 WeatherRenderer::tick
