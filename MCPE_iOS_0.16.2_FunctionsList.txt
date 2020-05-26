@@ -883,6 +883,12 @@ LevelChunk::getTopRainBlockPos
 0x10084c208(0x10cf92e)
 LevelChunk::getBiome
 
+0x1008478d4(0x10cc51c)
+LevelChunk::getSkyLight
+
+0x100847a8c(0x10cc67c)
+LevelChunk::getBlockLight
+
 0x10084410c(0x10c9758)
 ChunkSource::ChunkSource(Level*, Dimension*, int)
 
@@ -975,6 +981,8 @@ BlockSource::isInWall
 
 0x100799bc4(0x10c2068)
 BlockSource::hasChunksAt
+0x100799d74(0x10c219a)
+BlockSource::hasChunksAt(int, int, int, int)
 
 0x100810374(0x10a7d8c)
 LiquidBlock::getHeightFromData
@@ -1228,6 +1236,30 @@ MinecraftClient::getCameraTargetEntity
 0x1000855c8(0x7b6af6)
 MinecraftClient::setCameraTargetEntity
 
+0x10007ae74(0x7a8a88)
+MinecraftClient::getLocalPlayer
+
+0x100085598(0x7b6ad8)
+MinecraftClient::getTextures
+
+0x10007b9a4(0x7a9320)
+MinecraftClient::getHoloviewerScale
+
+0x100083818(0x7b4a6c)
+MinecraftClient::play
+
+0x100083674(0x7b4950)
+MinecraftClient::onAppResumed
+
+0x100536c90(0xd8e580)
+WorkerPool::getWorkersFor
+
+0x100044868(0x16b7070)
+mce::TextureGroup::getLocationFor(DynamicTexture)
+
+0x100044adc(0x16b73b4)
+mce::TextureGroup::getTexturePair(ResourceLocation const&)
+
 0x10037f5f8(0xb5abf0)
 SkinRepository::getSelectedSkin
 
@@ -1287,6 +1319,9 @@ TextureData::getWidth
 
 0x10000a3d4(0x169241c)
 TextureData::getHeight
+
+0x10000a398(0x16923f2)
+TextureData::getDataModify
 
 0x100340724(0xae5a9a)
 Options::getUsername
@@ -1857,8 +1892,38 @@ LevelRenderer::getFov(float, bool)
 0x100406f90(0xc02ec8)
 LevelRenderer::bobHurt(Matrix&, float)
 
+0x1003fa11c(0xbf4990)
+LevelRenderer::tickRain()
+
+0x10040f6d4(0xc0a41c)
+WeatherRenderer::tick
+
+0x10040fc24(0xc0aa34)
+WeatherRenderer::updatePrecipitation
+
+0x1007c28f0(0x1047cce)
+Biome::getDownfall
+
+0x1008be44c(0x1147998)
+PerlinSimplexNoise::getValue(float, float) const
+
+0x1008be9b4(0x1147dbc)
+SimplexNoise::_getValue(Vec2 const&) const
+
 0x1006a0fa8(0xf7ab54)
 Mob::getHealth
 
 0x100615df8(0xe966be)
 AttributeInstance::getCurrentValue
+
+0x10079a5d4(0x10c26c0)
+BlockSource::getLightColor
+
+0x100411790(0xc0c640)
+LightTexture::getColorForUV(BrightnessPair)
+
+0x100047de4(0x16b9428)
+TexturePair::sync
+
+0x1007a7bec(0x10db444)
+Level::addParticle
