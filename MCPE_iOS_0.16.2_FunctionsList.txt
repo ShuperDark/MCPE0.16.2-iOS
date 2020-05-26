@@ -419,6 +419,11 @@ BlockSource::mayPlace
 0x10079c3d8(0x10c3b90)
 BlockSource::getEntities
 
+0x10079b294(0x10c2f8c)
+BlockSource::setBlock(int, int, int, BlockID, int)
+0x10079b3a4(0x10c301c)
+BlockSource::setBlock(BlockPos const&, BlockID, int)
+
 0x10079bb6c(0x10c3644)
 BlockSource::setBlockAndData(BlockPos const&, BlockID, unsigned char, int)
 0x10079b320(0x10c2fda)
@@ -426,11 +431,11 @@ BlockSource::setBlockAndData(BlockPos const&, FullBlock, int)
 0x10079b854(0x10c33f8)
 BlockSource::setBlockAndData(BlockPos const&, FullBlock, int, std::unique_ptr<BlockEntity, std::default_delete<BlockEntity> >)
 
+0x10079affc(0x10c2dec)
+BlockSource::mayPlace(BlockID, BlockPos const&, signed char, Mob*, bool, Entity*)
+
 0x10079975c(0x10c1d04)
 BlockSource::getDimension()
-
-0x10079d25c(0x10c2f74)
-BlockSource::getMobsAt
 
 0x10079f2cc(0x10c6654)
 BlockSource::getBiome
