@@ -1219,6 +1219,15 @@ MinecraftClient::getSkinRepository
 0x100078a60(0x7a6756)
 MinecraftClient::getOptions
 
+0x100082ad4(0x7b3578)
+MinecraftClient::getCameraEntity
+
+0x1000855c0(0x7b6af0)
+MinecraftClient::getCameraTargetEntity
+
+0x1000855c8(0x7b6af6)
+MinecraftClient::setCameraTargetEntity
+
 0x10037f5f8(0xb5abf0)
 SkinRepository::getSelectedSkin
 
@@ -1841,3 +1850,15 @@ AppPlatform::singleton
 
 0x10052ce80(0xd84958)
 AppPlatform::addListener
+
+0x100406e50(0xc02d18)
+LevelRenderer::getFov(float, bool)
+
+0x100406f90(0xc02ec8)
+LevelRenderer::bobHurt(Matrix&, float)
+
+0x1006a0fa8(0xf7ab54)
+Mob::getHealth
+
+0x100615df8(0xe966be)
+AttributeInstance::getCurrentValue
