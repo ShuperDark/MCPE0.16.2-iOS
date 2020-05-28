@@ -2182,3 +2182,35 @@ MobEffectInstance::areAllEffectsAmbient(std::vector<MobEffectInstance, std::allo
 
 0x1006575dc(0xf22158)
 Entity::setStatusFlag(EntityFlags, bool)
+
+0x1007c0fc4(0x1046c10)
+Biome::Biome(int, Biome::BiomeType, std::unique_ptr<BiomeDecorator, std::default_delete<BiomeDecorator> >)
+
+0x1007c2828(0x1047c20)
+Biome::getMobs(EntityType)
+
+0x1007c2938(0x1047d30)
+Biome::buildSurfaceAtDefault(Random&, LevelChunk&, BlockPos const&, float, short)
+
+0x1007c2cc8(0x1048020)
+Biome::_placeBedrock(Random&, LevelChunk&, BlockPos const&)
+
+0x1007c28f8(0x1047cd2)
+Biome::decorate(BlockSource*, Random&, BlockPos const&, bool, float)
+
+0x1007c4e68(0x1049580)
+BiomeDecorator::BiomeDecorator()
+
+0x1007c6514(0x104a6e8)
+BiomeDecorator::decorate(BlockSource*, Random&, Biome*, BlockPos const&, bool, float)
+
+0x10079fd04(0x10c6f92)
+BlockSource::getTopSolidBlock(int, int, bool, bool)
+0x10079abc8(0x10c2b18)
+BlockSource::getTopSolidBlock(BlockPos const&, bool, bool)
+
+0x10068a5e0(0xf5a3e8)
+EntityDefinitionIdentifier::EntityDefinitionIdentifier()
+
+0x100668760(0xf34672)
+EntityClassTree::isTypeInstanceOf(EntityType, EntityType)
