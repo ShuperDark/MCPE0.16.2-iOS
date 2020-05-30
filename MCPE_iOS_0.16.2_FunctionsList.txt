@@ -1279,6 +1279,9 @@ mce::TextureGroup::getLocationFor(DynamicTexture)
 0x100044adc(0x16b73b4)
 mce::TextureGroup::getTexturePair(ResourceLocation const&)
 
+0x100044930(0x16b7102)
+mce::TextureGroup::getTexture(ResourceLocation const&)
+
 0x10003ce34(0x16b376c)
 mce::RenderMaterial::initContext()
 
@@ -1327,11 +1330,24 @@ mce::FrameBufferAttachmentDescription::setTextureFormatAndAttachmentType(mce::Te
 0x1004135a8(0xc0eac8)
 mce::MultisampledRenderStageWithFrameBufferObject::MultisampledRenderStageWithFrameBufferObject()
 
+0x10004816c(0x16b95f0)
+mce::TexturePtr::~TexturePtr()
+
+0x100048430(0x16b95ec)
+mce::TexturePtr::operator=(mce::TexturePtr&&)
+
 0x100048140(0x16b9510)
 mce::TexturePtr::TexturePtr()
+0x1000483cc(0x16b9576)
+mce::TexturePtr::TexturePtr(mce::TexturePtr&&)
+0x100048210(0x16b9526)
+mce::TexturePtr::TexturePtr(mce::TextureGroup&, ResourceLocation const&)
 
 0x100044594(0x16b6d50)
 mce::TextureGroup::reloadAll()
+
+0x10003b7d8(0x16b239c)
+mce::MaterialPtr::MaterialPtr(mce::RenderMaterialGroup&, std::string const&)
 
 0x10003c7d0(0x16b2f10)
 mce::Mesh::isValid
@@ -1388,6 +1404,15 @@ Tessellator::setOffset(float, float, float)
 
 0x1003a5c9c(0xb8956e)
 BlockTessellator::getTessellator()
+
+0x1003c1b38(0xba8edc)
+EntityRenderer::EntityRenderer(mce::TextureGroup&, bool)
+
+0x1003d34cc(0xbc3148)
+MobRenderer::MobRenderer(std::unique_ptr<Model, std::default_delete<Model> >, mce::TexturePtr, float)
+
+0x1004120c8(0xc0d59c)
+EntityShaderManager::EntityShaderManager()
 
 0x10084598c(0x10ca9ae)
 ChunkViewSource::clear()
