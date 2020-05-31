@@ -2239,3 +2239,24 @@ EntityDefinitionIdentifier::EntityDefinitionIdentifier()
 
 0x100668760(0xf34672)
 EntityClassTree::isTypeInstanceOf(EntityType, EntityType)
+
+0x10010f218(0x857e84)
+ScreenRenderer::ScreenRenderer()
+
+0x100107834(0x84f08c)
+GuiComponent::GuiComponent()
+
+0x1000a5bc4(0x7ce5d4)
+GuiElement::~GuiElement()
+
+0x1000a5ab4(0x7ce554)
+GuiElement::GuiElement(bool, bool, int, int, int, int)
+
+0x1000a5c14(0x7ce60c)
+GuiElement::pointInside(int, int)
+
+0x10013db48(0x9cee80)
+Screen::_init(int, int)
+
+0x1000a4f78(0x7ccc90)
+ControllerButtonRenderer::ControllerButtonRenderer(MinecraftClient&)
