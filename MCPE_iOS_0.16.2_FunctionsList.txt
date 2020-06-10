@@ -236,6 +236,9 @@ Item::initCreativeItems
 0x100745f6c(0x101ef28)
 Item::addBlockItems
 
+0x100733348(0x1001db0)
+Item::registerItems()
+
 0x100746dd0(0x1021ace)  //This is definitely not it...
 Item::setCategory
 
