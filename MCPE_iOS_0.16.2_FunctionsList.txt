@@ -2269,3 +2269,6 @@ Screen::_init(int, int)
 
 0x1000a4f78(0x7ccc90)
 ControllerButtonRenderer::ControllerButtonRenderer(MinecraftClient&)
+
+0x10060c558(0xe91544)
+Util::toLower(std::string const&)
