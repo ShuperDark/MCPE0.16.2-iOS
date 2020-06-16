@@ -22,6 +22,9 @@ GuiData::displayWhisperMessage
 0x100109b40(0x8523a0)
 GuiData::postError
 
+0x10010873c(0x850914)
+GuiData::clearMessages()
+
 0x10049816c(0xcdaf94)
 I18n::get std::string const&
 
@@ -1270,6 +1273,15 @@ MinecraftClient::play
 0x100083674(0x7b4950)
 MinecraftClient::onAppResumed
 
+0x1000882f0(0x7bb200)
+MinecraftClient::initializeTrialWorld(Player*)
+
+0x100088790(0x7bb604)
+MinecraftClient::onUserSignin()
+
+0x10008508c(0x7b60ce)
+MinecraftClient::leaveGame(bool)
+
 0x100536c90(0xd8e580)
 WorkerPool::getWorkersFor
 
@@ -1680,6 +1692,9 @@ Minecraft::getNetworkHandler
 
 0x100613294(0x118760c)
 Minecraft::getServerNetworkHandler
+
+0x100612c0c(0x1186eae)
+Minecraft::stopGame()
 
 0x1004a981c(0xced192)
 NetworkHandler::getConnector
