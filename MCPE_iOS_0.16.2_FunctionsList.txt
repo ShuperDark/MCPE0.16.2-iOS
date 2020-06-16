@@ -1282,11 +1282,64 @@ MinecraftClient::onUserSignin()
 0x10008508c(0x7b60ce)
 MinecraftClient::leaveGame(bool)
 
+0x1000870c4(0x7b9b40)
+MinecraftClient::onClientStartedLevel(std::unique_ptr<Level, std::default_delete<Level> >, std::unique_ptr<LocalPlayer, std::default_delete<LocalPlayer> >)
+
+0x10008721c(0x7b9c10)
+MinecraftClient::setupLevelRendering(Level*, Dimension*, Entity*)
+
+0x10008704c(0x7b9afc)
+MinecraftClient::setupCommandParser()
+
+0x100071c54(0x79ca84)
+ClientCommands::setupStandard(MinecraftCommands&, LocalPlayer&, mce::TextureGroup&, LevelArchiver&, GameMode&)
+
+0x10056ef28(0xdbaaf4)
+MinecraftCommands::loadCommandsFromFile(std::string const&, bool, bool)
+
+0x10056ef38(0xdbab00)
+MinecraftCommands::registerSingleStepCommand(std::string const&, int, std::string const&, CommandType const&, std::function<MCRESULT (CommandOrigin const&, CommandPropertyBag const&, CommandPropertyBag&)>)
+
+0x10056f070(0xdbab84)
+MinecraftCommands::registerMultiStepCommand(std::string const&, int, std::string const&, CommandType const&, unsigned char, std::function<MCRESULT (CommandOrigin const&, CommandPropertyBag const&, CommandPropertyBag&)>)
+
+0x10054cb94(0xda23bc)
+CommandParser::getCommand(std::string const&, unsigned char) const
+0x10054cba0(0xda23d4)
+CommandParser::getCommand(std::string const&, unsigned char, std::shared_ptr<Command>&) const
+
+0x10053f90c(0xd91494)
+Command::getCommandOverload(std::string const&)
+
+0x10053f62c(0xd9102c)
+Command::setType(unsigned char, CommandType)
+
+0x100543c5c(0xd96314)
+CommandOverload::getName() const
+
+0x100543c78(0xd96324)
+CommandOverload::getCallback(unsigned char) const
+
+0x100543cf4(0xd96372)
+CommandOverload::setCallback(unsigned char, std::function<MCRESULT (CommandOrigin const&, CommandPropertyBag const&, CommandPropertyBag&)>)
+
+0x1003e1714(0xbd7f72)
+GameRenderer::setLevel(Level*, Dimension*)
+
+0x100536bf4(0xd8e4c8)
+WorkerPool::getFor(WorkerRole)
+
 0x100536c90(0xd8e580)
 WorkerPool::getWorkersFor
 
+0x100534f08(0xd8cfc4)
+BackgroundWorker::sync()
+
 0x100534e9c(0xd8cf78)
 BackgroundWorker::resume
+
+0x100534834(0xd8c8a4)
+BackgroundWorker::_processNextCallback()
 
 0x100044868(0x16b7070)
 mce::TextureGroup::getLocationFor(DynamicTexture)
@@ -1361,6 +1414,9 @@ mce::TexturePtr::TexturePtr(mce::TextureGroup&, ResourceLocation const&)
 0x100044594(0x16b6d50)
 mce::TextureGroup::reloadAll()
 
+0x10003b758(0x16b249c)
+mce::MaterialPtr::~MaterialPtr()
+
 0x10003b7d8(0x16b239c)
 mce::MaterialPtr::MaterialPtr(mce::RenderMaterialGroup&, std::string const&)
 
@@ -1405,6 +1461,9 @@ HolographicPlatform::getTransform(TransformSpace, TransformSpace, TransformSpace
 0x1002ceeec(0xa595d0)
 HolographicPlatform::_getTransform(TransformSpace, TransformSpace)
 
+0x10041a4b0(0xc13cf0)
+Tessellator::Tessellator(MemoryTracker*)
+
 0x10041a6f0(0xc13fd0)
 Tessellator::init
 
@@ -1419,6 +1478,21 @@ Tessellator::setOffset(float, float, float)
 
 0x1003a5c9c(0xb8956e)
 BlockTessellator::getTessellator()
+
+0x10042522c(0xc1e7b0)
+TextureTessellator::TextureTessellator(Tessellator&)
+
+0x10000b3f0(0x1693834)
+MemoryTracker::MemoryTracker(std::string const&, MemoryTracker*)
+
+0x10034e69c(0xaf3706)
+ParticleEngine::~ParticleEngine()
+
+0x10034e01c(0xaf2eb8)
+ParticleEngine::ParticleEngine(Options&, Level&, mce::TextureGroup&, SeasonsRenderer&)
+
+0x10034e438(0xaf35b4)
+ParticleEngine::clear()
 
 0x1003c1b38(0xba8edc)
 EntityRenderer::EntityRenderer(mce::TextureGroup&, bool)
@@ -1687,6 +1761,12 @@ Minecraft::isModded
 0x100613478(0x118778c)
 Minecraft::getLevel
 
+0x10061396c(0x1187cf4)
+Minecraft::getCommands()
+
+0x1006139c0(0x62c4ac)
+Minecraft::getGameMode()
+
 0x1006139b8
 Minecraft::getNetworkHandler
 
@@ -1695,6 +1775,9 @@ Minecraft::getServerNetworkHandler
 
 0x100612c0c(0x1186eae)
 Minecraft::stopGame()
+
+0x1006139e8(0x1187d2c)
+Minecraft::onClientStartedLevel(std::unique_ptr<Level, std::default_delete<Level> >)
 
 0x1004a981c(0xced192)
 NetworkHandler::getConnector
@@ -2081,6 +2164,12 @@ AppPlatform::singleton
 
 0x10052ce80(0xd84958)
 AppPlatform::addListener
+
+0x1003f872c(0xbf3188)
+LevelRenderer::_recreateTessellators()
+
+0x1003f8a34(0xbf3380)
+LevelRenderer::setDimension(Dimension*, bool, bool)
 
 0x100406e50(0xc02d18)
 LevelRenderer::getFov(float, bool)
