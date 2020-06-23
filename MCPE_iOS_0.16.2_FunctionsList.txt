@@ -298,6 +298,12 @@ Block::playerDestroy
 0x1007d8c98(0x106a080)
 Block::popResource
 
+0x1007d9908(0x106a9e4)
+Block::neighborChanged(BlockSource&, BlockPos const&, BlockPos const&)
+
+0x1007d9940(0x106aa00)
+Block::onPlace(BlockSource&, BlockPos const&)
+
 0x1007d961c(0x106a73c)
 Block::getSilkTouchItemInstance
 
@@ -2044,6 +2050,9 @@ Dimension::getId
 
 0x1008527c8(0x10d318c)
 Dimension::updateLightRamp()
+
+0x1008533dc(0x10d3e20)
+Dimension::getCircuitSystem()
 
 0x10085558c(0x10d5a60)
 NormalDimension::NormalDimension(Level&)
