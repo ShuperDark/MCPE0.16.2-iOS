@@ -1491,6 +1491,11 @@ TextureTessellator::TextureTessellator(Tessellator&)
 0x10000b3f0(0x1693834)
 MemoryTracker::MemoryTracker(std::string const&, MemoryTracker*)
 
+0x100426074(0xc1f6b4)
+TextureUVCoordinateSet::TextureUVCoordinateSet(float, float, float, float, unsigned short, unsigned short, ResourceLocation)
+0x1004260e8(0xc1f74c)
+TextureUVCoordinateSet::TextureUVCoordinateSet()
+
 0x10034e69c(0xaf3706)
 ParticleEngine::~ParticleEngine()
 
