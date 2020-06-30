@@ -2350,6 +2350,9 @@ BiomeDecorator::BiomeDecorator()
 0x1007c6514(0x104a6e8)
 BiomeDecorator::decorate(BlockSource*, Random&, Biome*, BlockPos const&, bool, float)
 
+0x1007c7ca4(0x104b8fe)
+BiomeDecorator::decorateOres(BlockSource*, Random&, BlockPos const&)
+
 0x10079fd04(0x10c6f92)
 BlockSource::getTopSolidBlock(int, int, bool, bool)
 0x10079abc8(0x10c2b18)
