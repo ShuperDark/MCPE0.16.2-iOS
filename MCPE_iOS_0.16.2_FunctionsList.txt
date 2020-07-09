@@ -94,7 +94,7 @@ Recipes::init
 0x10012eb58(0x102df0c)
 ItemInstance::ItemInstance()
 
-0x100756c6c(0x102e500)
+0x100756c70(0x102e500)
 ItemInstance::ItemInstance(int, int, int)
 
 0x100756d24(0x102e5a0)
