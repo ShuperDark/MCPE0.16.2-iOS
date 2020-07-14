@@ -2393,3 +2393,6 @@ ControllerButtonRenderer::ControllerButtonRenderer(MinecraftClient&)
 
 0x10060c558(0xe91544)
 Util::toLower(std::string const&)
+
+0x1007557d0(0x102d040)
+CreativeItemCategoryFromString(std::string const&)
