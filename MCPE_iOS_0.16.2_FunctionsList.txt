@@ -953,141 +953,141 @@ AABB::expanded(Vec3 const&) const
 AABB::clipCollide(AABB const&, Vec3 const&, bool, float*) const
 
 0x1008edc18(0x118aa84)
-AABB::flooredCeiledCopy
+AABB::flooredCeiledCopy() const
 
 0x10079da30(0x10c51b8)
-BlockSource::getMaterial
+BlockSource::getMaterial(int, int, int)
 
 0x10079d364(0x10c4b64)
-BlockSource::fetchCollisionShapes
+BlockSource::fetchCollisionShapes(BlockSource&, AABB const&, float*, bool, Entity*)
 
 0x10079cf00(0x10c45b4)
-BlockSource::addUnloadedChunksAABBs
+BlockSource::addUnloadedChunksAABBs(AABB const&)
 
 0x10079cc6c(0x10c43d4)
-BlockSource::fetchAABBs
+BlockSource::fetchAABBs(AABB const&, bool)
 
 0x100665aa8(0x10c47d4)
-BlockSource::addVoidFloor
+BlockSource::addVoidFloor(AABB const&)
 
 0x100799964(0x10c1f04)
-BlockSource::hasBlock
+BlockSource::hasBlock(BlockPos const&)
 
 0x10079d734(0x10c4ea8)
-BlockSource::containsAnyLiquid
+BlockSource::containsAnyLiquid(AABB const&)
 
 0x10079da70(0x10c51ec)
-BlockSource::containsMaterial
+BlockSource::containsMaterial(AABB const&, MaterialType)
 
 0x10079975c(0x10c1d04)
 BlockSource::getDimension()
 
 0x10079aca0(0x10c2b8a)
-BlockSource::canSeeSky
+BlockSource::canSeeSky(BlockPos const&)
 
 0x10079f6c8(0x10c6900)
-BlockSource::getTopRainBlockPos
+BlockSource::getTopRainBlockPos(BlockPos const&)
 
 0x10079f2cc(0x10c6654)
-BlockSource::getBiome
+BlockSource::getBiome(BlockPos const&)
 
 0x10079f1f4(0x10c65de)
-BlockSource::tryGetBiome
+BlockSource::tryGetBiome(BlockPos const&)
 
 0x10079faac(0x10c6d2c)
-BlockSource::isSnowTemperature
+BlockSource::isSnowTemperature(BlockPos const&)
 
 0x10079ed20(0x10c6250)
-BlockSource::isInWall
+BlockSource::isInWall(Vec3 const&)
 
 0x100799bc4(0x10c2068)
-BlockSource::hasChunksAt
+BlockSource::hasChunksAt(AABB const&)
 0x100799d74(0x10c219a)
 BlockSource::hasChunksAt(int, int, int, int)
 
 0x100810374(0x10a7d8c)
-LiquidBlock::getHeightFromData
+LiquidBlock::getHeightFromData(int)
 
 0x1007a76f0(0x10db150)
-Level::playSound
+Level::playSound(LevelSoundEvent, Vec3 const&, int, EntityType, bool, bool)
 
 0x1007a79e8(0x10db338)
-Level::getLocalPlayer
+Level::getLocalPlayer() const
 
 0x1007aae38(0x10de3ee)
-Level::getNewUniqueID
+Level::getNewUniqueID()
 
 0x1007a8920(0x10dbfc0)
-Level::fetchEntity
+Level::fetchEntity(EntityUniqueID, bool) const
 
 0x1007aa628(0x10ddd9e)
-Level::getPlayerList
+Level::getPlayerList()
 
 0x1007a9aa4(0x10dd312)
 Level::getPlayer(mce::UUID const&)
 
 0x1007aa63c(0x10dddac)
-Level::getPacketSender
+Level::getPacketSender() const
 
 0x1007a9a34(0x10dd086)
-Level::broadcastBossEvent
+Level::broadcastBossEvent(BossEventUpdateType, Mob*)
 
 0x1007a98cc(0x10dcee4)
-Level::broadcastEntityEvent
+Level::broadcastEntityEvent(Entity*, EntityEvent)
 
 0x1007a780c(0x10db208)
-Level::broadcastSoundEvent
+Level::broadcastSoundEvent(BlockSource&, LevelSoundEvent, Vec3 const&, int, EntityType, bool, bool)
 
 0x1007a9790(0x10dcd90)
-Level::animateTick
+Level::animateTick(Entity&)
 
 0x1007a55a8(0x10d91c8)
-Level::_saveMapData
+Level::_saveMapData(MapItemSavedData&)
 
 0x1007a96fc(0x10dcd40)
-Level::setCommandsEnabled
+Level::setCommandsEnabled(bool)
 
 0x1007a9684(0x10dccfc)
-Level::setXBLBroadcast
+Level::setXBLBroadcast(bool)
 
 0x1007a94bc(0x10dca48)
-Level::extinguishFire
+Level::extinguishFire(BlockSource&, BlockPos const&, signed char)
 
 0x1007a9414(0x10dc9e4)
-Level::potionSplash
+Level::potionSplash(Vec3 const&, Color const&, bool)
 
 0x1007a9118(0x10dc774)
-Level::explode
+Level::explode(BlockSource&, Entity*, Vec3 const&, float, bool, bool, float)
 
 0x1007a8fe8(0x10dc678)
-Level::setDayCycleActive
+Level::setDayCycleActive(bool)
 
 0x1007a8ba8(0x10dc19c)
-Level::removeEntityReferences
+Level::removeEntityReferences(Entity&, bool)
 
 0x1007a8a38(0x10dc07c)
-Level::getRuntimeEntity
+Level::getRuntimeEntity(EntityRuntimeID, bool) const
 
 0x1007a8978(0x10dbff6)
-Level::takeEntity
+Level::takeEntity(EntityUniqueID)
 
 0x1008ed2bc(0x1189bf8)
-AABB::getCenter
+AABB::getCenter() const
 
 0x1007d8150(0x10695ac)
-Block::isType
+Block::isType(Block const*) const
 
 0x1007d8fdc(0x106a31c)
-Block::isSolid
+Block::isSolid() const
 
 0x100852ae4(0x10d3530)
-Dimension::getWeather
+Dimension::getWeather() const
 
 0x100854778(0x10d4f88)
-Dimension::sendPacketForPosition
+Dimension::sendPacketForPosition(BlockPos const&, Packet const&, Player const*)
 
 0x1007bdac8(0x11852bc)
-Weather::isRainingAt
+Weather::isRainingAt(BlockSource&, BlockPos const&) const
 
 0x1007a1330(0x10d2424)
 ChunkBlockPos::ChunkBlockPos(BlockPos const&)
@@ -1096,7 +1096,7 @@ ChunkBlockPos::ChunkBlockPos(BlockPos const&)
 Biome::getBiome(int)
 
 0x1008533f4(0x10d3e2e)
-Dimension::fetchEntity
+Dimension::fetchEntity(EntityUniqueID, bool)
 
 0x1006e5a30(0xf0c114)
 ContainerComponent::ContainerComponent(Entity&)
@@ -1108,13 +1108,13 @@ ContainerComponent::rebuildContainer(ContainerType, int, int, bool)
 FillingContainer::FillingContainer(Player*, int, int, ContainerType)
 
 0x10060f710(0xe9feb0)
-Container::getContainerType
+Container::getContainerType()
 
 0x100757488(0x102ea60)
-ItemInstance::isNull
+ItemInstance::isNull() const
 
 0x1006e3c50(0xf09c24)
-BreathableComponent::getTotalAirSupply
+BreathableComponent::getTotalAirSupply() const
 
 0x1006add18(0xfac1ba)
 SynchedEntityData::_get(short)
@@ -1153,124 +1153,124 @@ ClassID::getNextID()
 DefinitionModifier::~DefinitionModifier()
 
 0x1006e39e0(0xf098a0)
-BossComponent::unRegisterPlayer
+BossComponent::unRegisterPlayer(Player*)
 
 0x1006e38ac(0xf09710)
-BossComponent::_sendBossEvent
+BossComponent::_sendBossEvent(BossEventUpdateType, Player*)
 
 0x10049f78c(0xcf4860)
-NbtIo::write
+NbtIo::write(CompoundTag const*, IDataOutput&)
 
 0x1008d3db0(0x1166702)
-MapItemSavedData::getMapId
+MapItemSavedData::getMapId() const
 
 0x1008e30f4(0x117d40a)
-LevelData::setCommandsEnabled
+LevelData::setCommandsEnabled(bool)
 
 0x1008e2efc(0x117d27c)
-LevelData::setTime
+LevelData::setTime(int)
 
 0x1008e3060(0x117d396)
-LevelData::getWorldCenter
+LevelData::getWorldCenter() const
 
 0x100798f58(0x10c1810)
-BlockPos::neighbor
+BlockPos::neighbor(signed char) const
 
-0x100798f98(0x10c184)
-BlockPos::center
+0x100798f98(0x10c184c)
+BlockPos::center() const
 
 0x100799098(0x10c18e0)
 BlockSource::BlockSource(Level&, Dimension&, ChunkSource&, bool, bool)
 
 0x10079c000(0x10c390e)
-BlockSource::removeBlock
+BlockSource::removeBlock(BlockPos const&)
 
 0x10079fe98(0x10c199c)
-BlockSource::addListener
+BlockSource::addListener(BlockSourceListener&)
 
 0x100009030(0x1691760)
-Color::toARGB
+Color::toARGB() const
 
 0x1007a14b8(0x10d5bd8)
 Explosion::Explosion(BlockSource&, Entity*, Vec3 const&, float)
 
 0x1007a2308(0x10d69de)
-Explosion::setFire
+Explosion::setFire(bool)
 
 0x1007a2310(0x10d69e4)
-Explosion::setBreaking
+Explosion::setBreaking(bool)
 
 0x1007a2320(0x10d69ee)
-Explosion::setMaxResistance
+Explosion::setMaxResistance(float)
 
 0x1007a2318(0x10d69ea)
-Explosion::getToBlow
+Explosion::getToBlow()
 
 0x10070f1f8(0xf97730)
-Player::isBouncing
+Player::isBouncing() const
 
 0x1006a1df4(0xf7b8a0)
-Mob::hasEffect
+Mob::hasEffect(MobEffect const&) const
 
 0x10064b1c4(0xed0864)
-MobEffect::getId
+MobEffect::getId() const
 
 0x10064d7fc(0xed3d1a)
 MobEffectInstance::operator!=(MobEffectInstance const&) const
 
 0x1007a9a8c(0x10dd0ac)
-Level::hasLevelStorage
+Level::hasLevelStorage() const
 
 0x1007a9a9c(0x10dd0b6)
-Level::getLevelStorage
+Level::getLevelStorage()
 
 0x1007a98a4(0x10dce8a)
-Level::getSeed
+Level::getSeed()
 
 0x1007a8f38(0x10dc5c8)
-Level::removeListener
+Level::removeListener(LevelListener&)
 
 0x1007a8ec4(0x10dc516)
-Level::addListener
+Level::addListener(LevelListener&)
 
 0x1008533bc(0x10d3e08)
 Dimension::getLevel()
 
 0x100079afc(0x7a77b8)
-MinecraftClient::getHoloInput
+MinecraftClient::getHoloInput() const
 
 0x100079610(0x7a72ce)
-MinecraftClient::getServer
+MinecraftClient::getServer()
 
 0x100088068(0x7bae9c)
-MinecraftClient::getSkinRepository
+MinecraftClient::getSkinRepository() const
 
 0x100078a60(0x7a6756)
-MinecraftClient::getOptions
+MinecraftClient::getOptions()
 
 0x100082ad4(0x7b3578)
-MinecraftClient::getCameraEntity
+MinecraftClient::getCameraEntity() const
 
 0x1000855c0(0x7b6af0)
-MinecraftClient::getCameraTargetEntity
+MinecraftClient::getCameraTargetEntity() const
 
 0x1000855c8(0x7b6af6)
-MinecraftClient::setCameraTargetEntity
+MinecraftClient::setCameraTargetEntity(Entity*)
 
 0x10007ae74(0x7a8a88)
-MinecraftClient::getLocalPlayer
+MinecraftClient::getLocalPlayer()
 
 0x100085598(0x7b6ad8)
-MinecraftClient::getTextures
+MinecraftClient::getTextures() const
 
 0x10007b9a4(0x7a9320)
-MinecraftClient::getHoloviewerScale
+MinecraftClient::getHoloviewerScale()
 
 0x100083818(0x7b4a6c)
-MinecraftClient::play
+MinecraftClient::play(std::string const&, Vec3 const&, float, float)
 
 0x100083674(0x7b4950)
-MinecraftClient::onAppResumed
+MinecraftClient::onAppResumed()
 
 0x1000882f0(0x7bb200)
 MinecraftClient::initializeTrialWorld(Player*)
@@ -1329,13 +1329,13 @@ GameRenderer::setLevel(Level*, Dimension*)
 WorkerPool::getFor(WorkerRole)
 
 0x100536c90(0xd8e580)
-WorkerPool::getWorkersFor
+WorkerPool::getWorkersFor(WorkerRole)
 
 0x100534f08(0xd8cfc4)
 BackgroundWorker::sync()
 
 0x100534e9c(0xd8cf78)
-BackgroundWorker::resume
+BackgroundWorker::resume()
 
 0x100534834(0xd8c8a4)
 BackgroundWorker::_processNextCallback()
@@ -1420,7 +1420,7 @@ mce::MaterialPtr::~MaterialPtr()
 mce::MaterialPtr::MaterialPtr(mce::RenderMaterialGroup&, std::string const&)
 
 0x10003c7d0(0x16b2f10)
-mce::Mesh::isValid
+mce::Mesh::isValid() const
 
 0x10003c750(0x16b2eb4)
 mce::Mesh::operator=(mce::Mesh&&)
@@ -1464,7 +1464,7 @@ HolographicPlatform::_getTransform(TransformSpace, TransformSpace)
 Tessellator::Tessellator(MemoryTracker*)
 
 0x10041a6f0(0xc13fd0)
-Tessellator::init
+Tessellator::init()
 
 0x10041a8d0(0xc141b8)
 Tessellator::isTessellating() const
@@ -1511,259 +1511,259 @@ EntityShaderManager::EntityShaderManager()
 ChunkViewSource::clear()
 
 0x100597ac8(0xe002e4)
-OfferRepository::isGameLicensed
+OfferRepository::isGameLicensed() const
 
 0x10037f5f8(0xb5abf0)
-SkinRepository::getSelectedSkin
+SkinRepository::getSelectedSkin()
 
 0x10037e904(0xb5a068)
-SkinRepository::getDefaultSkin
+SkinRepository::getDefaultSkin(SkinRepository::DefaultSkin) const
 
 0x10037e974(0xb5a144)
-SkinRepository::_setDefaultSkin
+SkinRepository::_setDefaultSkin()
 
 0x10037f23c(0xb5a800)
-SkinRepository::_getSkinId
+SkinRepository::_getSkinId(SkinRepository::DefaultSkin) const
 
 0x10037ef68(0xb5a5a4)
-SkinRepository::_getSkin
+SkinRepository::_getSkin(std::string const&) const
 
 0x10037eaa8(0xb5a204)
-SkinRepository::setSkin
+SkinRepository::setSkin(Skin const&, bool)
 
 0x10037f384(0xb5a90c)
-SkinRepository::_doNameSwap
+SkinRepository::_doNameSwap()
 
 0x10035efc4(0xb03b98)
-Skin::premiumLocked
+Skin::premiumLocked() const
 
 0x10035ee60(0xb0397c)
-Skin::getSerializable
+Skin::getSerializable() const
 
 0x10035ee80(0xb0398c)
-Skin::isCustomSkin
+Skin::isCustomSkin() const
 
 0x10035ee58(0xb03978)
-Skin::getName
+Skin::getName() const
 
 0x10035f2d4(0xb03e60)
-SkinPack::isPremiumUnlocked
+SkinPack::isPremiumUnlocked() const
 
 0x10035f2b4(0xb03e50)
-SkinPack::getSerializableName
+SkinPack::getSerializableName() const
 
 0x10035f2ac(0xb03e4c)
-SkinPack::getSkins
+SkinPack::getSkins() const
 
 0x100591314(0xdfa6c4)
-Offer::isOwned
+Offer::isOwned() const
 
 0x10060cea4(0xe92598)
-Util::splitString
+Util::splitString(std::string const&, char, std::vector<std::string, std::allocator<std::string> >&)
 
 0x100009900(0x1691e24)
-Resource::loadTexture
+Resource::loadTexture(ResourceLocation const&)
 
 0x10000a354(0x16923dc)
 TextureData::~TextureData()
 
 0x10000a3cc(0x1692418)
-TextureData::getWidth
+TextureData::getWidth() const
 
 0x10000a3d4(0x169241c)
-TextureData::getHeight
+TextureData::getHeight() const
 
 0x10000a398(0x16923f2)
-TextureData::getDataModify
+TextureData::getDataModify()
 
 0x100340724(0xae5a9a)
-Options::getUsername
+Options::getUsername() const
 
 0x10034071c(0xae5a92)
-Options::setUsername
+Options::setUsername(std::string const&)
 
 0x100340730(0xae5aa8)
-Options::setSkinId
+Options::setSkinId(std::string const&)
 
 0x10033fc4c(0xae4638)
-Options::save
+Options::save()
 
 0x100340844(0xae5d60)
-Options::getSwapJumpAndSneak
+Options::getSwapJumpAndSneak() const
 
 0x10034083c(0xae5d54)
-Options::getSplitControls
+Options::getSplitControls() const
 
 0x100340834(0xae5d48)
-Options::getServerVisible
+Options::getServerVisible() const
 
 0x10033fa14(0xae4434)
-Options::getBobView
+Options::getBobView() const
 
 0x1003406fc(0xae5a76)
-Options::getCameraSpeed
+Options::getCameraSpeed() const
 
 0x10033f974(0xae427c)
-Options::getDestroyVibration
+Options::getDestroyVibration() const
 
 0x10034060c(0xae594c)
-Options::getDifficulty
+Options::getDifficulty() const
 
 0x10034085c(0xae5db4)
-Options::getDpadScale
+Options::getDpadScale() const
 
 0x10034094c(0xae5f2e)
-Options::getVRHeadSteering
+Options::getVRHeadSteering() const
 
 0x10034059c(0xae57f6)
-Options::getFancyGraphics
+Options::getFancyGraphics() const
 
 0x100340854(0xae5d78)
-Options::getFancySkies
+Options::getFancySkies() const
 
 0x1003406b4(0xae59ea)
-Options::getFieldOfView
+Options::getFieldOfView() const
 
 0x1003406ec(0xae5a5e)
-Options::getFixedCamera
+Options::getFixedCamera() const
 
 0x1003406f4(0xae5a6a)
-Options::getFlySpeed
+Options::getFlySpeed() const
 
 0x1003405c4(0xae5900)
-Options::getFullscreen
+Options::getFullscreen() const
 
 0x10033f994(0xae4382)
-Options::getGameSensitivity
+Options::getGameSensitivity() const
 
 0x100340698(0xae59d0)
-Options::getGamma
+Options::getGamma() const
 
 0x100340704(0xae5a82)
-Options::getGuiScale
+Options::getGuiScale() const
 
 0x10034062c(0xae5964)
-Options::getHideGui
+Options::getHideGui() const
 
 0x10033f94c(0xae4260)
-Options::getAutoJump
+Options::getAutoJump() const
 
 0x10033f944(0xae425a)
-Options::getInvertYMouse
+Options::getInvertYMouse() const
 
-0x1003405f8(0xae563c)
-Options::getLanguage
+0x1003405f8(0xae593c)
+Options::getLanguage() const
 
 0x100340594(0xae57ea)
-Options::getLimitFramerate
+Options::getLimitFramerate() const
 
 0x1003408f4(0xae5ed0)
-Options::getLimitWorldSize
+Options::getLimitWorldSize() const
 
 0x1003406bc(0xae5a20)
-Options::getMSAA
+Options::getMSAA()
 
 0x100340904(0xae5ef0)
-Options::getMultiPlayerGame
+Options::getMultiPlayerGame() const
 
 0x10033f97c(0xae429c)
-Options::getMusic
+Options::getMusic() const
 
 0x10033f9f8(0xae441a)
-Options::getParticleViewDistance
+Options::getParticleViewDistance() const
 
 0x100340670(0xae599c)
-Options::getPlayerViewPerspective
+Options::getPlayerViewPerspective() cons
 
 0x1003406dc(0xae5a52)
-Options::getSmoothCamera
+Options::getSmoothCamera() const
 
 0x10033f984(0xae42a4)
-Options::getSound
+Options::getSound() const
 
 0x10034083c(0xae5d54)
-Options::getSplitControls
+Options::getSplitControls() const
 
 0x10033fa3c(0xae4458)
-Options::getStereoRendering
+Options::getStereoRendering() const
 
 0x10034097c(0xae5f54)
-Options::getStutterTurn
+Options::getStutterTurn() const
 
 0x100340844(0xae5d60)
-Options::getSwapJumpAndSneak
+Options::getSwapJumpAndSneak() const
 
 0x1003406cc(0xae5a3a)
-Options::getTexelAA
+Options::getTexelAA()
 
 0x1003405a4(0xae5802)
-Options::getTransparentLeaves
+Options::getTransparentLeaves() const
 
 0x1003405b4(0xae581a)
-Options::getUseMouseForDigging
+Options::getUseMouseForDigging() const
 
 0x10034084c(0xae5d6c)
-Options::getUseTouchScreen
+Options::getUseTouchScreen() const
 
 0x10033f9d0(0xae43e6)
-Options::getViewDistanceChunks
+Options::getViewDistanceChunks() const
 
 0x10033fb84(0xae457c)
-Options::getVRLivingRoomCursorCentered
+Options::getVRLivingRoomCursorCentered() const
 
 0x10033fb4c(0xae454a)
-Options::getVRGazePitchBoost
+Options::getVRGazePitchBoost() const
 
 0x10033fa5c(0xae4482)
-Options::getVRHudAtTop
+Options::getVRHudAtTop() const
 
 0x10033fb7c(0xae4570)
-Options::getVRHudDrifts
+Options::getVRHudDrifts() const
 
 0x10033fbcc(0xae45cc)
-Options::getVRLinearJump
+Options::getVRLinearJump() const
 
 0x10033fc04(0xae45fe)
-Options::getVRLinearMotion
+Options::getVRLinearMotion() const
 
 0x100340574(0xae5790)
-Options::getVRRollTurning
+Options::getVRRollTurning()
 
 0x10034056c(0xae5784)
-Options::getVRRollTurningSensitivity
+Options::getVRRollTurningSensitivity()
 
 0x10033fc3c(0xae462a)
-Options::getVRStickyMining
+Options::getVRStickyMining() const
 
 0x1003409dc(0xae5fa0)
-Options::getStutterConstantTimeMode
+Options::getStutterConstantTimeMode() const
 
 0x1003409ac(0xae5f7a)
-Options::getStutterTurnSound
+Options::getStutterTurnSound() const
 
 0x10034055c(0xae576c)
-Options::getVRTapTurn
+Options::getVRTapTurn()
 
 0x100340564(0xae5778)
-Options::getVRTapTurningSensitivity
+Options::getVRTapTurningSensitivity()
 
 0x1003406c4(0xae5a26)
-Options::getVRMSAA
+Options::getVRMSAA()
 
 0x100340914(0xae5efc)
-Options::getXboxLiveVisible
+Options::getXboxLiveVisible() const
 
 0x1007aac68(0x10de290)
-Level::getDifficulty
+Level::getDifficulty() const
 
 0x1007a7664(0x10db0e4)
 Level::broadcastLevelEvent(LevelEvent, Vec3 const&, int, Player*)
 
 0x100613490(0x1187798)
-Minecraft::isModded
+Minecraft::isModded()
 
 0x100613478(0x118778c)
-Minecraft::getLevel
+Minecraft::getLevel()
 
 0x10061396c(0x1187cf4)
 Minecraft::getCommands()
@@ -1771,11 +1771,11 @@ Minecraft::getCommands()
 0x1006139c0(0x62c4ac)
 Minecraft::getGameMode()
 
-0x1006139b8
-Minecraft::getNetworkHandler
+0x1006139b8(0x1187d14)
+Minecraft::getNetworkHandler()
 
 0x100613294(0x118760c)
-Minecraft::getServerNetworkHandler
+Minecraft::getServerNetworkHandler()
 
 0x100612c0c(0x1186eae)
 Minecraft::stopGame()
@@ -1784,10 +1784,10 @@ Minecraft::stopGame()
 Minecraft::onClientStartedLevel(std::unique_ptr<Level, std::default_delete<Level> >)
 
 0x1004a981c(0xced192)
-NetworkHandler::getConnector
+NetworkHandler::getConnector()
 
 0x1004a952c(0xcecede)
-NetworkHandler::isServer
+NetworkHandler::isServer() const
 
 0x10006364c(0xcd621c)
 MinecraftEventing::fireEventPlayerMessage(std::string const&, std::string const&, std::string const&, std::string const&)
@@ -2000,37 +2000,37 @@ Dimension::Dimension(Level&, DimensionId, short)
 Dimension::~Dimension()
 
 0x1008533e4(0x10d3e26)
-Dimension::getEntityIdMap
+Dimension::getEntityIdMap()
 
 0x1008522d0(0x10d2e4c)
-Dimension::_createGenerator
+Dimension::_createGenerator(GeneratorType)
 
 0x10085200c(0x10d2c8e)
-Dimension::init
+Dimension::init()
 
 0x1008525f8(0x10d3016)
-Dimension::tickRedstone
+Dimension::tickRedstone()
 
 0x100854830(0x10d4fea)
-Dimension::hasCeiling
+Dimension::hasCeiling() const
 
 0x100854838(0x10d4ff0)
-Dimension::setCeiling
+Dimension::setCeiling(bool)
 
 0x100852694(0x10d3070)
-Dimension::getOldSkyDarken
+Dimension::getOldSkyDarken(float)
 
 0x10085295c(0x10d32d8)
-Dimension::getSunAngle
+Dimension::getSunAngle(float)
 
 0x1008529d4(0x10d33f4)
-Dimension::getSunIntensity
+Dimension::getSunIntensity(float, Entity const&, float)
 
 0x100852aec(0x10d3536)
-Dimension::getMoonPhase
+Dimension::getMoonPhase() const
 
 0x100852b34(0x10d3560)
-Dimension::getMoonBrightness
+Dimension::getMoonBrightness() const
 
 0x100852dec(0x10d380c)
 Dimension::getSkyColor(Entity const&, float)
@@ -2038,13 +2038,13 @@ Dimension::getSkyColor(Entity const&, float)
 Dimension::getSkyColor(BlockSource&, BlockPos const&, float)
 
 0x1008533d4(0x10d3e1a)
-Dimension::getBlockSourceDEPRECATEDUSEPLAYERREGIONINSTEAD
+Dimension::getBlockSourceDEPRECATEDUSEPLAYERREGIONINSTEAD() const
 
 0x1008532c4(0x10d3d14)
-Dimension::getStarBrightness
+Dimension::getStarBrightness(float)
 
 0x1008533b4(0x10d3e04)
-Dimension::getId
+Dimension::getId() const
 
 0x1008527c8(0x10d318c)
 Dimension::updateLightRamp()
@@ -2068,7 +2068,7 @@ CircuitSceneGraph::~CircuitSceneGraph()
 CircuitSystem::CircuitSystem()
 
 0x1008f4c0c(0x118f856)
-CircuitSystem::evaluate
+CircuitSystem::evaluate()
 
 0x1007ba1f4(0x1167e20)
 Seasons::Seasons(Dimension&)
@@ -2077,58 +2077,58 @@ Seasons::Seasons(Dimension&)
 Seasons::~Seasons()
 
 0x1007ba200(0x1167e28)
-Seasons::tick
+Seasons::tick()
 
 0x1007bd3a0(0x1184cc8)
 Weather::Weather(Dimension&)
 
 0x1007bd57c(0x1184e24)
-Weather::tick
+Weather::tick()
 
 0x1007bd6dc(0x1184f58)
-Weather::serverTick
+Weather::serverTick()
 
 0x1007bdab8(0x11852a4)
-Weather::isRaining
+Weather::isRaining() const
 
 0x1007bda88(0x1185266)
-Weather::getRainLevel
+Weather::getRainLevel(float) const
 
 0x1007bda98(0x1185284)
-Weather::getFogLevel
+Weather::getFogLevel() const
 
 0x1007bdaa0(0x1185288)
-Weather::setFogLevel
+Weather::setFogLevel(float)
 
 0x1007bda78(0x1185248)
-Weather::getLightningLevel
+Weather::getLightningLevel(float) const
 
 0x1007bdc2c(0x1185378)
-Weather::getSkyFlashTime
+Weather::getSkyFlashTime() const
 
 0x1007bdc34(0x118537c)
-Weather::setSkyFlashTime
+Weather::setSkyFlashTime(int)
 
 0x1007bdc3c(0x1185380)
-Weather::stop
+Weather::stop()
 
 0x1008e2fb8(0x117d318)
-LevelData::getRainLevel
+LevelData::getRainLevel() const
 
 0x1008e2fc0(0x117d31e)
-LevelData::setRainLevel
+LevelData::setRainLevel(float)
 
-0x1008e2f88(0x117d2ee)
-LevelData::getLightningLevel
+0x1008e2f88(0x117d2e8)
+LevelData::getLightningLevel() const
 
 0x1008e2f90(0x117d2ee)
-LevelData::setLightningLevel
+LevelData::setLightningLevel(float)
 
 0x1008e2f98(0x117d2f4)
-LevelData::getLightningTime
+LevelData::getLightningTime() const
 
 0x1008e2fa0(0x117d2fa)
-LevelData::setLightningTime
+LevelData::setLightningTime(int)
 
 0x1008e2fc8(0x117d324)
 LevelData::getRainTime
