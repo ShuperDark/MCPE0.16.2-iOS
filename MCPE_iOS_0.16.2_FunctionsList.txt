@@ -1,95 +1,88 @@
-////////////////////////////////////////
-//List of functions in the iOS version//
-// of Minecraft Pocket Edition v0.16.2//
-//		Created by DarkShuper //
-////////////////////////////////////////
+//////////// 0.16.2-iOS @darkshuper ////////////
 
 0x100108428(0x8505e4)
-GuiData::addMessage
+GuiData::addMessage(std::string const&, std::string const&, int, bool)
 
 0x10010881c(0x850d7c)
-GuiData::displayChatMessage
+GuiData::displayChatMessage(std::string const&, std::string const&)
 
 0x100108794(0x850c80)
-GuiData::displayClientMessage
+GuiData::displayClientMessage(std::string const&)
 
 0x100108fa4(0x851a18)
-GuiData::showTipMessage
+GuiData::showTipMessage(std::string const&)
 
 0x100108988(0x851038)
-GuiData::displayWhisperMessage
+GuiData::displayWhisperMessage(std::string const&, std::string const&)
 
 0x100109b40(0x8523a0)
-GuiData::postError
+GuiData::postError(int)
 
 0x10010873c(0x850914)
 GuiData::clearMessages()
 
 0x10049816c(0xcdaf94)
-I18n::get std::string const&
+I18n::get(std::string const&)
 
 0x1004980e0(0xcdaea4)
-I18n::get std::string const&, std::vector<std::string, std::allocator<std::string> > const&
+I18n::get(std::string const&, std::vector<std::string, std::allocator<std::string> > const&)
 
 0x1008528fc(0x10d32a0)
-Dimmension::getTimeOfDay
+Dimension::getTimeOfDay(float) const
 
 0x1007a5de4(0x10d995c)
-Level::isDayCycleActive
+Level::isDayCycleActive()
 
 0x1008e2eec(0x117d26a)
-LevelData::getStopTime
+LevelData::getStopTime() const
 
 0x1007a6db0(0x10da826)
-Level::getTime
+Level::getTime() const
 
 0x1007a6d38(0x10da7ca)
-Level::setTime//Maybe not
+Level::setTime(int)//Maybe not
 
 0x1007a74d4(0x10db032)
-Level::getLevelData
-
-0x1008e2eec(0x117d26a)
-LevelData::getStopTime
+Level::getLevelData()
 
 0x1008e2f0c(0x117d286)
-Level::clearLoadedPlayerTag
+Level::clearLoadedPlayerTag()
 
 0x100757b60(0x102ee48)
-ItemInstance::getAuxValue
+ItemInstance::getAuxValue() const
 
 0x100757b68(0x102ee4e)
-ItemInstance::operator=
+ItemInstance::operator=(ItemInstance const&)
 
 0x1007579f0(0x102ed28)
-ItemInstance::useAsFuel
+ItemInstance::useAsFuel()
 
 0x100658034(0xf22dd4)
-Entity::getRegion
+Entity::getRegion() const
 
 0x100107fc4(0x850104)
-GuiData::tick
+GuiData::tick()
 
 0x1000855a8(0x7b6ae2)
-MinecraftClient::getFont
+MinecraftClient::getFont() const
 
 0x10007ba50(0x7a942c)
-MinecraftClient::onResourcesLoaded
+MinecraftClient::onResourcesLoaded()
 
 0x1000832b8(0x7b43d0)
-MinecraftClient::onPlayerLoaded
+MinecraftClient::onPlayerLoaded(Player&)
 
 0x1007aa610(0x10ddd86)
-Level::isClientSide
+Level::isClientSide() const
 
 0x100722000(0xfae9dc)
-SurvivalMode::tick
+SurvivalMode::tick()
 
 0x10072192c(0xfae68a)
-GameMode::tick
+GameMode::tick()
 
 0x100774f40(0xfd1390)
-Recipes::init
+Recipes::init()
 
 0x10012eb58(0x102df0c)
 ItemInstance::ItemInstance()
@@ -134,61 +127,61 @@ Recipes::addShapedRecipe(std::vector<ItemInstance, std::allocator<ItemInstance> 
 Recipes::addShapelessRecipe(ItemInstance const&, std::vector<Recipes::Type, std::allocator<Recipes::Type> > const&);
 
 0x1007717d8(0xfce0d6)
-FurnaceRecipes::getResult
+FurnaceRecipes::getResult(ItemInstance const*) const
 
 0x1007168f8(0xf9fb7c)
-PlayerInventoryProxy::getSelectedItem
+PlayerInventoryProxy::getSelectedItem()
 
-0x100713a28
-Player::canUseCarriedItemWhileMoving
+0x100713a28(0xf9d080)
+Player::canUseCarriedItemWhileMoving()
 
 0x1007138f0(0xf9cfac)
-Player::isHiddenFrom
+Player::isHiddenFrom(Mob&) const
 
 0x100713ab8(0xf9d0dc)
-Player::_addLevels
+Player::_addLevels(int)
 
 0x100713c94(0xf9d280)
-Player::sendInventory
+Player::sendInventory() const
 
 0x1007144c8(0xf9d868)
-Player::tickWorld
+Player::tickWorld(Tick const&)
 
 0x1007125e4(0xf9c088)
-Player::attack
+Player::attack(Entity&)
 
 0x1007120e0(0xf9bcb0)
-Player::hurt
+Player::hurt(EntityDamageSource const&, int, bool, bool)
 
 0x100713a0c(0xf9d06a)
 Player::hasResource//Maybe not
 
 0x10035c584(0xb02410)
-LocalPlayer::playSynchronizedSound
+LocalPlayer::playSynchronizedSound(LevelSoundEvent, Vec3 const&, int, bool)
 
 0x10065965c(0xf24418)
-Entity::playSound
+Entity::playSound(LevelSoundEvent, Vec3 const&, int)
 
 0x10035caac(0xb026dc)
-EntityEventPacket::read
+EntityEventPacket::read(BinaryStream&)
 
 0x10070ec64(0xf97014)
-Player::normalTick
+Player::normalTick()
 
 0x10065b088(0xf25d60)
-Entity::tick
+Entity::tick(BlockSource&)
 
 0x10035eba4(0xb03446)
-Player::displayLocalizebleMessage
+Player::displayLocalizebleMessage(std::string const&, std::vector<std::string, std::allocator<std::string> > const&)
 
 0x10035eba8(0xb03448)
-Player::displayWhisperMessage
+Player::displayWhisperMessage(std::string const&, std::string const&)
 
 0x100746be0(0x10219a0)
-Item::useOn
+Item::useOn(ItemInstance*, Player*, int, int, int, signed char, float, float, float)
 
 0x100746b5c(0x1021958)
-Item::use
+Item::use(ItemInstance&, Player&)
 
 0x100746b04(0x102191e)
 Item::setIcon(TextureUVCoordinateSet const&)
@@ -196,27 +189,27 @@ Item::setIcon(TextureUVCoordinateSet const&)
 Item::setIcon(std::string const&, int)
 
 0x100746a88(0x10218cc)
-Item::setMaxStackSize
+Item::setMaxStackSize(unsigned char)
 
 0x1007a6db8(0x10da82c)
-Level::_backgroundTickSeasons
+Level::_backgroundTickSeasons()
 
 0x10070f5cc(0xf979bc)
-Player::getInventory
+Player::getInventory() const
 
 0x100656278(0xf2137a)
-Entity::getLevel
+Entity::getLevel()
 0x100657df8(0xf22c4e)
 Entity::getLevel() const
 
 0x10070dfe0(0xf96594)
-Player::prepareRegion
+Player::prepareRegion(ChunkSource&)
 
 0x1006a5e04(0xf7ff50)
-Mob::spawnEatParticle
+Mob::spawnEatParticle(ItemInstance const&, int)
 
 0x1006a6110(0xf801f4)
-Mob::setSpeed
+Mob::setSpeed(float)
 
 0x1012ae238(0x1c7fde0)
 Item::mItems
@@ -228,43 +221,43 @@ Item::Item(std::string const&, short)
 BlockItem::BlockItem(std::string const&, int)
 
 0x10074242c(0x1016870)
-Item::initClientData
+Item::initClientData()
 
 0x1007421e0(0x1016368)
 Item::initServerData
 
 0x100734d00(0x100a0a4)
-Item::initCreativeItems
+Item::initCreativeItems(ResourcePackManager&)
 
 0x100745f6c(0x101ef28)
-Item::addBlockItems
+Item::addBlockItems()
 
 0x100733348(0x1001db0)
 Item::registerItems()
 
 0x100746dd0(0x1021ace)  //This is definitely not it...
-Item::setCategory
+Item::setCategory(CreativeItemCategory)
 
 0x100726a44(0xfc1e30)
-Item::setIsGlint
+Item::setIsGlint(bool)
 
 0x100745f10(0x101ee00)
 Item::addCreativeItem(ItemInstance const&)  //Maybe there is no addCreativeItem whose argument is not "ItemInstance const&".
 
 0x100746ed0(0x1021b60)
-Item::buildDescriptionName
+Item::buildDescriptionName(ItemInstance const&) const
 
 0x100747974(0x10228a0)
-Item::setStackedByData
+Item::setStackedByData(bool)
 
 0x10074797c(0x10228a6)
-Item::setMaxDamage
+Item::setMaxDamage(int)
 
 0x100747984(0x10228ac)
-Item::getTextureUVCoordinateSet
+Item::getTextureUVCoordinateSet(std::string const&, int)
 
 0x100759748(0x10309d8)
-ItemInstance::getIcon
+ItemInstance::getIcon(int, bool) const
 
 0x1007d7dc8(0x1069180)
 Block::Block(std::string const&, int, Material const&)
@@ -278,25 +271,25 @@ Block::clip(BlockSource&, BlockPos const&, Vec3 const&, Vec3 const&, bool, int)
 Block::clip(BlockSource&, BlockPos const&, Vec3 const&, Vec3 const&, bool, int, AABB const&)
 
 0x1007d8a20(0x1069e90)
-Block::spawnResources
+Block::spawnResources(BlockSource&, BlockPos const&, int, float, int)
 
 0x1007d8118(0x1069584)
-Block::getMaterial
+Block::getMaterial() const
 
 0x1007d81d0(0x1069630)
-Block::getDestroyProgress
+Block::getDestroyProgress(Player&)
 
 0x1007d8184(0x10695fc)
-Block::init
+Block::init()
 
 0x1007d451c(0x10569a0)
-Block::initBlocks
+Block::initBlocks()
 
 0x1007d94c8(0x106a66c)
-Block::playerDestroy
+Block::playerDestroy(Player*, BlockPos const&, int)
 
 0x1007d8c98(0x106a080)
-Block::popResource
+Block::popResource(BlockSource&, BlockPos const&, ItemInstance const&)
 
 0x1007d9908(0x106a9e4)
 Block::neighborChanged(BlockSource&, BlockPos const&, BlockPos const&)
@@ -305,31 +298,31 @@ Block::neighborChanged(BlockSource&, BlockPos const&, BlockPos const&)
 Block::onPlace(BlockSource&, BlockPos const&)
 
 0x1007d961c(0x106a73c)
-Block::getSilkTouchItemInstance
+Block::getSilkTouchItemInstance(unsigned char)
 
 0x1007d9678(0x106a76c)
-Block::buildDescriptionName
+Block::buildDescriptionName(unsigned char) const
 
 0x1007d9738(0x106a8ca)
-Block::setDestroyTime
+Block::setDestroyTime(float)
 
 0x1007d9728(0x106a8b8)
-Block::setExplodeable
+Block::setExplodeable(float)
 
 0x1007d987c(0x106a998)
-Block::tryToPlace
+Block::tryToPlace(BlockSource&, BlockPos const&, unsigned char)
 
 0x1007d991c(0x106a9ee)
-Block::checkIsPathable
+Block::checkIsPathable(Entity&, BlockPos const&, BlockPos const&)
 
 0x1007d9944(0x106aa02)
-Block::onRemove
+Block::onRemove(BlockSource&, BlockPos const&)
 
 0x1007d9998(0x106aa30)
-Block::onFallOn
+Block::onFallOn(BlockSource&, BlockPos const&, Entity*, float)
 
 0x1007d9a1c(0x106aa82)
-Block::getTypeToSpawn
+Block::getTypeToSpawn(BlockSource&, EntityType, BlockPos const&) const
 
 0x1007d9b6c(0x106ab08)
 Block::getMobToSpawn(BlockSource&, BlockPos const&) const
@@ -337,46 +330,46 @@ Block::getMobToSpawn(BlockSource&, BlockPos const&) const
 Block::getMobToSpawn(BlockSource&, BlockPos const&, std::map<EntityType, int, std::less<EntityType>, std::allocator<std::pair<EntityType const, int> > >, bool&) const
 
 0x1007d9d20(0x106abfa)
-Block::isSolidBlockingBlock
+Block::isSolidBlockingBlock() const
 
 0x1007d9d84(0x106ac30)
-Block::isWaterBlocking
+Block::isWaterBlocking() const
 
 0x1007d9e58(0x106acc4)
 Block::getVisualShape(BlockSource&, BlockPos const&, AABB&, bool)
 
 0x1007d9eb0(0x106acec)
-Block::getCollisionShape
+Block::getCollisionShape(AABB&, BlockSource&, BlockPos const&, Entity*)
 
 0x1007d9fcc(0x106add0)
-Block::lookupByName
+Block::lookupByName(std::string const&, bool)
 
 0x1007da280(0x106b11c)
-Block::getDebugText
+Block::getDebugText(std::vector<std::string, std::allocator<std::string> >&)
 
 0x1008c6e50(0x1150d60)
-Material::getTranslucency
+Material::getTranslucency() const
 
 0x1008c6e74(0x1150d78)
-Material::getMaterial
+Material::getMaterial(MaterialType)
 
 0x1008c6e28(0x1150d48)
-Material::getBlocksMotion
+Material::getBlocksMotion() const
 
 0x1008c6e08(0x1150d34)
-Material::isSolidBlocking
+Material::isSolidBlocking() const
 
 0x1008c6de8(0x1150d20)
-Material::isType
+Material::isType(MaterialType) const
 
 0x1008c6e40(0x1150d58)
-Material::isReplaceable
+Material::isReplaceable() const
 
 0x1008c6e48(0x1150d5c)
-Material::isLiquid
+Material::isLiquid() const
 
 0x1008c6e28(0x1150d48)
-Material::getBlocksMotion
+Material::getBlocksMotion() const
 
 0x1007994a0(0x10c1b46)
 BlockSource::getLevel()
@@ -385,7 +378,7 @@ BlockSource::getLevel()
 Level::getRandom() const
 
 0x1000ec430(0x7f6af4)
-Random::genrand_int32
+Random::genrand_int32()
 
 0x1008ebd48(0x1187f20)
 AABB::AABB()
