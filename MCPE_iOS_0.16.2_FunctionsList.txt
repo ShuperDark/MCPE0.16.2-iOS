@@ -386,43 +386,43 @@ AABB::AABB()
 AABB::AABB(Vec3 const&, Vec3 const&)
 
 0x1008ec200(0x1188528)
-AABB::translated
+AABB::translated(Vec3 const&) const
 
 0x1008edaa8(0x118a59c)
-AABB::isEmpty
+AABB::isEmpty() const
 
 0x1008ee0a8(0x118ade0)
 Vec3::Vec3(BlockPos const&)
 
 0x100710cb4(0xf98e90)
-Player::getDestroySpeed
+Player::getDestroySpeed(Block&)
 
 0x100710e04(0xf98ff4)
-Player::canDestroy
+Player::canDestroy(Block&)
 
 0x10070f5c4(0xf979b4)
-Player::getSelectedItem
+Player::getSelectedItem() const
 
 0x10070f8b8(0xf97c1c)
-Player::causeFoodExhaustion
+Player::causeFoodExhaustion(float)
 
 0x10070f5d4(0xf979c2)
-Player::useItem
+Player::useItem(ItemInstance&) const
 
 0x100713770(0xf9ce70)
-Player::respawn
+Player::respawn()
 
 0x10079971c(0x10c1cd0)
-BlockSource::getBlock
+BlockSource::getBlock(BlockPos const&)
 
 0x10079a014(0x10c2358)
-BlockSource::getBlockID
+BlockSource::getBlockID(BlockPos const&)
 
 0x10079affc(0x10c2dec)
-BlockSource::mayPlace
+BlockSource::mayPlace(BlockID, BlockPos const&, signed char, Mob*, bool, Entity*)
 
 0x10079c3d8(0x10c3b90)
-BlockSource::getEntities
+BlockSource::getEntities(Entity*, AABB const&)
 
 0x10079b294(0x10c2f8c)
 BlockSource::setBlock(int, int, int, BlockID, int)
@@ -452,16 +452,16 @@ Block::canInstatick()
 BlockSource::getDimension()
 
 0x10079f2cc(0x10c6654)
-BlockSource::getBiome
+BlockSource::getBiome(BlockPos const&)
 
 0x10079f1f4(0x10c65de)
-BlockSource::tryGetBiome
+BlockSource::tryGetBiome(BlockPos const&)
 
 0x10079a858(0x10c2868)
-BlockSource::getBrightness
+BlockSource::getBrightness(BlockPos const&)
 
 0x10079a898(0x10c288c)
-BlockSource::getRawBrightness
+BlockSource::getRawBrightness(BlockPos const&, bool)
 
 0x10079a0fc(0x10c23f0)
 BlockSource::getData(BlockPos const&)
@@ -469,37 +469,37 @@ BlockSource::getData(BlockPos const&)
 BlockSource::getData(int, int, int)
 
 0x1007994b0(0x10c1b4e)
-BlockSource::checkBlockPermissions
+BlockSource::checkBlockPermissions(Player&, BlockPos const&, bool)
 
 0x100799564(0x10c1bd0)
-BlockSource::_getBlockPermissions
+BlockSource::_getBlockPermissions(BlockPos const&, bool)
 
 0x100799660(0x10c1c6c)
-BlockSource::hasBorderBlock
+BlockSource::hasBorderBlock(BlockPos)
 
 0x10079ecb8(0x10c620c)
-BlockSource::canProvideSupport
+BlockSource::canProvideSupport(BlockPos const&, signed char, BlockSupportType)
 
 0x1007aa608(0x10ddd82)
-Level::getPlayers
+Level::getPlayers()
 
 0x1007aa8c0(0x10ddf56)
-Level::getGameRules
+Level::getGameRules()
 
-0x1007aa8a8(0x10dd5f0)
-Level::getAdventureSettings
+0x1007aa8a8(0x10ddf50)
+Level::getAdventureSettings()
 
 0x1007a9334(0x10dc954)
-Level::denyEffect
+Level::denyEffect(Vec3 const&)
 
 0x10065b818(0xf26266)
-Entity::isRemoved
+Entity::isRemoved() const
 
 0x1008dded4(0x1175aac)
-GameRules::getBool
+GameRules::getBool(std::string const&) const
 
 0x1003845e0(0xb60c90)
-BlockGraphics::initBlocks
+BlockGraphics::initBlocks()
 
 0x100388338(0xb6c0d8)
 BlockGraphics::BlockGraphics(std::string const&)
@@ -523,61 +523,61 @@ BlockGraphics::getTexture(signed char)
 BlockGraphics::mBlocks
 
 0x10004db54(0x163634e)
-Json::Value::isNull
+Json::Value::isNull() const
 
 0x10004d538(0x1635e58)
-Json::Value::asString
+Json::Value::asString(std::string const&) const
 
 0x100381ca8(0xb5c388)
 BlockSoundTypeFromString(std::string const&)//normal, gravel, wood, grass, metal, stone, cloth, glass, sand, snow, ladder, anvil, slime, silent, default
 
 0x100798fc0(0x10c1888)
-BlockPos::relative
+BlockPos::relative(signed char, int) const
 
 0x10065be28(0xf26840)
-Entity::getRotation
+Entity::getRotation() const
 
 0x100757c50(0x102eecc)
-ItemInstance::getEnchantsFromUserData
+ItemInstance::getEnchantsFromUserData() const
 
 0x10075719c(0x102e884)
-ItemInstance::getNetworkUserData
+ItemInstance::getNetworkUserData() const
 
 0x100757048(0x102e7b8)
-ItemInstance::getStrippedNetworkItem
+ItemInstance::getStrippedNetworkItem() const
 
 0x10075700c(0x102e790)
-ItemInstance::getId
+ItemInstance::getId() const
 
 0x100758ca8(0x102fc40)
-ItemInstance::save
+ItemInstance::save()
 
 0x100758ba8(0x102fb8c)
-ItemInstance::cloneSafe
+ItemInstance::cloneSafe(ItemInstance const*)
 
 0x100758b0c(0x102fb40)
-ItemInstance::clone
+ItemInstance::clone(ItemInstance const*)
 
 0x1007587dc(0x102f7dc)
-ItemInstance::getIdAuxEnchanted
+ItemInstance::getIdAuxEnchanted() const
 
 0x1007586a4(0x102f650)
-ItemInstance::getCustomName
+ItemInstance::getCustomName() const
  
 0x100758638(0x102f604)
-ItemInstance::hasCustomHoverName
+ItemInstance::hasCustomHoverName() const
 
 0x1007585b4(0x102f59c)
-ItemInstance::getName
+ItemInstance::getName() const
 
 0x100757738(0x102ebbc)
-ItemInstance::hasUserData
+ItemInstance::hasUserData() const
 
 0x100757890(0x102ec64)
-ItemInstance::getUserData
+ItemInstance::getUserData() const
 
 0x100758530(0x102f54a)
-ItemInstance::sameItemAndAux
+ItemInstance::sameItemAndAux(ItemInstance const*) const
 
 0x10049aeec(0xcde19e)
 CompoundTag::contains(std::string const&, Tag::Type) const
@@ -585,67 +585,67 @@ CompoundTag::contains(std::string const&, Tag::Type) const
 CompoundTag::contains(std::string const&) const
 
 0x10049b3d8(0xcde894)
-CompoundTag::getList
+CompoundTag::getList(std::string const&) const
 
 0x10049bc28(0xcdf076)
-CompoundTag::rawView
+CompoundTag::rawView() const
 
 0x10049b8a0(0xcdee60)
-CompoundTag::clone
+CompoundTag::clone() const
 
 0x10049b1f8(0xcde5ac)
-CompoundTag::getString
+CompoundTag::getString(std::string const&) const
 
 0x100794860(0xffa84c)
 ItemEnchants::ItemEnchants(int)
 
 0x100794ed0(0xfface4)
-ItemEnchants::addEnchants
+ItemEnchants::addEnchants(ItemEnchants const&)
 
 0x100794e08(0xffac68)
-ItemEnchants::addEnchant
+ItemEnchants::addEnchant(EnchantmentInstance)
 
 0x100794c68(0xffab3c)
-ItemEnchants::canEnchant
+ItemEnchants::canEnchant(EnchantmentInstance)
 
 0x100794fa8(0xffad3e)
-ItemEnchants::getAllEnchants
+ItemEnchants::getAllEnchants() const
 
 0x1007953c4(0xffb03a)
-ItemEnchants::isEmpty
+ItemEnchants::isEmpty() const
 
 0x100795724(0xffb298)
-ItemEnchants::_toList
+ItemEnchants::_toList() const
 
 0x10079571c(0xffb292)
-ItemEnchants::getSlot
+ItemEnchants::getSlot() const
 
 0x1007956a0(0xffb258)
-ItemEnchants::hasEnchant
+ItemEnchants::hasEnchant(int) const
 
 0x100757cf4(0x102ef44)
-ItemInstance::saveEnchantsToUserData
+ItemInstance::saveEnchantsToUserData(ItemEnchants const&)
 
 0x100757c20(0x102eea8)
-ItemInstance::isEnchanted
+ItemInstance::isEnchanted() const
 
 0x100794770(0xff8762)
 EnchantmentInstance::EnchantmentInstance(int, int)
 
 0x100794778(0xff8768)
-EnchantmentInstance::getEnchantType
+EnchantmentInstance::getEnchantType() const
 
 0x100794780(0xff8770)
-EnchantmentInstance::getEnchantLevel
+EnchantmentInstance::getEnchantLevel() const
 
 0x100794780(0xff876c)
-EnchantmentInstance::setEnchantType
+EnchantmentInstance::setEnchantType(int)
 
 0x100794788(0xff8774)
-EnchantmentInstance::setEnchantLevel
+EnchantmentInstance::setEnchantLevel(int)
 
 0x100791a7c(0xff9414)
-EnchantUtils::determineActivation
+EnchantUtils::determineActivation(int)
 
 0x100790de4(0xff8ce4)
 EnchantUtils::applyEnchant(ItemInstance&, ItemEnchants const&)
@@ -661,46 +661,46 @@ EnchantUtils::randomlyEnchant(ItemInstance&, int, int)
 EnchantUtils::selectEnchantments(Item*, int, int)
 
 0x10079184c(0xff92f4)
-EnchantUtils::getAvailableEnchantmentResults
+EnchantUtils::getAvailableEnchantmentResults(Item*, int)
 
 0x100790a68(0xff8a50)
-EnchantUtils::getLegalEnchants
+EnchantUtils::getLegalEnchants(Item*)
 
 0x100790678(0xff88ae)
-EnchantUtils::hasEnchant
+EnchantUtils::hasEnchant(int, ItemInstance const&)
 
 0x100790804(0xff892a)
-EnchantUtils::getRandomItemWith
+EnchantUtils::getRandomItemWith(int, Mob const&)
 
 0x1007903f4(0xff87da)
-EnchantUtils::getEnchantLevel
+EnchantUtils::getEnchantLevel(int, ItemInstance const&)
 
 0x1007902f8(0xff8778)
-EnchantUtils::getBestEnchantLevel
+EnchantUtils::getBestEnchantLevel(int, Mob const&)
 
 0x10078de6c(0xff56b8)
 Enchant::canEnchant(int) const
 
 0x10078de40(0xff5664)
-Enchant::isCompatibleWith
+Enchant::isCompatibleWith(int) const
 
 0x10049a40c(0xcdd4dc)
 CompoundTag::CompoundTag()
 
 0x10049aa24(0xcddd3a)
-CompoundTag::putShort
+CompoundTag::putShort(std::string const&, short)
 
 0x10049a9a0(0xcddcf6)
-CompoundTag::putByte
+CompoundTag::putByte(std::string const&, char)
 
 0x10049a928(0xcddcbe)
-CompoundTag::put
+CompoundTag::put(std::string const&, std::unique_ptr<Tag, std::default_delete<Tag> >)
 
 0x10049ad84(0xcde00c)
 CompoundTag::putCompound
 
 0x10049b344(0xcde800)
-CompoundTag::getCompound
+CompoundTag::getCompound(std::string const&) const
 
 0x10049ee8c(0xce2028)
 Tag::Tag(std::string const&)
@@ -726,58 +726,58 @@ Entity::setPos(EntityPos const&)
 Entity::setPos(Vec3 const&)
 
 0x10065a064(0xf24da0)
-Entity::getPos
+Entity::getPos() const
 
 0x10065a06c(0xf24da4)
-Entity::getPosOld
+Entity::getPosOld() const
 
 0x10065a074(0xf24da8)
-Entity::getPosExtrapolated
+Entity::getPosExtrapolated(float) const
 
 0x10065a108(0xf24e2a)
-Entity::getVelocity
+Entity::getVelocity() const
 
 0x10065a110(0xf24e2e)
-Entity::setPreviousPosRot
+Entity::setPreviousPosRot(Vec3 const&, Vec2 const&)
 
 0x10065a148(0xf24e5e)
 Entity::getRadius()
 
 0x10065a160(0xf24e78)
-Entity::isSkyLit
+Entity::isSkyLit(float)
 
 0x10065a1d4(0xf24ed0)
-Entity::getCenter
+Entity::getCenter(float) const
 
 0x10065a288(0xf24fa8)
-Entity::getBrightness
+Entity::getBrightness(float) const
 
 0x10065a330(0xf25044)
-Entity::getViewVector
+Entity::getViewVector(float) const
 
 0x10065a428(0xf25184)
-Entity::getViewVector2
+Entity::getViewVector2(float) const
 
 0x10065a3d0(0xf25110)
-Entity::getInterpolatedRotation
+Entity::getInterpolatedRotation(float) const
 
 0x100659c40(0xf249e0)
-Entity::_updateOwnerChunk
+Entity::_updateOwnerChunk()
 
 0x100659abc(0xf24888)
-Entity::isUnderLiquid
+Entity::isUnderLiquid(MaterialType) const
 
 0x1006591a8(0xf23eb0)
-Entity::_getBlockOnPos
+Entity::_getBlockOnPos()
 
 0x100659448(0xf24230)
-Entity::_playMovementSound
+Entity::_playMovementSound(int, Vec3 const&)
 
 0x1006590b4(0xf23bf8)
-Entity::testForEntityStacking
+Entity::testForEntityStacking(BlockSource&, AABB const&, std::vector<AABB, std::allocator<AABB> >&)
 
 0x1006581d4(0xf22f18)
-Entity::move
+Entity::move(Vec3 const&)
 
 0x100658170(0xf22ed8)
 Entity::isFree(Vec3 const&)
@@ -785,85 +785,85 @@ Entity::isFree(Vec3 const&)
 Entity::isFree(Vec3 const&, float)
 
 0x100658048(0xf22de4)
-Entity::isInLava
+Entity::isInLava()
 
 0x100657fa0(0xf22d76)
-Entity::isInWaterOrRain
+Entity::isInWaterOrRain()
 
 0x100657f3c(0xf22d38)
-Entity::isInWall
+Entity::isInWall() const
 
 0x100657ea4(0xf22cd0)
-Entity::setSitting
+Entity::setSitting(bool)
 
 0x100657e74(0xf22cb4)
-Entity::isSitting
+Entity::isSitting() const
 
 0x100657e0c(0xf22c66)
-Entity::setOwner
+Entity::setOwner(EntityUniqueID)
 
 0x100657bd4(0xf228d8)
-Entity::initParams
+Entity::initParams(VariantParameterList&)
 
 0x100657960(0xf22492)
-Entity::getUniqueID
+Entity::getUniqueID() const
 
 0x10066049c(0xf2ce5c)
-Entity::getOwnerEntityType
+Entity::getOwnerEntityType()
 
 0x1006604f0(0xf2ce90)
-Entity::_playStepSound
+Entity::_playStepSound(BlockPos const&, int)
 
 0x1006606a4(0xf2cfb0)
-Entity::onSynchedDataUpdate
+Entity::onSynchedDataUpdate(int)
 
 0x1006576a4(0xf22272)
-Entity::hasCategory
+Entity::hasCategory(EntityCategory) const
 
 0x100660870(0xf2d0b0)
-Entity::isInsideBorderBlock
+Entity::isInsideBorderBlock(float) const
 
 0x100660a4c(0xf2d2c0)
-Entity::checkBlockCollisions
+Entity::checkBlockCollisions(AABB const&)
 
 0x100660d44(0xf2d4e0)
-Entity::setLeashHolder
+Entity::setLeashHolder(EntityUniqueID)
 
 0x100660e54(0xf2d5ac)
-Entity::dropLeash
+Entity::dropLeash(bool)
 
 0x100661018(0xf2d6fc)
-Entity::canBeLeashed
+Entity::canBeLeashed()
 
 0x100661068(0xf2d728)
-Entity::getAirSupply
+Entity::getAirSupply() const
 
 0x100661084(0xf2d734)
-Entity::getTotalAirSupply
+Entity::getTotalAirSupply() const
 
 0x1006579cc(0xf22510)
-Entity::getTarget
+Entity::getTarget()
 
 0x1006579f4(0xf22548)
-Entity::setTarget
+Entity::setTarget(Entity*)
 
 0x10065768c(0xf2225c)
-Entity::removeDefinitionGroup
+Entity::removeDefinitionGroup(std::string const&)
 
 0x100657684(0xf22254)
-Entity::addDefinitionGroup
+Entity::addDefinitionGroup(std::string const&)
 
 0x100661530(0xf2db30)
-Entity::isGlobal
+Entity::isGlobal() const
 
 0x10065b64c(0xf261a8)
-Entity::removeAllRiders
+Entity::removeAllRiders(bool, bool)
 
 0x10065e800(0xf29990)
-Entity::isRide
+Entity::isRide() const
 
 0x100657958(0xf22484)
-Entity::getRuntimeID
+Entity::getRuntimeID() const
 
 0x1007a13ac(0x10d2458)
 ChunkPos::ChunkPos(BlockPos const&)
@@ -881,76 +881,76 @@ BlockPos::BlockPos(float, float, float)
 BlockSource::getChunk(ChunkPos const&)
 
 0x10084cac0(0x10d00a8)
-LevelChunk::getPosition
+LevelChunk::getPosition() const
 
 0x10084c7b8(0x10cfe7e)
-LevelChunk::getState
+LevelChunk::getState() const
 
 0x100847b40(0x10cc6f4)
-LevelChunk::removeEntity
+LevelChunk::removeEntity(Entity&)
 
 0x100847a9c(0x10cc686)
-LevelChunk::addEntity
+LevelChunk::addEntity(std::unique_ptr<Entity, std::default_delete<Entity> >)
 
 0x10084cac8(0x10d00ac)
-LevelChunk::isReadOnly
+LevelChunk::isReadOnly() const
 
 0x100847ce0(0x10cc898)
-LevelChunk::isSkyLit
+LevelChunk::isSkyLit(ChunkBlockPos const&)
 
 0x10084c644(0x10cfd94)
-LevelChunk::getTopRainBlockPos
+LevelChunk::getTopRainBlockPos(ChunkBlockPos const&)
 
 0x10084c208(0x10cf92e)
-LevelChunk::getBiome
+LevelChunk::getBiome(ChunkBlockPos const&) const
 
 0x1008478d4(0x10cc51c)
-LevelChunk::getSkyLight
+LevelChunk::getSkyLight()
 
 0x100847a8c(0x10cc67c)
-LevelChunk::getBlockLight
+LevelChunk::getBlockLight()
 
 0x10084410c(0x10c9758)
 ChunkSource::ChunkSource(Level*, Dimension*, int)
 
 0x100843d60(0x10c9018)
-ChunkSource::getGeneratedChunk
+ChunkSource::getGeneratedChunk(ChunkPos const&)
 
 0x10084438c(0x10c98ce)
-ChunkSource::getAvailableChunk
+ChunkSource::getAvailableChunk(ChunkPos const&)
 
 0x10084415c(0x10c97b4)
-ChunkSource::getChunkSide
+ChunkSource::getChunkSide() const
 
 0x100847a44(0x10cc648)
-LevelChunk::hasEntity
+LevelChunk::hasEntity(Entity&)
 
 0x1008ed2e8(0x1189c46)
-AABB::contains
+AABB::contains(Vec3 const&) const
 
 0x1008ec350(0x11886c4)
-AABB::grow
+AABB::grow(Vec3 const&) const
 
 0x1008ec9a4(0x1188f26)
-AABB::intersects
+AABB::intersects(AABB const&) const
 
 0x1008ec2a0(0x11885e0)
-AABB::merge
+AABB::merge(AABB const&) const
 
 0x1008ed0cc(0x11899a4)
 AABB::move(Vec3 const&)
 
 0x1008ed1d8(0x1189ac0)
-AABB::getBounds
+AABB::getBounds() const
 
 0x1008ec3f0(0x118879c)
-AABB::cloneMove
+AABB::cloneMove(Vec3 const&) const
 
 0x1008ec040(0x1188368)
-AABB::expanded
+AABB::expanded(Vec3 const&) const
 
 0x1008ec490(0x1188854)
-AABB::clipCollide
+AABB::clipCollide(AABB const&, Vec3 const&, bool, float*) const
 
 0x1008edc18(0x118aa84)
 AABB::flooredCeiledCopy
