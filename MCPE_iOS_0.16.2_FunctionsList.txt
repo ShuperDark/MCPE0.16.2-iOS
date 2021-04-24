@@ -2131,16 +2131,16 @@ LevelData::getLightningTime() const
 LevelData::setLightningTime(int)
 
 0x1008e2fc8(0x117d324)
-LevelData::getRainTime
+LevelData::getRainTime() const
 
 0x1008e2fd0(0x117d32a)
-LevelData::setRainTime
+LevelData::setRainTime(int)
 
-0x1008e2fa8
-LevelData::isRaining
+0x1008e2fa8(0x117d300)
+LevelData::isRaining() const
 
 0x10070e194(0xf966b0)
-Player::getDimension
+Player::getDimension() const
 
 0x1008be0b8(0x11477b0)
 PerlinSimplexNoise::PerlinSimplexNoise(unsigned int, int)
@@ -2155,22 +2155,22 @@ Storage::set(std::string const&, SavedData*)
 SavedDataStorage::load(SavedData*, std::string const&)
 
 0x1004afd00(0xcf4934)
-NbtIo::read
+NbtIo::read(IDataInput&)
 
 0x10049f3c4(0xce2870)
-Tag::readNamedTag
+Tag::readNamedTag(IDataInput&, std::string&)
 
 0x10049f538(0xce2a38)
-Tag::newTag
+Tag::newTag(Tag::Type, std::string const&)
 
 0x100057aa0(0x793408)
 AppPlatformListener::AppPlatformListener()
 
 0x10052b5a8(0xd82f30)
-AppPlatform::singleton
+AppPlatform::singleton()
 
 0x10052ce80(0xd84958)
-AppPlatform::addListener
+AppPlatform::addListener(AppPlatformListener*, float)
 
 0x1003f872c(0xbf3188)
 LevelRenderer::_recreateTessellators()
@@ -2194,10 +2194,10 @@ LevelRenderer::_finishBuildingChunk(RenderChunk&)
 LevelRenderer::_updateColumnVisibility(BlockPos const&)
 
 0x1003b2a1c(0xb97d14)
-RenderChunk::isReady
+RenderChunk::isReady()
 
 0x1003b1fb0(0xb96d5a)
-RenderChunk::isEmpty
+RenderChunk::isEmpty() const
 
 0x1003b1c98(0xb96af4)
 RenderChunk::endRebuild(Vec3 const&)
@@ -2212,13 +2212,13 @@ RenderChunk::getPosition() const
 RenderChunkBuilder::trim()
 
 0x10040f6d4(0xc0a41c)
-WeatherRenderer::tick
+WeatherRenderer::tick(BlockSource&, float)
 
 0x10040fc24(0xc0aa34)
 WeatherRenderer::updatePrecipitation
 
 0x1007c28f0(0x1047cce)
-Biome::getDownfall
+Biome::getDownfall(float, BlockPos const&)
 
 0x1008be44c(0x1147998)
 PerlinSimplexNoise::getValue(float, float) const
@@ -2227,22 +2227,22 @@ PerlinSimplexNoise::getValue(float, float) const
 SimplexNoise::_getValue(Vec2 const&) const
 
 0x1006a0fa8(0xf7ab54)
-Mob::getHealth
+Mob::getHealth() const
 
 0x100615df8(0xe966be)
-AttributeInstance::getCurrentValue
+AttributeInstance::getCurrentValue() const
 
 0x10079a5d4(0x10c26c0)
-BlockSource::getLightColor
+BlockSource::getLightColor(BlockPos const&, Brightness)
 
 0x100411790(0xc0c640)
 LightTexture::getColorForUV(BrightnessPair)
 
 0x100047de4(0x16b9428)
-TexturePair::sync
+TexturePair::sync()
 
 0x1007a7bec(0x10db444)
-Level::addParticle
+Level::addParticle(ParticleType, Vec3 const&, Vec3 const&, int)
 
 0x100858528(0x10ed6ec)
 Feature::~Feature()
