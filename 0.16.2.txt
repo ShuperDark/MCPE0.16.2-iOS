@@ -328,6 +328,13 @@ ItemInstance::save()
 0x100759748(0x10309d8)
 ItemInstance::getIcon(int, bool) const
 ------------------------------
+0x100765b28(0xfb73d4)
+Potion::getPotionId() const
+0x10076774c(0xfbaf5e)
+Potion::getMobEffect() const
+0x100767754(0xfbaf64)
+Potion::getPotion(int)
+------------------------------
 0x100653314(0xf1e8c0)
 Entity::Entity(EntityDefinitionGroup&, EntityDefinitionIdentifier const&)
 0x100655034(0xf204d0)
@@ -356,6 +363,10 @@ Entity::getTarget()
 Entity::setTarget(Entity*)
 0x100657bd4(0xf228d8)
 Entity::initParams(VariantParameterList&)
+0x100657d08(0xf22b98)
+Entity::isBaby() const
+0x100657d38(0xf22bb4)
+Entity::getStatusFlag(EntityFlags) const
 0x100657df8(0xf22c4e)
 Entity::getLevel() const
 0x100657e0c(0xf22c66)
@@ -368,8 +379,30 @@ Entity::setSitting(bool)
 Entity::isInWall() const
 0x100657fa0(0xf22d76)
 Entity::isInWaterOrRain()
+0x100658034(0xf22dd4)
+Entity::getRegion() const
+0x10065803c(0xf22dda)
+Entity::setPersistent()
+0x100658048(0xf22de4)
+Entity::isInLava()
+0x1006580ec(0xf22e84)
+Entity::isFree(Vec3 const&, float)
+0x100658170(0xf22ed8)
+Entity::isFree(Vec3 const&)
+0x1006581d4(0xf22f18)
+Entity::move(Vec3 const&)
+0x1006590b4(0xf23bf8)
+Entity::testForEntityStacking(BlockSource&, AABB const&, std::vector<AABB, std::allocator<AABB> >&)
 0x1006591a8(0xf23eb0)
 Entity::_getBlockOnPos()
+0x100659448(0xf24230)
+Entity::_playMovementSound(int, Vec3 const&)
+0x10065965c(0xf24418)
+Entity::playSound(LevelSoundEvent, Vec3 const&, int)
+0x100659704(0xf24478)
+Entity::getAttachPos(EntityLocation) const
+0x100659abc(0xf24888)
+Entity::isUnderLiquid(MaterialType) const
 0x100659c40(0xf249e0)
 Entity::_updateOwnerChunk()
 0x100659d40(0xf24aa8)
@@ -378,6 +411,8 @@ Entity::setPos(EntityPos const&)
 Entity::setRot(Vec2 const&)
 0x100659fc8(0xf24d10)
 Entity::setPos(Vec3 const&)
+0x100659c40(0xf249e0)
+Entity::_updateOwnerChunk()
 0x10065a064(0xf24da0)
 Entity::getPos() const
 0x10065a06c(0xf24da4)
@@ -528,6 +563,14 @@ Entity::isSheared() const
 Entity::isChested() const
 0x10065d37c(0xf27eaa)
 Entity::isIgnited() const
+0x10065b088(0xf25d60)
+Entity::tick(BlockSource&)
+0x10065b64c(0xf261a8)
+Entity::removeAllRiders(bool, bool)
+0x10065b818(0xf26266)
+Entity::isRemoved() const
+0x10065be28(0xf26840)
+Entity::getRotation() const
 0x10065d3ac(0xf27ec6)
 Entity::hasSaddle() const
 0x10065d3dc(0xf27ee0)
@@ -586,74 +629,6 @@ Entity::setEquippedSlot(ArmorSlot, ItemInstance const&)
 Entity::isSneaking() const
 0x10065dc10(0xf2864e)
 Entity::lavaHurt()
-0x100657d08(0xf22b98)
-Entity::isBaby() const
-0x100658034(0xf22dd4)
-Entity::getRegion() const
-0x10065803c(0xf22dda)
-Entity::setPersistent()
-0x100658048(0xf22de4)
-Entity::isInLava()
-0x1006580ec(0xf22e84)
-Entity::isFree(Vec3 const&, float)
-0x100658170(0xf22ed8)
-Entity::isFree(Vec3 const&)
-0x1006581d4(0xf22f18)
-Entity::move(Vec3 const&)
-0x1006590b4(0xf23bf8)
-Entity::testForEntityStacking(BlockSource&, AABB const&, std::vector<AABB, std::allocator<AABB> >&)
-0x1006591a8(0xf23eb0)
-Entity::_getBlockOnPos()
-0x100659448(0xf24230)
-Entity::_playMovementSound(int, Vec3 const&)
-0x10065965c(0xf24418)
-Entity::playSound(LevelSoundEvent, Vec3 const&, int)
-0x100659704(0xf24478)
-Entity::getAttachPos(EntityLocation) const
-0x100659abc(0xf24888)
-Entity::isUnderLiquid(MaterialType) const
-0x100659c40(0xf249e0)
-Entity::_updateOwnerChunk()
-0x100659d40(0xf24aa8)
-Entity::setPos(EntityPos const&)
-0x100659f04(0xf24c48)
-Entity::setRot(Vec2 const&)
-0x100659fc8(0xf24d10)
-Entity::setPos(Vec3 const&)
-0x10065a064(0xf24da0)
-Entity::getPos() const
-0x10065a06c(0xf24da4)
-Entity::getPosOld() const
-0x10065a074(0xf24da8)
-Entity::getPosExtrapolated(float) const
-0x10065a108(0xf24e2a)
-Entity::getVelocity() const
-0x10065a110(0xf24e2e)
-Entity::setPreviousPosRot(Vec3 const&, Vec2 const&)
-0x10065a148(0xf24e5e)
-Entity::getRadius() const
-0x10065a160(0xf24e78)
-Entity::isSkyLit(float)
-0x10065a1d4(0xf24ed0)
-Entity::getCenter(float) const
-0x10065a288(0xf24fa8)
-Entity::getBrightness(float) const
-0x10065a330(0xf25044)
-Entity::getViewVector(float) const
-0x10065a3d0(0xf25110)
-Entity::getInterpolatedRotation(float) const
-0x10065a428(0xf25184)
-Entity::getViewVector2(float) const
-0x10065b088(0xf25d60)
-Entity::tick(BlockSource&)
-0x10065b64c(0xf261a8)
-Entity::removeAllRiders(bool, bool)
-0x10065b818(0xf26266)
-Entity::isRemoved() const
-0x10065be28(0xf26840)
-Entity::getRotation() const
-0x10065d3ac(0xf27ec6)
-Entity::hasSaddle() const
 0x10065e800(0xf29990)
 Entity::isRide() const
 0x10066049c(0xf2ce5c)
@@ -1082,6 +1057,18 @@ Item::setCategory(CreativeItemCategory)
 0x1012ae238(0x1c7fde0)
 Item::mItems
 ------------------------------
+0x100763bbc(0x103f404)
+SplashPotionItem::applyEffect(ThrownPotion*, ItemInstance const*)
+------------------------------
+0x1006ee454(0xf146f0)
+ProjectileComponent::shoot(Vec3 const&, float, float, Vec3 const&)
+0x1006edf10(0xf141be)
+ProjectileComponent::getUncertaintyBase()
+0x1006edf18(0xf141c4)
+ProjectileComponent::getUncertaintyMultiplier()
+0x1006edf20(0xf141d0)
+ProjectileComponent::getGravity()
+------------------------------
 0x10069e3c8(0xf78b68)
 Mob::Mob(EntityDefinitionGroup&, EntityDefinitionIdentifier const&)
 0x1006a0fa8(0xf7ab54)
@@ -1094,6 +1081,8 @@ Mob::die(EntityDamageSource const&)
 Mob::getEffect(MobEffect const&) const
 0x1006a32ec(0xf7c8f0)
 Mob::travel(float, float)
+0x1006a4928(0xf7ec0c)
+Mob::addEffect(MobEffectInstance const&)
 0x1006a4b94(0xf7eef8)
 Mob::aiStep()
 0x1006a5404(0xf7f72c)
@@ -1110,6 +1099,8 @@ Mob::setYHeadRot(float)
 Mob::setRiderLockedBodyRot(float)
 0x1006a6138(0xf80214)
 Mob::setRiderRotLimit(float)
+0x1006a68c8(0xf80c88)
+Mob::getDamageAfterMagicAbsorb(EntityDamageSource const&, int)
 0x1006a7d40(0xf81a6a)
 Mob::canBeControlledByRider()
 0x1006a7d48(0xf81a6e)
@@ -1130,6 +1121,8 @@ Mob::onEffectUpdated(MobEffectInstance const&)
 Mob::onEffectRemoved(MobEffectInstance&)
 0x1006a8b7c(0xf8275c)
 Mob::getAllEffects()
+0x1006a8ba4(0xf827c4)
+Mob::getMaxHealth() const
 0x1006a8bd0(0xf827f0)
 Mob::setCanPickUpLoot(bool)
 0x1006a8bdc(0xf827f6)
@@ -1157,6 +1150,107 @@ Zombie::die(EntityDamageSource const&)
 Zombie::getRidingHeight()
 0x10070923c(0xf8dcca)
 Zombie::~Zombie()
+------------------------------
+0x1006fe250(0xf83a30)
+Creeper::Creeper(EntityDefinitionGroup&, EntityDefinitionIdentifier const&)
+0x1006fe464(0xf83ba4)
+Creeper::normalTick()
+0x1006fe62c(0xf83d2c)
+Creeper::_setSwellDir(int)
+0x1006fe694(0xf83dbc)
+Creeper::getSwellDir()
+0x1006fe6b0(0xf83dc8)
+Creeper::getSwelling(float) const
+0x1006fe740(0xf83e92)
+Creeper::getEntityTypeId() const
+0x1006fe748(0xf83e98)
+Creeper::die(EntityDamageSource const&)
+0x1006fe818(0xf83f1c)
+Creeper::useNewAi()
+0x1006fe824(0xf83f20)
+Creeper::~Creeper()
+------------------------------
+0x1006fe86c(0xf83f30)
+EnderMan::EnderMan(EntityDefinitionGroup&, EntityDefinitionIdentifier const&)
+0x1006feb4c(0xf84154)
+EnderMan::addAdditionalSaveData(CompoundTag&)
+0x1006fec4(0xf84320)
+EnderMan::getCarryingBlock()
+0x1006fec8c(0xf84340)
+EnderMan::readAdditionalSaveData(CompoundTag const&)
+0x1006fede8(0xf845e0)
+EnderMan::normalTick()
+0x1006ff038(0xf84848)
+EnderMan::aiStep()
+0x1006ff040(0xf84852)
+EnderMan::newServerAiStep()
+0x1006ff11c(0xf848dc)
+EnderMan::getEntityTypeId() const
+0x1006ff124(0xf848e8)
+EnderMan::_isLookingAtMe(Entity&)
+0x1006ff2f4(0xf84aa8)
+EnderMan::hurt(EntityDamageSource const&, int, bool, bool)
+------------------------------
+0x100707768(0xf8bda4)
+Spider::Spider(EntityDefinitionGroup&, EntityDefinitionIdentifier const&)
+0x100707828(0xf8be34)
+Spider::aiStep()
+0x10070782c(0xf8be38)
+Spider::normalTick()
+0x1007078b0(0xf8be94)
+Spider::isClimbing()
+0x1007078b8(0xf8be9a)
+Spider::makeStuckInWeb()
+0x1007078bc(0xf8be9c)
+Spider::getModelScale()
+0x1007078c4(0xf8bea4)
+Spider::getShadowRadius() const
+0x1007078e4(0xf8bec0)
+Spider::getEntityTypeId() const
+0x1007078f0(0xf8beca)
+Spider::useNewAi()
+0x1007078f8(0xf8bece)
+Spider::findAttackTarget()
+0x10070794c(0xf8bf08)
+Spider::_playStepSound(BlockPos const&, int)
+0x100707994(0xf8bf2c)
+Spider::canBeAffected(MobEffectInstance const&)
+0x100707b94(0xf8c09a)
+Spider::~Spider()
+0x100707ba8(0xf8c0a8)
+Spider::getSpiderType() const
+------------------------------
+0x1007079f4(0xf8bf68)
+CaveSpider::CaveSpider(EntityDefinitionGroup&, EntityDefinitionIdentifier const&)
+0x100707ac8(0xf8c00c)
+CaveSpider::getEntityTypeId() const
+0x100707ad4(0xf8c018)
+CaveSpider::doHurtTarget(Entity*)
+0x100707b84(0xf8c090)
+CaveSpider::getModelScale()
+0x100707bb4(0xf8c0ac)
+CaveSpider::~CaveSpider()
+0x100707bc8(0xf8c0ba)
+CaveSpider::getSpiderType() const
+------------------------------
+0x100707c04(0xf8c0c0)
+Witch::Witch(EntityDefinitionGroup&, EntityDefinitionIdentifier const&)
+0x100707cfc(0xf8c176)
+Witch::getEntityTypeId() const
+0x100707d04(0xf8c180)
+Witch::aiStep()
+0x1007081f8(0xf8ca20)
+Witch::handleEntityEvent(EntityEvent, int)
+0x100708560(0xf8cd28)
+Witch::getDamageAfterMagicAbsorb(EntityDamageSource const&, int)
+0x100708618(0xf8cdd0)
+Witch::performRangedAttack(Entity&, float)
+0x100708ab0(0xf8d448)
+Witch::getEyeHeight() const
+0x100708abc(0xf8d452)
+Witch::canAttack(Entity*, bool)
+0x100708ac8(0xf8d456)
+Witch::~Witch()
 ------------------------------
 0x10070a468(0xf8f2cc)
 Villager::Villager(EntityDefinitionGroup&, EntityDefinitionIdentifier const&)
@@ -1282,6 +1376,8 @@ HumanoidMonster::HumanoidMonster(EntityDefinitionGroup&, EntityDefinitionIdentif
 ------------------------------
 0x100704108(0xf88ba4)
 Monster::Monster(EntityDefinitionGroup&, EntityDefinitionIdentifier const&)
+0x100704194(0xf88c18)
+Monster::normalTick()
 ------------------------------
 0x1006ac948(0xf923a0)
 PathfinderMob::PathfinderMob(EntityDefinitionGroup&, EntityDefinitionIdentifier const&)
@@ -1377,6 +1473,9 @@ EntityBlock::EntityBlock(std::string const&, int, Material const&)
 ------------------------------
 0x10083054c(0x108a444)
 BlockEntity::getType() const
+------------------------------
+0x1007ba9a8(0x1168618)
+Spawner::spawnProjectile(BlockSource&, EntityDefinitionIdentifier const&, Entity*, Vec3 const&, Vec3 const&)
 ------------------------------
 0x10083e6c0(0x109909c)
 MusicBlockEntity::MusicBlockEntity(BlockPos const&)
@@ -1586,6 +1685,8 @@ AABB::flooredCeiledCopy() const
 ------------------------------
 0x1008ee0a8(0x118ade0)
 Vec3::Vec3(BlockPos const&)
+0x1008ee35c(0x118b194)
+Vec3::directionFromRotation(Vec2 const&)
 ------------------------------
 0x1007a03e8(0x10c74d0)
 BlockTickingQueue::isInstaticking() const
@@ -2576,6 +2677,8 @@ BiomeDecorator::decorateOres(BlockSource*, Random&, BlockPos const&)
 ------------------------------
 0x10068a5e0(0xf5a3e8)
 EntityDefinitionIdentifier::EntityDefinitionIdentifier()
+0x10068ac90(0xf5ac8c)
+EntityDefinitionIdentifier::EntityDefinitionIdentifier(EntityType)
 ------------------------------
 0x100668760(0xf34672)
 EntityClassTree::isTypeInstanceOf(EntityType, EntityType)
