@@ -129,20 +129,48 @@ Dimension::getStarBrightness(float)
 Dimension::getId() const
 0x1008533bc(0x10d3e08)
 Dimension::getLevel() const
+0x1008533c4(0x10d3e0e)
+Dimension::getLevelConst() const
+0x1008533cc(0x10d3e14)
+Dimension::getChunkSource() const
 0x1008533d4(0x10d3e1a)
 Dimension::getBlockSourceDEPRECATEDUSEPLAYERREGIONINSTEAD() const
 0x1008533dc(0x10d3e20)
 Dimension::getCircuitSystem()
 0x1008533e4(0x10d3e26)
 Dimension::getEntityIdMap()
+0x1008533ec(0x10d3e2a)
+Dimension::getEntityIdMapConst() cons
 0x1008533f4(0x10d3e2e)
 Dimension::fetchEntity(EntityUniqueID, bool)
+0x100853560(0x10d3f3a)
+Dimension::transferEntity(Vec3 const&, std::unique_ptr<CompoundTag, std::default_delete<CompoundTag> >)
+0x10085390c(0x10d418c)
+Dimension::onNewChunkFor(Player&, LevelChunk&)
+0x100853c10(0x10d4360)
+Dimension::load(CompoundTag const&)
+0x1008540cc(0x10d4898)
+Dimension::save(CompoundTag&)
+0x10085446c(0x10d4d14)
+Dimension::getTimeOfDay(int, float) const
+0x10085452c(0x10d4dfc)
+Dimension::onBlockChanged(BlockSource&, BlockPos const&, FullBlock, FullBlock, int)
 0x100854778(0x10d4f88)
 Dimension::sendPacketForPosition(BlockPos const&, Packet const&, Player const*)
+0x100854820(0x10d4fde)
+Dimension::isUltraWarm() const
+0x100854828(0x10d4fe4)
+Dimension::setUltraWarm(bool)
 0x100854830(0x10d4fea)
 Dimension::hasCeiling() const
 0x100854838(0x10d4ff0)
 Dimension::setCeiling(bool)
+0x100854840(0x10d4ff8)
+Dimension::onBlockEvent(BlockSource&, int, int, int, int, int)
+0x100854900(0x10d5068)
+Dimension::sendBroadcast(Packet const&, Player*)
+0x10085499c(0x10d50ba)
+Dimension::sendPacketForEntity(Entity const&, Packet const&, Player const*)
 ------------------------------
 0x1003f9f90(0xbf47b0)
 LevelRenderer::tick()
