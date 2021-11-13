@@ -1082,10 +1082,66 @@ Item::setStackedByData(bool)
 Item::setMaxDamage(int)
 0x100747984(0x10228ac)
 Item::getTextureUVCoordinateSet(std::string const&, int)
+0x100747a14(0x1022964)
+Item::getTextureItem(std::string const&)
+0x100747a38(0x102297c)
+Item::getEnchantSlot() const
+0x100747a6c(0x10229bc)
+Item::getEnchantValue() const
+0x100747a88(0x10229dc)
+Item::isComplex() const
 0x100746dd0(0x1021ace)  //This is definitely not it...
 Item::setCategory(CreativeItemCategory)
 0x1012ae238(0x1c7fde0)
 Item::mItems
+------------------------------
+0x100729f14(0xfc50a8)
+BowItem::BowItem(std::string const&, int)
+0x10072a054(0xfc53e4)
+BowItem::setIcon(std::string const&, int)
+0x10072a1b8(0xfc5638)
+BowItem::releaseUsing(ItemInstance*, Player*, int)
+0x10072a598(0xfc5b40)
+BowItem::getAnimationFrameFor(Mob&) const
+0x10072a62c(0xfc5bbc)
+BowItem::getEnchantSlot() const
+0x10072a634(0xfc5bc0)
+BowItem::getEnchantValue() const
+0x10072a63c(0xfc5bc4)
+BowItem::use(ItemInstance&, Player&)
+0x10072a6fc(0xfc5c34)
+BowItem::mineBlock(ItemInstance*, BlockID, int, int, int, Mob*)
+0x10072a704(0xfc5c38)
+BowItem::hurtEnemy(ItemInstance*, Mob*, Mob*)
+0x10072a7f8(0xfc5e62)
+BowItem::getIcon(int, int, bool) const
+------------------------------
+0x10072a84c(0xfc5e78)
+BucketItem::BucketItem(std::string const&, int)
+0x10072a984(0xfc61b8)
+BucketItem::setIcon(std::string const&, int)
+0x10072aab0(0xfc6358)
+BucketItem::getMaxStackSize(ItemInstance const*)
+0x10072aad8(0xfc6370)
+BucketItem::use(ItemInstance&, Player&)
+0x10072ab88(0xfc63c8)
+BucketItem::useTimeDepleted(ItemInstance*, Level*, Player*)
+0x10072ac4c(0xfc643c)
+BucketItem::useOn(ItemInstance*, Player*, int, int, int, signed char, float, float, float)
+0x10072af60(0xfc665c)
+BucketItem::_takeLiquid(ItemInstance&, Player&, BlockPos const&)
+0x10072b180(0xfc67c8)
+BucketItem::_emptyBucket(BlockSource*, FullBlock, BlockPos const&)
+0x10072b470(0xfc6a5c)
+BucketItem::dispense(BlockSource&, Container&, int, Vec3 const&, signed char)
+0x10072b75c(0xfc6c60)
+BucketItem::getIcon(int, int, bool) const
+0x10072b7b0(0xfc6ca4)
+BucketItem::buildDescriptionName(ItemInstance const&) const
+0x10072bb34(0xfc72e0)
+BucketItem::isLiquidClipItem(int) const
+0x10072bb40(0xfc72ec)
+BucketItem::isEmissive(int) const
 ------------------------------
 0x100763bbc(0x103f404)
 SplashPotionItem::applyEffect(ThrownPotion*, ItemInstance const*)
