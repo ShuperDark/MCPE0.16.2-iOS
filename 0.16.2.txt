@@ -1094,6 +1094,8 @@ Item::getEnchantSlot() const
 Item::getEnchantValue() const
 0x100747a88(0x10229dc)
 Item::isComplex() const
+0x100747a90(0x10229e0)
+Item::lookupByName(std::string const&, bool)
 0x100746dd0(0x1021ace)  //This is definitely not it...
 Item::setCategory(CreativeItemCategory)
 0x1012ae238(0x1c7fde0)
@@ -1491,6 +1493,10 @@ EntityDamageSource::getCause() const
 0x1007281e0(0xfc35c8)
 BlockItem::BlockItem(std::string const&, int)
 ------------------------------
+0x1007cfd6c(0x1052d20)
+Block::onRedstoneUpdate(BlockSource&, BlockPos const&, int, bool)
+0x1007cfd70(0x1052d22)
+Block::onLoaded(BlockSource&, BlockPos const&)
 0x1007d451c(0x10569a0)
 Block::initBlocks()
 0x1007d7e20(0x1069180)
