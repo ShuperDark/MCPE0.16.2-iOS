@@ -1052,8 +1052,28 @@ AddPlayerPacket::AddPlayerPacket(Player&)
 0x10035caac(0xb026dc)
 EntityEventPacket::read(BinaryStream&)
 ------------------------------
+0x100726a2c(0xfc1e20)
+Item::setUseAnimation(UseAnimation)
+0x100726a34(0xfc1e26)
+Item::setMaxUseDuration(int)
+0x100726a3c(0xfc1e2a)
+Item::setExplodable(bool)
 0x100726a44(0xfc1e30)
 Item::setIsGlint(bool)
+0x100726a4c(0xfc1e36)
+Item::setShouldDespawn(bool)
+0x100726a54(0xfc1e3c)
+Item::isLiquidClipItem(int) const
+0x100726a5c(0xfc1e40)
+Item::requiresInteract() const
+0x100726a64(0xfc1e44)
+Item::uniqueAuxValues() const
+0x100726a6c(0xfc1e48)
+Item::getAnimationFrameFor(Mob&) const
+0x100726a74(0xfc1e4c)
+Item::isEmissive(int) const
+0x100726a7c(0xfc1e50)
+Item::getIconYOffset() const
 0x10073275c(0x100038c)
 Item::Tier::getTierItem() const
 0x100733348(0x1001db0)
@@ -1200,6 +1220,25 @@ HoeItem::useOn(ItemInstance*, Player*, int, int, int, signed char, float, float,
 HoeItem::isHandEquipped() const
 0x1007320b4(0xfff96c)
 HoeItem::getEnchantSlot() const
+------------------------------
+0x1007265e0(0xfc1848)
+ArmorItem::ArmorItem(std::string const&, int, ArmorItem::ArmorMaterial const&, int, ArmorSlot)
+0x10072667c(0xfc18a8)
+ArmorItem::isArmor() const
+0x100726684(0xfc18ac)
+ArmorItem::getEnchantSlot() const
+0x1007266a8(0xfc18cc)
+ArmorItem::getEnchantValue() const
+0x1007266b4(0xfc1a60)
+ArmorItem::dispense(BlockSource&, Container&, int, Vec3 const&, signed char)
+0x10072686c(0xfc1b80)
+ArmorItem::getSlotForItem(ItemInstance const&)
+0x1007268a0(0xfc1b98)
+ArmorItem::appendFormattedHovertext(ItemInstance const&, Level&, std::string&, bool) const
+0x100726a08(0xfc1e0c)
+ArmorItem::mineBlock(ItemInstance*, BlockID, int, int, int, Mob*)
+0x100726a10(0xfc1e10)
+ArmorItem::hurtEnemy(ItemInstance*, Mob*, Mob*)
 ------------------------------
 0x100763bbc(0x103f404)
 SplashPotionItem::applyEffect(ThrownPotion*, ItemInstance const*)
