@@ -1054,6 +1054,8 @@ EntityEventPacket::read(BinaryStream&)
 ------------------------------
 0x100726a44(0xfc1e30)
 Item::setIsGlint(bool)
+0x10073275c(0x100038c)
+Item::Tier::getTierItem() const
 0x100733348(0x1001db0)
 Item::registerItems()
 0x100734d00(0x100a0a4)
@@ -1148,6 +1150,56 @@ BucketItem::buildDescriptionName(ItemInstance const&) const
 BucketItem::isLiquidClipItem(int) const
 0x10072bb40(0xfc72ec)
 BucketItem::isEmissive(int) const
+------------------------------
+0x10074f448(0x1024c9c)
+WeaponItem::canDestroySpecial(Block const*) const
+0x10074f468(0x1024cbc)
+WeaponItem::getAttackDamage()
+0x10074f470(0x1024cc0)
+WeaponItem::isHandEquipped() const
+0x10074f478(0x1024cc4)
+WeaponItem::canDestroyInCreative() const
+0x10074f480(0x1024cc8)
+WeaponItem::appendFormattedHovertext(ItemInstance const&, Level&, std::string&, bool) const
+0x10074f780(0x10254d4)
+WeaponItem::isValidRepairItem(ItemInstance const&, ItemInstance const&)
+0x10074f88c(0x1025558)
+WeaponItem::getEnchantSlot() const
+0x10074f894(0x102555c)
+WeaponItem::getEnchantValue() const
+0x10074f8a0(0x1025562)
+WeaponItem::use(ItemInstance&, Player&)
+0x10074f8a8(0x1025568)
+WeaponItem::getDestroySpeed(ItemInstance*, Block*)
+0x10074f8d0(0x1025594)
+WeaponItem::hurtEnemy(ItemInstance*, Mob*, Mob*)
+------------------------------
+0x10075f978(0x103adec)
+PickaxeItem::PickaxeItem(std::string const&, int, Item::Tier const&)
+0x100760028(0x103b968)
+PickaxeItem::canDestroySpecial(Block const*) const
+0x1007601ac(0x103bab0)
+PickaxeItem::getDestroySpeed(ItemInstance*, Block*)
+0x10076023c(0x103bb14)
+PickaxeItem::getEnchantSlot() const
+------------------------------
+0x100761d84(0x103d48c)
+ShovelItem::ShovelItem(std::string const&, int, Item::Tier const&)
+0x1007621bc(0x103d9b0)
+ShovelItem::canDestroySpecial(Block const*) const
+0x100762200(0x103d9d4)
+ShovelItem::useOn(ItemInstance*, Player*, int, int, int, signed char, float, float, float)
+0x100762504(0x103dc34)
+ShovelItem::getEnchantSlot() const
+------------------------------
+0x100731e70(0xfff7b0)
+HoeItem::HoeItem(std::string const&, int, Item::Tier)
+0x100731ee4(0xfff800)
+HoeItem::useOn(ItemInstance*, Player*, int, int, int, signed char, float, float, float)
+0x1007320ac(0xfff968)
+HoeItem::isHandEquipped() const
+0x1007320b4(0xfff96c)
+HoeItem::getEnchantSlot() const
 ------------------------------
 0x100763bbc(0x103f404)
 SplashPotionItem::applyEffect(ThrownPotion*, ItemInstance const*)
