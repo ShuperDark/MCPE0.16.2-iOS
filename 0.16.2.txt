@@ -2054,6 +2054,8 @@ EnchantUtils::determineActivation(int)
 Enchant::isCompatibleWith(int) const
 0x10078de6c(0xff56b8)
 Enchant::canEnchant(int) const
+0x10078deac(0xff5734)
+Enchant::initEnchants()
 ------------------------------
 0x10049ee8c(0xce2028)
 Tag::Tag(std::string const&)
