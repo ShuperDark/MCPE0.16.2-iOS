@@ -2054,6 +2054,10 @@ EnchantUtils::determineActivation(int)
 Enchant::isCompatibleWith(int) const
 0x10078de6c(0xff56b8)
 Enchant::canEnchant(int) const
+0x10078de9c(0xff5724)
+Enchant::getDescription() const
+0x10078dea4(0xff572e)
+Enchant::getStringId() const
 0x10078deac(0xff5734)
 Enchant::initEnchants()
 ------------------------------
