@@ -2050,6 +2050,30 @@ EnchantUtils::getAvailableEnchantmentResults(Item*, int)
 0x100791a7c(0xff9414)
 EnchantUtils::determineActivation(int)
 ------------------------------
+0x10078dc80(0xff5400)
+Enchant::Enchant(int, int, std::string const&, std::string const&, int, int)
+0x10078ddd0(0xff562c)
+Enchant::getFrequency() const
+0x10078ddd8(0xff5630)
+Enchant::getMinLevel() const
+0x10078dde0(0xff5634)
+Enchant::getMaxLevel() const
+0x10078dde8(0xff5638)
+Enchant::getMinCost(int) const
+0x10078ddf8(0xff5644)
+Enchant::getMaxCost(int) const
+0x10078de18(0xff5650)
+Enchant::getDamageProtection(int, EntityDamageSource const&) const
+0x10078de20(0xff5654)
+Enchant::getDamageBonus(int, Entity const&) const
+0x10078de28(0xff5658)
+Enchant::doPostAttack(Mob&, Mob&, int) const
+0x10078de2c(0xff565a)
+Enchant::doPostHurt(ItemInstance&, Mob&, Mob&, int) const
+0x10078de30(0xff565c)
+Enchant::isMeleeDamageEnchant() const
+0x10078de38(0xff5660)
+Enchant::isProtectionEnchant() const
 0x10078de40(0xff5664)
 Enchant::isCompatibleWith(int) const
 0x10078de6c(0xff56b8)
@@ -2060,6 +2084,8 @@ Enchant::getDescription() const
 Enchant::getStringId() const
 0x10078deac(0xff5734)
 Enchant::initEnchants()
+0x1012b0070(0x1c7ddc0)
+Enchant::mEnchants
 ------------------------------
 0x10049ee8c(0xce2028)
 Tag::Tag(std::string const&)
