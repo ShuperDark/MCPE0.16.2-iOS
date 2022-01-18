@@ -1139,6 +1139,29 @@ MapExtendingRecipe::MapExtendingRecipe(mce::UUID const&)
 0x100773018(0xcfa016)
 MapCloningRecipe::MapCloningRecipe(mce::UUID const&)
 ------------------------------
+0x10070ba98(0xf92f9c)
+Abilities::Abilities()
+0x10070bb04(0xf92fdc)
+Abilities::addSaveData(CompoundTag&) const
+0x10070be1c(0xf93760)
+Abilities::loadSaveData(CompoundTag const&)
+0x10070c174(0xf94118)
+Abilities::isFlying() const
+0x10070c194(0xf9412c)
+Abilities::getFlyingSpeed() const
+0x10070c19c(0xf94130)
+Abilities::setFlyingSpeed(float)
+0x10070c1a4(0xf94134)
+Abilities::getWalkingSpeed() const
+0x10070c1ac(0xf9413c)
+Abilities::isWorldBuilder() const
+0x10070c1b4(0xf94140)
+Abilities::setWorldBuilder(bool)
+0x10070c1bc(0xf94144)
+Abilities::getCommandPermissions()
+0x10070c1c4(0xf9414a)
+Abilities::setCommandPermissions(CommandPermissionLevel)
+------------------------------
 0x10071620c(0xf9ef82)
 PlayerInventoryProxy::canAdd(ItemInstance const&) const
 0x1007163c4(0xf9f2d8)
