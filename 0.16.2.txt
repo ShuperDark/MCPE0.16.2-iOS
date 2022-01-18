@@ -330,12 +330,46 @@ Level::getClientResourcePackManager() const
 0x1007ab96c(0x10def88)
 Level::getServerResourcePackManager() const
 ------------------------------
+0x1008e0b94(0x1177ed0)
+LevelData::LevelData()
+0x1008e0d70(0x11780ec)
+LevelData::LevelData(LevelSettings const&, std::string const&, GeneratorType, BlockPos
+0x1008e11b8(0x1178898)
+LevelData::getTagData(CompoundTag const&)
+0x1008e1f88(0x117b230)
+LevelData::loadFixedInventoryData(CompoundTag&)
+0x1008e21a0(0x117b328)
+LevelData::v1_read(RakNet::BitStream&, StorageVersion)
+0x1008e2438(0x117b4be)
+LevelData::createTag() const
+0x1008e24b4(0x117b500)
+LevelData::setTagData(CompoundTag&) const
+0x1008e2ed4(0x117d25c)
+LevelData::setGameType(GameType)
+0x1008e2edc(0x117d262)
+LevelData::getSpawn() const
+0x1008e2ee4(0x117d266)
+LevelData::getTime() const
 0x1008e2eec(0x117d26a)
 LevelData::getStopTime() const
+0x1008e2ef4(0x117d274)
+LevelData::getLoadedPlayerTag()
 0x1008e2efc(0x117d27c)
 LevelData::setTime(int)
+0x1008e2f04(0x117d280)
+LevelData::setStopTime(int)
 0x1008e2f0c(0x117d286)
 LevelData::clearLoadedPlayerTag()
+0x1008e2f60(0x117d2b6)
+LevelData::getLevelName() const
+0x1008e2f68(0x117d2ba)
+LevelData::setLevelName(std::string const&)
+0x1008e2f70(0x117d2c0)
+LevelData::getGenerator() const
+0x1008e2f78(0x117d2c6)
+LevelData::setGenerator(GeneratorType)
+0x1008e2f80(0x117d2cc)
+LevelData::getLastPlayed() const
 0x1008e2f88(0x117d2e8)
 LevelData::getLightningLevel() const
 0x1008e2f90(0x117d2ee)
@@ -354,12 +388,70 @@ LevelData::setRainLevel(float)
 LevelData::getRainTime() const
 0x1008e2fd0(0x117d32a)
 LevelData::setRainTime(int)
+0x1008e2fd8(0x117d330)
+LevelData::getGameType() const
+0x1008e2fe0(0x117d336)
+LevelData::getGameDifficulty() const
+0x1008e2fe8(0x117d33c)
+LevelData::setGameDifficulty(Difficulty)
+0x1008e2ff0(0x117d342)
+LevelData::getForceGameType() const
+0x1008e2ff8(0x117d348)
+LevelData::setForceGameType(bool)
+0x1008e3000(0x117d34e)
+LevelData::getSpawnMobs() const
+0x1008e3008(0x117d35a)
+LevelData::hasAchievementsDisabled() const
+0x1008e3010(0x117d360)
+LevelData::disableAchievements()
+0x1008e301c(0x117d368)
+LevelData::achievementsWillBeDisabledOnLoad() const
+0x1008e3048(0x117d384)
+LevelData::hasCommandsEnabled() const
+0x1008e3050(0x117d38a)
+LevelData::recordStartUp()
 0x1008e3060(0x117d396)
 LevelData::getWorldCenter() const
+0x1008e3068(0x117d39a)
+LevelData::getWorldStartCount() const
 0x1008e3070(0x117d3a0)
 LevelData::getStorageVersion() const
+0x1008e3078(0x117d3a4)
+LevelData::setStorageVersion(StorageVersion)
+0x1008e3080(0x117d3a8)
+LevelData::getNetworkVersion() const
+0x1008e3088(0x117d3b0)
+LevelData::getCurrentTick() const
+0x1008e3090(0x117d3b4)
+LevelData::incrementTick()
+0x1008e30a0(0x117d3ce)
+LevelData::getAdventureSettings()
+0x1008e30a4(0x117d3d0)
+LevelData::getGameRules()
+0x1008e30ac(0x117d3d4)
+LevelData::isEduLevel() const
+0x1008e30b4(0x117d3da)
+LevelData::setIsEduLevel(bool)
+0x1008e30bc(0x117d3e0)
+LevelData::isMultiplayerGame() const
+0x1008e30c4(0x117d3e6)
+LevelData::getFixedInventory()
+0x1008e30cc(0x117d3ec)
+LevelData::setMultiplayerGame(bool)
+0x1008e30d4(0x117d3f2)
+LevelData::hasLANBroadcast() const
+0x1008e30dc(0x117d3f8)
+LevelData::setLANBroadcast(bool)
+0x1008e30e4(0x117d3fe)
+LevelData::hasXBLBroadcast() const
+0x1008e30ec(0x117d404)
+LevelData::setXBLBroadcast(bool)
 0x1008e30f4(0x117d40a)
 LevelData::setCommandsEnabled(bool)
+0x1008e30fc(0x117d410)
+LevelData::isTexturepacksRequired() const
+0x1008e3104(0x117d416)
+LevelData::setTexturepacksRequired(bool)
 ------------------------------
 0x1007565d4(0x102df0c)
 ItemInstance::ItemInstance()
