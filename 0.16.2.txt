@@ -1523,6 +1523,25 @@ BucketItem::isLiquidClipItem(int) const
 0x10072bb40(0xfc72ec)
 BucketItem::isEmissive(int) const
 ------------------------------
+0x100730134(0xffd938)
+FoodItemComponent::FoodItemComponent(Item&)
+0x100730188(0xffd980)
+FoodItemComponent::init(Json::Value&)
+0x100730418(0xffdef8)
+FoodItemComponent::_loadEffects(std::vector<FoodItemComponent::Effect, std::allocator<FoodItemComponent::Effect> >&, Json::Value&)
+0x10073062c(0xffe2d0)
+FoodItemComponent::getNutrition() const
+0x100730634(0xffe2d4)
+FoodItemComponent::getSaturationModifier() const
+0x10073063c(0xffe2d8)
+FoodItemComponent::use(ItemInstance&, Player&)
+0x10073071c(0xffe36c)
+FoodItemComponent::useOn(ItemInstance&, Player&, BlockPos const&, signed char, Vec3 const&)
+0x100730724(0xffe370)
+FoodItemComponent::useTimeDepleted(ItemInstance&, Player&, Level&)
+0x1007307e8(0xffe3e0)
+FoodItemComponent::_applyEatEffects(ItemInstance&, Player&, Level&)
+------------------------------
 0x10074f448(0x1024c9c)
 WeaponItem::canDestroySpecial(Block const*) const
 0x10074f468(0x1024cbc)
@@ -2088,6 +2107,57 @@ DetectorRailBlock::getComparatorSignal(BlockSource&, BlockPos const&, signed cha
 DetectorRailBlock::onLoaded(BlockSource&, BlockPos const&)
 0x1007fe8f4(0x1082c84)
 DetectorRailBlock::onRedstoneUpdate(BlockSource&, BlockPos const&, int, bool)
+------------------------------
+0x100808458(0x10a1eb8)
+GlassBlock::GlassBlock(std::string const&, int, Material const&, bool)
+0x100808484(0x10a1ee4)
+GlassBlock::getResourceCount(Random&, int, int)
+0x10080848c(0x10a1ee8)
+GlassBlock::canProvideSupport(BlockSource&, BlockPos const&, signed char, BlockSupportType)
+------------------------------
+0x10080c8dc(0x10a518c)
+LeafBlock::isDeepLeafBlock(BlockSource&, BlockPos const&)
+0x10080caec(0x10a531c)
+LeafBlock::LeafBlock(std::string const&, int)
+0x10080cbc0(0x10a53a6)
+LeafBlock::onRemove(BlockSource&, BlockPos const&)
+0x10080cc08(0x10a53c6)
+LeafBlock::runDecay(BlockSource&, BlockPos const&, int)
+0x10080cd7c(0x10a54d0)
+LeafBlock::isSeasonTinted(BlockSource&, BlockPos const&) const
+0x10080cdc0(0x10a54fc)
+LeafBlock::getRenderLayer(BlockSource&, BlockPos const&) const
+0x10080ce24(0x10a554c)
+LeafBlock::getColor(BlockSource&, BlockPos const&) const
+0x10080cfb4(0x10a5644)
+LeafBlock::getSeasonsColor(BlockSource&, BlockPos const&, int, int) const
+0x10080d1a4(0x10a5834)
+LeafBlock::getMapColor(BlockSource&, BlockPos const&) const
+0x10080d1f0(0x10a5890)
+LeafBlock::tick(BlockSource&, BlockPos const&, Random&)
+0x10080d4f0(0x10a5b1c)
+LeafBlock::playerDestroy(Player*, BlockPos const&, int)
+0x10080d5fc(0x10a5bb4)
+LeafBlock::getResourceCount(Random&, int, int)
+0x10080d638(0x10a5bdc)
+LeafBlock::getResource(Random&, int, int)
+0x10080d64c(0x10a5bf4)
+LeafBlock::spawnResources(BlockSource&, BlockPos const&, int, float, int)
+0x10080d7f8(0x10a5cec)
+LeafBlock::onGraphicsModeChanged(bool, bool, bool)
+0x10080d884(0x10a5d36)
+LeafBlock::getSpawnResourcesAuxValue(unsigned char)
+0x10080d88c(0x10a5d3c)
+LeafBlock::getMobToSpawn(BlockSource&, BlockPos const&) const
+------------------------------
+0x100812728(0x10a98b8)
+LogBlock::LogBlock(std::string const&, int)
+0x100812784(0x10a98ec)
+LogBlock::getResourceCount(Random&, int, int)
+0x10081278c(0x10a98f0)
+LogBlock::onRemove(BlockSource&, BlockPos const&)
+0x1008127d4(0x10a9910)
+LogBlock::getSpawnResourcesAuxValue(unsigned char)
 ------------------------------
 0x10081a914(0x10b0ca0)
 RailBlock::RailBlock(std::string const&, int)
