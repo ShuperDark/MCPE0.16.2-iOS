@@ -2108,6 +2108,27 @@ DetectorRailBlock::onLoaded(BlockSource&, BlockPos const&)
 0x1007fe8f4(0x1082c84)
 DetectorRailBlock::onRedstoneUpdate(BlockSource&, BlockPos const&, int, bool)
 ------------------------------
+0x100803dac(0x109df84)
+FenceBlock::FenceBlock(std::string const&, int, Material const&)
+0x100803e58(0x109e010)
+FenceBlock::getVisualShape(BlockSource&, BlockPos const&, AABB&, bool)
+0x100803f80(0x109e0e8)
+FenceBlock::connectsTo(BlockSource&, BlockPos const&, BlockPos const&)
+0x1008040a0(0x109e1a6)
+FenceBlock::getAABB(BlockSource&, BlockPos const&, AABB&, int, bool, int)
+0x1008041fc(0x109e2ba)
+FenceBlock::canProvideSupport(BlockSource&, BlockPos const&, signed char, BlockSupportType)
+0x100804218(0x109e2d4)
+FenceBlock::getSpawnResourcesAuxValue(unsigned char)
+0x100804220(0x109e2d8)
+FenceBlock::use(Player&, BlockPos const&)
+0x100804268(0x109e2fc)
+FenceBlock::buildDescriptionName(unsigned char) const
+0x100804510(0x109e9e0)
+FenceBlock::canBeSilkTouched() const
+0x100804578(0x109e9f2)
+FenceBlock::isFenceBlock() const
+------------------------------
 0x100808458(0x10a1eb8)
 GlassBlock::GlassBlock(std::string const&, int, Material const&, bool)
 0x100808484(0x10a1ee4)
@@ -2158,6 +2179,44 @@ LogBlock::getResourceCount(Random&, int, int)
 LogBlock::onRemove(BlockSource&, BlockPos const&)
 0x1008127d4(0x10a9910)
 LogBlock::getSpawnResourcesAuxValue(unsigned char)
+------------------------------
+0x1008142e0(0x10ab030)
+NewLeafBlock::NewLeafBlock(std::string const&, int)
+0x100814304(0x10ab04c)
+NewLeafBlock::getVariant(int) const
+0x100814324(0x10ab064)
+NewLeafBlock::dropExtraLoot(BlockSource&, BlockPos const&, int)
+0x1008143cc(0x10ab0c0)
+NewLeafBlock::buildDescriptionName(unsigned char) const
+0x1008145a8(0x10ab474)
+NewLeafBlock::getSpawnResourcesAuxValue(unsigned char)
+------------------------------
+0x10081463c(0x10ab490)
+NewLogBlock::NewLogBlock(std::string const&, int)
+0x100814660(0x10ab4ac)
+NewLogBlock::getResource(Random&, int, int)
+0x100814674(0x10ab4c4)
+NewLogBlock::buildDescriptionName(unsigned char) const
+------------------------------
+0x10081595c(0x10ac338)
+OldLeafBlock::OldLeafBlock(std::string const&, int)
+0x100815980(0x10ac354)
+OldLeafBlock::getColor(BlockSource&, BlockPos const&) const
+0x100815aa0(0x10ac410)
+OldLeafBlock::dropExtraLoot(BlockSource&, BlockPos const&, int)
+0x100815b44(0x10ac46c)
+OldLeafBlock::getVariant(int) const
+0x100815b60(0x10ac480)
+OldLeafBlock::buildDescriptionName(unsigned char) const
+0x100815d94(0x10ac8d0)
+OldLeafBlock::getSpawnResourcesAuxValue(unsigned char)
+------------------------------
+0x100815e28(0x10ac8e4)
+OldLogBlock::OldLogBlock(std::string const&, int)
+0x100815e4c(0x10ac900)
+OldLogBlock::getResource(Random&, int, int)
+0x100815e60(0x10ac918)
+OldLogBlock::buildDescriptionName(unsigned char) const
 ------------------------------
 0x10081a914(0x10b0ca0)
 RailBlock::RailBlock(std::string const&, int)
