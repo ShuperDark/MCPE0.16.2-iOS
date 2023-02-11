@@ -1523,6 +1523,13 @@ BucketItem::isLiquidClipItem(int) const
 0x10072bb40(0xfc72ec)
 BucketItem::isEmissive(int) const
 ------------------------------
+0x10072d528(0xff4178)
+DoorItem::DoorItem(std::string const&, int, Material const&, DoorBlock::DoorType)
+0x10072d574(0xff41a8)
+DoorItem::useOn(ItemInstance*, Player*, int, int, int, signed char, float, float, float)
+0x10072d760(0xff4320)
+DoorItem::place(BlockSource*, int, int, int, int, Block*)
+------------------------------
 0x100730134(0xffd938)
 FoodItemComponent::FoodItemComponent(Item&)
 0x100730188(0xffd980)
@@ -1954,7 +1961,30 @@ EntityDamageSource::getCause() const
 ------------------------------
 0x1007281e0(0xfc35c8)
 BlockItem::BlockItem(std::string const&, int)
+0x1007282d8(0xfc361c)
+BlockItem::useOn(ItemInstance*, Player*, int, int, int, signed char, float, float, float)
+0x100728b24(0xfc40bc)
+BlockItem::isEmissive(int) const
+0x100728b40(0xfc40dc)
+BlockItem::buildDescriptionName(ItemInstance const&) const
+0x100728b98(0xfc4110)
+BlockItem::getIcon(int, int, bool) const
+0x100728bf4(0xfc4150)
+BlockItem::getIconYOffset() const
 ------------------------------
+0x1007cfbec(0x1052bf8)
+AirBlock::AirBlock(std::string const&, int, Material const&)
+------------------------------
+0x1007cfb98(0x1052be6)
+Block::waterSpreadCausesSpawn() const
+0x1007cfba0(0x1052bea)
+Block::handleRain(BlockSource&, BlockPos const&, float) const
+0x1007cfba4(0x1052bec)
+Block::onMove(BlockSource&, BlockPos const&, BlockPos const&)
+0x1007cfba8(0x1052bee)
+Block::detachesOnPistonMove(BlockSource&, BlockPos const&)
+0x1007cfbb0(0x1052bf2)
+Block::getRedstoneProperty(BlockSource&, BlockPos const&)
 0x1007cfd6c(0x1052d20)
 Block::onRedstoneUpdate(BlockSource&, BlockPos const&, int, bool)
 0x1007cfd70(0x1052d22)
@@ -1971,6 +2001,8 @@ Block::getCreativeCategory()
 Block::getMaterial() const
 0x1007d8150(0x10695ac)
 Block::isType(Block const*) const
+0x1007d815c(0x10695b8)
+Block::setLightEmission(float)
 0x1007d8184(0x10695fc)
 Block::init()
 0x1007d81d0(0x1069630)
@@ -1997,32 +2029,130 @@ Block::buildDescriptionName(unsigned char) const
 Block::setExplodeable(float)
 0x1007d9738(0x106a8ca)
 Block::setDestroyTime(float)
+0x1007d9758(0x106a8ec)
+Block::setFriction(float)
+0x1007d9760(0x106a8f0)
+Block::setBlockProperty(BlockProperty)
+0x1007d9770(0x106a8f8)
+Block::setTicking(bool)
+0x1007d9784(0x106a910)
+Block::setMapColor(Color const&)
+0x1007d9790(0x106a91e)
+Block::addProperty(BlockProperty)
+0x1007d97a8(0x106a92a)
+Block::getVariant(int) const
+0x1007d97b0(0x106a92e)
+Block::getMappedFace(signed char, int) const
+0x1007d97b8(0x106a932)
+Block::getSpawnResourcesAuxValue(unsigned char)
+0x1007d97c0(0x106a936)
+Block::setVisualShape(Vec3 const&, Vec3 const&)
+0x1007d97c8(0x106a93c)
+Block::setVisualShape(AABB const&)
+0x1007d97d0(0x106a942)
+Block::mayPlaceOn(Block const&)
+0x1007d97d8(0x106a946)
+Block::mayPlace(BlockSource&, BlockPos const&)
+0x1007d9870(0x106a990)
+Block::mayPlace(BlockSource&, BlockPos const&, signed char)
 0x1007d987c(0x106a998)
 Block::tryToPlace(BlockSource&, BlockPos const&, unsigned char)
 0x1007d9908(0x106a9e4)
 Block::neighborChanged(BlockSource&, BlockPos const&, BlockPos const&)
+0x1007d990c(0x106a9e6)
+Block::getSecondPart(BlockSource&, BlockPos const&, BlockPos&)
+0x1007d9914(0x106a9ea)
+Block::onGraphicsModeChanged(bool, bool, bool)
 0x1007d991c(0x106a9ee)
 Block::checkIsPathable(Entity&, BlockPos const&, BlockPos const&)
+0x1007d9938(0x106a9fc)
+Block::dispense(BlockSource&, Container&, int, Vec3 const&, signed char)
 0x1007d9940(0x106aa00)
 Block::onPlace(BlockSource&, BlockPos const&)
 0x1007d9944(0x106aa02)
 Block::onRemove(BlockSource&, BlockPos const&)
+0x1007d9990(0x106aa2c)
+Block::onExploded(BlockSource&, BlockPos const&, Entity*)
+0x1007d9994(0x106aa2e)
+Block::onStepOn(Entity&, BlockPos const&)
 0x1007d9998(0x106aa30)
 Block::onFallOn(BlockSource&, BlockPos const&, Entity*, float)
+0x1007d99fc(0x106aa70)
+Block::updateEntityAfterFallOn(Entity&)
+0x1007d9a04(0x106aa76)
+Block::onFertilized(BlockSource&, BlockPos const&, Player*)
+0x1007d9a0c(0x106aa7a)
+Block::mayConsumeFertilizer(BlockSource&)
+0x1007d9a14(0x106aa7e)
+Block::getIconYOffset() const
 0x1007d9a1c(0x106aa82)
 Block::getTypeToSpawn(BlockSource&, EntityType, BlockPos const&) const
+0x1007d9b64(0x106ab04)
+Block::canBeSilkTouched() const
 0x1007d9b6c(0x106ab08)
 Block::getMobToSpawn(BlockSource&, BlockPos const&) const
 0x1007d9bc0(0x106ab3c)
 Block::getMobToSpawn(BlockSource&, BlockPos const&, std::map<EntityType, int, std::less<EntityType>, std::allocator<std::pair<EntityType const, int> > >, bool&) const
+0x1007d9cec(0x106abd8)
+Block::isAlphaTested()
 0x1007d9d20(0x106abfa)
 Block::isSolidBlockingBlock() const
+0x1007d9d64(0x106ac20)
+Block::isCropBlock() const
+0x1007d9d6c(0x106ac24)
+Block::isContainerBlock() const
+0x1007d9d74(0x106ac28)
+Block::isCraftingBlock() const
+0x1007d9d7c(0x106ac2c)
+Block::isInteractiveBlock() const
 0x1007d9d84(0x106ac30)
 Block::isWaterBlocking() const
+0x1007d9ddc(0x106ac66)
+Block::isHurtableBlock() const
+0x1007d9de4(0x106ac6a)
+Block::isFenceBlock() const
+0x1007d9dec(0x106ac6e)
+Block::isStairBlock() const
+0x1007d9df4(0x106ac72)
+Block::isRailBlock() const
+0x1007d9dfc(0x106ac76)
+Block::canHurtAndBreakItem() const
+0x1007d9e0c(0x106ac8e)
+Block::getBlockEntityType() const
+0x1007d9e14(0x106ac92)
+Block::hasBlockEntity()
+0x1007d9e24(0x106ac9c)
+Block::getRenderLayer(BlockSource&, BlockPos const&) const
+0x1007d9e2c(0x106aca0)
+Block::getRenderLayer() const
+0x1007d9e34(0x106aca4)
+Block::getExtraRenderLayers()
+0x1007d9e3c(0x106aca8)
+Block::getThickness() const
+0x1007d9e44(0x106acac)
+Block::isObstructingChests(BlockSource&, BlockPos const&)
 0x1007d9e58(0x106acc4)
 Block::getVisualShape(BlockSource&, BlockPos const&, AABB&, bool)
+0x1007d9ea8(0x106ace8)
+Block::getVisualShape(unsigned char, AABB&, bool)
 0x1007d9eb0(0x106acec)
 Block::getCollisionShape(AABB&, BlockSource&, BlockPos const&, Entity*)
+0x1007d9f38(0x106ad3e)
+Block::calcGroundFriction(Mob&, BlockPos const&) const
+0x1007d9f40(0x106ad44)
+Block::canHaveExtraData() const
+0x1007d9f5c(0x106ad64)
+Block::hasComparatorSignal()
+0x1007d9f64(0x106ad68)
+Block::getComparatorSignal(BlockSource&, BlockPos const&, signed char, int)
+0x1007d9f6c(0x106ad6c)
+Block::shouldStopFalling(Entity&)
+0x1007d9f74(0x106ad72)
+Block::getProperties() const
+0x1007d9f7c(0x106ad78)
+Block::getShadeBrightness() const
+0x1007d9fb4(0x106adb8)
+Block::getLightEmission(BlockID)
 0x1007d9fcc(0x106add0)
 Block::lookupByName(std::string const&, bool)
 0x1007da280(0x106b11c)
@@ -2108,6 +2238,57 @@ DetectorRailBlock::onLoaded(BlockSource&, BlockPos const&)
 0x1007fe8f4(0x1082c84)
 DetectorRailBlock::onRedstoneUpdate(BlockSource&, BlockPos const&, int, bool)
 ------------------------------
+0x100800894(0x108449c)
+DoorBlock::DoorBlock(std::string const&, int, Material const&, DoorBlock::DoorType)
+0x100800994(0x1084558)
+DoorBlock::getCompositeData(BlockSource&, BlockPos const&)
+0x100800a30(0x10845ae)
+DoorBlock::isUpper(unsigned char)
+0x100800a38(0x10845be)
+DoorBlock::getVariant(int) const
+0x100800a40(0x10845c4)
+DoorBlock::getVisualShape(BlockSource&, BlockPos const&, AABB&, bool)
+0x100800be0(0x10846e4)
+DoorBlock::use(Player&, BlockPos const&)
+0x100800cc0(0x1084762)
+DoorBlock::isOpen(BlockSource&, BlockPos const&)
+0x100800d40(0x10847aa)
+DoorBlock::setOpen(BlockSource&, BlockPos const&, bool, Mob*, bool)
+0x100801018(0x10849ac)
+DoorBlock::getDir(BlockSource&, BlockPos const&)
+0x1008010a0(0x10849f8)
+DoorBlock::playerWillDestroy(Player&, BlockPos const&, int)
+0x100801150(0x1084a68)
+DoorBlock::neighborChanged(BlockSource&, BlockPos const&, BlockPos const&)
+0x100801360(0x1084bd0)
+DoorBlock::onRedstoneUpdate(BlockSource&, BlockPos const&, int, bool)
+0x1008014bc(0x1084cb0)
+DoorBlock::getResource(Random&, int, int)
+0x1008015e0(0x1084df8)
+DoorBlock::asItemInstance(BlockSource&, BlockPos const&, int) const
+0x100801610(0x1084e10)
+DoorBlock::getSilkTouchItemInstance(unsigned char)
+0x100801640(0x1084e28)
+DoorBlock::mayPlace(BlockSource&, BlockPos const&)
+0x1008016fc(0x1084e82)
+DoorBlock::onLoaded(BlockSource&, BlockPos const&)
+0x100801834(0x1084f44)
+DoorBlock::onPlace(BlockSource&, BlockPos const&)
+0x100801878(0x1084f62)
+DoorBlock::getSecondPart(BlockSource&, BlockPos const&, BlockPos&)
+0x1008018cc(0x1084f8c)
+DoorBlock::shouldFlipTexture(int, signed char)
+0x1008019a4(0x108501e)
+DoorBlock::isInteractiveBlock() const
+0x1008019ac(0x1085022)
+DoorBlock::canBeSilkTouched() const
+0x1008019b4(0x1085026)
+DoorBlock::checkIsPathable(Entity&, BlockPos const&, BlockPos const&)
+0x100801a40(0x1085076)
+DoorBlock::tick(BlockSource&, BlockPos const&, Random&)
+0x100801aec(0x10850d4)
+DoorBlock::isWaterBlocking() const
+------------------------------
 0x100803dac(0x109df84)
 FenceBlock::FenceBlock(std::string const&, int, Material const&)
 0x100803e58(0x109e010)
@@ -2128,6 +2309,35 @@ FenceBlock::buildDescriptionName(unsigned char) const
 FenceBlock::canBeSilkTouched() const
 0x100804578(0x109e9f2)
 FenceBlock::isFenceBlock() const
+------------------------------
+0x1008045b4(0x109e9f8)
+FenceGateBlock::FenceGateBlock(std::string const&, int, WoodBlockType)
+0x100804680(0x109ea90)
+FenceGateBlock::onLoaded(BlockSource&, BlockPos const&)
+0x100804714(0x109eade)
+FenceGateBlock::onPlace(BlockSource&, BlockPos const&)
+0x100804758(0x109eafc)
+FenceGateBlock::_checkIsInWall(BlockSource&, BlockPos const&)
+0x1008048dc(0x109ec18)
+FenceGateBlock::onRedstoneUpdate(BlockSource&, BlockPos const&, int, bool)
+0x1008049c4(0x109ecfe)
+FenceGateBlock::mayPlace(BlockSource&, BlockPos const&)
+0x100804a34(0x109ed38)
+FenceGateBlock::getAABB(BlockSource&, BlockPos const&, AABB&, int, bool, int)
+0x100804b64(0x109ee38)
+FenceGateBlock::isOpen(int)
+0x100804b6c(0x109ee40)
+FenceGateBlock::getDirection(int)
+0x100804b74(0x109ee46)
+FenceGateBlock::neighborChanged(BlockSource&, BlockPos const&, BlockPos const&)
+0x100804b78(0x109ee4c)
+FenceGateBlock::getPlacementDataValue(Mob&, BlockPos const&, signed char, Vec3 const&, int)
+0x100804bb8(0x109ee90)
+FenceGateBlock::use(Player&, BlockPos const&)
+0x100804d50(0x109efe0)
+FenceGateBlock::isInWall(int)
+0x100804d58(0x109efe8)
+FenceGateBlock::isInteractiveBlock() const
 ------------------------------
 0x100808458(0x10a1eb8)
 GlassBlock::GlassBlock(std::string const&, int, Material const&, bool)
@@ -2312,6 +2522,77 @@ StoneBlock::getSpawnResourcesAuxValue(unsigned char)
 0x10082405c(0x10b84d8)
 StoneBlock::buildDescriptionName(unsigned char) const
 ------------------------------
+0x100828348(0x10bc294)
+TrapDoorBlock::TrapDoorBlock(std::string const&, int, Material const&)
+0x1008283f8(0x10bc314)
+TrapDoorBlock::getVisualShape(unsigned char, AABB&, bool)
+0x1008285bc(0x10bc444)
+TrapDoorBlock::_toggleOpen(BlockSource&, BlockPos const&)
+0x1008286e0(0x10bc50e)
+TrapDoorBlock::use(Player&, BlockPos const&)
+0x100828744(0x10bc580)
+TrapDoorBlock::getPlacementDataValue(Mob&, BlockPos const&, signed char, Vec3 const&, int)
+0x1008287e4(0x10bc60c)
+TrapDoorBlock::asItemInstance(BlockSource&, BlockPos const&, int) const
+0x1008287fc(0x10bc62c)
+TrapDoorBlock::getResourceCount(Random&, int, int)
+0x100828804(0x10bc630)
+TrapDoorBlock::getResource(Random&, int, int)
+0x10082880c(0x10bc634)
+TrapDoorBlock::isInteractiveBlock() const
+0x100828814(0x10bc638)
+TrapDoorBlock::canBeSilkTouched() const
+0x10082881c(0x10bc63c)
+TrapDoorBlock::onLoaded(BlockSource&, BlockPos const&)
+0x1008288bc(0x10bc694)
+TrapDoorBlock::onRedstoneUpdate(BlockSource&, BlockPos const&, int, bool)
+0x10082892c(0x10bc6d2)
+TrapDoorBlock::onPlace(BlockSource&, BlockPos const&)
+------------------------------
+0x10082bad4(0x10beb9c)
+WallBlock::WallBlock(std::string const&, int, Block&)
+0x10082bbd0(0x10bec5c)
+WallBlock::getVariant(int) const
+0x10082bbdc(0x10bec68)
+WallBlock::buildDescriptionName(unsigned char) const
+0x10082bd20(0x10bef24)
+WallBlock::getVisualShape(BlockSource&, BlockPos const&, AABB&, bool)
+0x10082bef4(0x10bf094)
+WallBlock::canProvideSupport(BlockSource&, BlockPos const&, signed char, BlockSupportType)
+0x10082bf10(0x10bf0ae)
+WallBlock::getAABB(BlockSource&, BlockPos const&, AABB&, int, bool, int)
+0x10082bfb0(0x10bf108)
+WallBlock::connectsTo(BlockSource&, BlockPos const&, BlockPos const&)
+0x10082c0b4(0x10bf198)
+WallBlock::getSpawnResourcesAuxValue(unsigned char)
+0x10082c0bc(0x10bf19c)
+WallBlock::shouldRenderFace(BlockSource&, BlockPos const&, signed char, AABB const&) const
+0x10082c0e4(0x10bf1ba)
+WallBlock::canBeSilkTouched() const
+------------------------------
+0x10082d2e4(0x10c0490)
+WoolCarpetBlock::WoolCarpetBlock(std::string const&, int)
+0x10082d3d4(0x10c0538)
+WoolCarpetBlock::getVisualShape(unsigned char, AABB&, bool)
+0x10082d420(0x10c056c)
+WoolCarpetBlock::mayPlace(BlockSource&, BlockPos const&)
+0x10082d474(0x10c0590)
+WoolCarpetBlock::onPlace(BlockSource&, BlockPos const&)
+0x10082d4cc(0x10c05b6)
+WoolCarpetBlock::neighborChanged(BlockSource&, BlockPos const&, BlockPos const&)
+0x10082d4d8(0x10c05be)
+WoolCarpetBlock::canSurvive(BlockSource&, BlockPos const&)
+0x10082d59c(0x10c062e)
+WoolCarpetBlock::shouldRenderFace(BlockSource&, BlockPos const&, signed char, AABB const&) const
+0x10082d5c4(0x10c0652)
+WoolCarpetBlock::getSpawnResourcesAuxValue(unsigned char)
+0x10082d5cc(0x10c0658)
+WoolCarpetBlock::getMapColor(BlockSource&, BlockPos const&) const
+0x10082d5e4(0x10c067c)
+WoolCarpetBlock::checkIsPathable(Entity&, BlockPos const&, BlockPos const&)
+0x10082d5ec(0x10c0680)
+WoolCarpetBlock::getBlockDataForItemAuxValue(int)
+------------------------------
 0x10080367c(0x109dae0)
 EntityBlock::EntityBlock(std::string const&, int, Material const&)
 ------------------------------
@@ -2319,7 +2600,7 @@ EntityBlock::EntityBlock(std::string const&, int, Material const&)
 BlockEntity::getType() const
 ------------------------------
 0x1007ba9a8(0x1168618)
-Spawner::spawnProjectile(BlockSource&, EntityDefinitionIdentifier const&, Entity*, Vec3 const&, Vec3 const&)
+Spawner::spawnsunflowerProjectile(BlockSource&, EntityDefinitionIdentifier const&, Entity*, Vec3 const&, Vec3 const&)
 ------------------------------
 0x10083e6c0(0x109909c)
 MusicBlockEntity::MusicBlockEntity(BlockPos const&)
