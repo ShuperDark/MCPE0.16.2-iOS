@@ -7808,6 +7808,10 @@ InventoryScreen::isModal() const
 InventoryScreen::closeOnPlayerHurt() const
 0x10012b1bc(0x9942b0)
 InventoryScreen::handleButtonRelease(short)
+0x10012b520(0x994a74)
+InventoryScreen::clearPopulatedItems()
+0x10012b610(0x994ad4)
+InventoryScreen::getScreenName() const
 ------------------------------
 0x1000abaf8(0x7d77fa)
 ScrollingPane::getScrollT() const
