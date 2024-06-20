@@ -1,5 +1,8 @@
 //////////// 0.16.2-iOS @darkshuper ////////////
 
+0x100107834(0x84f08c)
+GuiComponent::GuiComponent()
+------------------------------
 0x100107898(0x84f0b0)
 GuiData::GuiData(MinecraftClient&, NetworkStatistics const*)
 0x100107fc4(0x850104)
