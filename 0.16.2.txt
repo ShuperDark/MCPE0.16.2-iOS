@@ -1,5 +1,28 @@
 //////////// 0.16.2-iOS @darkshuper ////////////
 
+0x1000a5ab4(0x7ce554)
+GuiElement::GuiElement(bool, bool, int, int, int, int)
+0x1000a5c14(0x7ce60c)
+GuiElement::pointInside(int, int)
+0x1000a5c5c(0x7ce632)
+GuiElement::setVisible(bool)
+0x1000a5c64(0xce638)
+GuiElement::render(MinecraftClient*, int, int)
+0x1000a5d10(0x7ce6e0)
+GuiElement::drawSelected(int)
+0x1000a5d44(0x7ce72c)
+GuiElement::drawSliderSelected()
+0x1000a5d74(0x7cec0c)
+GuiElement::setActiveAndVisibility(bool, bool)
+0x1000a5d80(0x7cec12)
+GuiElement::setActiveAndVisibility(bool)
+0x1000a5d8c(0x7cec18)
+GuiElement::setSelected(bool)
+0x1000a5db8(0x7cec34)
+GuiElement::isSelected()
+0x1000a5dc0(0x7cec3a)
+GuiElement::onSelectedChanged()
+------------------------------
 0x100107834(0x84f08c)
 GuiComponent::GuiComponent()
 ------------------------------
