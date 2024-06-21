@@ -186,6 +186,66 @@ InGamePlayScreen::_applyInput_StutterDirectRoll(InputMode const&, float, float, 
 InGamePlayScreen::_applyInput_Standard(InputMode const&, float, float, float)
 0x10011a0e8(0x97c2bc)
 InGamePlayScreen::_applyInput_StepSound(float)
+0x10011a1cc(0x97c414)
+InGamePlayScreen::render(ScreenContext&)
+0x10011a25c(0x97c464)
+InGamePlayScreen::tick(int, int)
+0x10011a308(0x97c508)
+InGamePlayScreen::isShowingMenu() const
+0x10011a310(0x97c50c)
+InGamePlayScreen::onFocusGained()
+0x10011a314(0x97c50e)
+InGamePlayScreen::renderGameBehind() const
+0x10011a31c(0x97c512)
+InGamePlayScreen::renderOnlyWhenTopMost() const
+0x10011a324(0x97c516)
+InGamePlayScreen::isModal() const
+0x10011a32c(0x97c51a)
+InGamePlayScreen::shouldStealMouse() const
+0x10011a350(0x97c534)
+InGamePlayScreen::handleDirection(DirectionId, float, float)
+0x10011a76c(0x97c974)
+InGamePlayScreen::_renderLevelPrep(float)
+0x10011a84c(0x97c9f8)
+InGamePlayScreen::_pick(float)
+0x10011b4a0(0x97d374)
+InGamePlayScreen::_renderLevel(float)
+0x10011b52c(0x97d3c8)
+InGamePlayScreen::_preLevelRender(ScreenContext&)
+0x10011b530(0x97d3ca)
+InGamePlayScreen::_postLevelRender(ScreenContext&)
+0x10011b534(0x97d3cc)
+InGamePlayScreen::_shouldRenderFirstPersonObjects(LevelRenderer&) const
+0x10011b5e4(0x97d480)
+InGamePlayScreen::_renderedFramedItems(Vec3, LevelRenderer&, Entity&, float)
+0x10011b824(0x97d66c)
+InGamePlayScreen::_prepareCuller(FrustumData&, FrustumData&)
+0x10011bab4(0x97d794)
+InGamePlayScreen::_getPickRange()
+0x10011bb3c(0x97d7d8)
+InGamePlayScreen::_updateFreeformPickDirection(float, Vec3&, Vec3&)
+0x10011be70(0x97dbe8)
+InGamePlayScreen::_saveMatrices()
+0x10011c358(0x97dd94)
+InGamePlayScreen::_renderFirstPerson3DObjects(LevelRenderer&, float)
+0x10011cb5c(0x97e170)
+InGamePlayScreen::_renderTransparentFirstPerson3DObjects(LevelRenderer&, float)
+0x10011d1ac(0x97e4c0)
+InGamePlayScreen::_renderItemInHand(Player&, bool, float)
+0x10011d630(0x97e8c8)
+InGamePlayScreen::_shouldClipLiquids() const
+0x10011d6ac(0x97e906)
+InGamePlayScreen::_getThirdPersonSetting()
+0x10011d6d0(0x97e91a)
+InGamePlayScreen::_isHoloViewer() const
+0x10011d6d8(0x97e920)
+InGamePlayScreen::getScreenName() const
+0x10011d6f4(0x97e940)
+InGamePlayScreen::_setCorrectViewProj(mce::WorldConstantsHolographic&)
+0x10011d740(0x97e964)
+InGamePlayScreen::getSendEvents()
+0x10011d748(0x97e968)
+InGamePlayScreen::isPlayScreen() const
 ##############################
 .data.rel.ro:01B58EA4 ; `vtable for'InGamePlayScreen
 .data.rel.ro:01B58EA4 _ZTV16InGamePlayScreen DCB    0         ; DATA XREF: InGamePlayScreen::InGamePlayScreen(MinecraftClient &)+16o
