@@ -3343,6 +3343,12 @@ Item::isEmissive(int) const
 Item::getIconYOffset() const
 0x10073275c(0x100038c)
 Item::Tier::getTierItem() const
+0x1007327f4(0x1000414)
+Item::setTextureAtlas(std::shared_ptr<TextureAtlas>)
+0x100732c44(0x1000abc)
+Item::initServer(Json::Value&)
+0x100732f4c(0x1001288)
+Item::initClient(Json::Value&)
 0x100733348(0x1001db0)
 Item::registerItems()
 0x100734d00(0x100a0a4)
@@ -3355,20 +3361,84 @@ Item::initClientData()
 Item::addBlockItems()
 0x100745f10(0x101ee00)
 Item::addCreativeItem(ItemInstance const&)  //Maybe there is no addCreativeItem whose argument is not "ItemInstance const&".
+0x10074685c(0x1021614)
+Item::destroySpeedBonus(ItemInstance const*) const
 0x10074689c(0x1021650)
 Item::Item(std::string const&, short)
+0x100746a08(0x1021824)
+Item::getMaxStackSize(ItemInstance const*)
+0x100746a10(0x1021828)
+Item::inventoryTick(ItemInstance&, Level&, Entity&, int, bool)
+0x100746a14(0x102182a)
+Item::onCraftedBy(ItemInstance&, Level&, Player&)
+0x100746a18(0x102182c)
+Item::getInteractText(Player const&) const
 0x100746a88(0x10218cc)
 Item::setMaxStackSize(unsigned char)
+0x100746a90(0x10218d0)
+Item::setRequiresWorldBuilder(bool)
+0x100746aa4(0x10218e0)
+Item::canBeDepleted()
 0x100746b04(0x102191e)
 Item::setIcon(TextureUVCoordinateSet const&)
 0x100746b0c(0x1021924)
 Item::setIcon(std::string const&, int)
+0x100746b54(0x1021950)
+Item::isMirroredArt() const
 0x100746b5c(0x1021958)
 Item::use(ItemInstance&, Player&)
 0x100746be0(0x10219a0)
 Item::useOn(ItemInstance*, Player*, int, int, int, signed char, float, float, float)
+0x100746cfc(0x1021a5c)
+Item::dispense(BlockSource&, Container&, int, Vec3 const&, signed char)
+0x100746d04(0x1021a60)
+Item::useTimeDepleted(ItemInstance*, Level*, Player*)
+0x100746da0(0x1021aae)
+Item::releaseUsing(ItemInstance*, Player*, int)
+0x100746db0(0x1021aba)
+Item::getDestroySpeed(ItemInstance*, Block*)
+0x100746db8(0x1021ac0)
+Item::canDestroySpecial(Block const*) const
+0x100746dc0(0x1021ac4)
+Item::getLevelDataForAuxValue(int) const
+0x100746dc8(0x1021ac8)
+Item::isStackedByData() const
+0x100746dd0(0x1021ace)
+Item::setCategory(CreativeItemCategory)
+0x100746dd8(0x1021ad2)
+Item::getMaxDamage()
+0x100746de0(0x1021ad8)
+Item::getAttackDamage()
+0x100746de8(0x1021adc)
+Item::hurtEnemy(ItemInstance*, Mob*, Mob*)
+0x100746dfc(0x1021ae6)
+Item::interactEnemy(ItemInstance*, Mob*, Player*)
+0x100746e04(0x1021aec)
+Item::mineBlock(ItemInstance*, BlockID, int, int, int, Mob*)
+0x100746e5c(0x1021b20)
+Item::setHandEquipped()
+0x100746e68(0x1021b28)
+Item::isHandEquipped() const
+0x100746e70(0x1021b2e)
+Item::isArmor() const
+0x100746e78(0x1021b32)
+Item::isDye() const
+0x100746e80(0x1021b36)
+Item::isGlint(ItemInstance const*) const
+0x100746ec0(0x1021b56)
+Item::isThrowable() const
+0x100746ec8(0x1021b5a)
+Item::canDestroyInCreative() const
 0x100746ed0(0x1021b60)
 Item::buildDescriptionName(ItemInstance const&) const
+0x100746fc4(0x1021d98)
+Item::buildEffectDescriptionName(ItemInstance const&) const
+0x1007472c4(0x10220a0)
+Item::appendFormattedHovertext(ItemInstance const&, Level&, std::string&, bool) const
+0x100747704(0x1022624)
+Item::readUserData(ItemInstance*, IDataInput&) const
+0x100747844(0x1022780)
+Item::writeUserData(ItemInstance const*, IDataOutput&) const
 0x100747974(0x10228a0)
 Item::setStackedByData(bool)
 0x10074797c(0x10228a6)
@@ -3385,8 +3455,6 @@ Item::getEnchantValue() const
 Item::isComplex() const
 0x100747a90(0x10229e0)
 Item::lookupByName(std::string const&, bool)
-0x100746dd0(0x1021ace)  //This is definitely not it...
-Item::setCategory(CreativeItemCategory)
 0x1012ae238(0x1c7fde0)
 Item::mItems
 ##############################
