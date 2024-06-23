@@ -1475,10 +1475,38 @@ ItemInstance::getStrippedNetworkItem() const
 ItemInstance::getNetworkUserData() const
 0x100757488(0x102ea60)
 ItemInstance::isNull() const
+0x1007574e4(0x102ea92)
+ItemInstance::setNull()
+0x100757510(0x102eaae)
+ItemInstance::add(int)
+0x1007575a8(0x102eaf6)
+ItemInstance::set(int)
+0x10075763c(0x102eb3c)
+ItemInstance::remove(int)
+0x1007576d4(0x102eb84)
+ItemInstance::getMaxStackSize() const
+0x100757708(0x102eb9c)
+ItemInstance::onCraftedBy(Level&, Player&)
 0x100757738(0x102ebbc)
 ItemInstance::hasUserData() const
+0x100757748(0x102ebc6)
+ItemInstance::hasSameUserData(ItemInstance const&) const
 0x100757890(0x102ec64)
 ItemInstance::getUserData() const
+0x100757898(0x102ec68)
+ItemInstance::setUserData(std::unique_ptr<CompoundTag, std::default_delete<CompoundTag> >)
+0x1007578c0(0x102ec80)
+ItemInstance::useOn(Player*, int, int, int, signed char, float, float, float)
+0x100757900(0x102ecbe)
+ItemInstance::isGlint() const
+0x100757934(0x102ecd4)
+ItemInstance::isThrowable() const
+0x100757960(0x102ece8)
+ItemInstance::getDestroySpeed(Block*)
+0x100757980(0x102ecf6)
+ItemInstance::use(Player&)
+0x1007579b0(0x102ed04)
+ItemInstance::inventoryTick(Level&, Entity&, int, bool)
 0x1007579f0(0x102ed28)
 ItemInstance::useAsFuel()
 0x100757b60(0x102ee48)
@@ -1487,10 +1515,46 @@ ItemInstance::getAuxValue() const
 ItemInstance::operator=(ItemInstance const&)
 0x100757c20(0x102eea8)
 ItemInstance::isEnchanted() const
-0x100757cf4(0x102ef44)
-ItemInstance::saveEnchantsToUserData(ItemEnchants const&)
 0x100757c50(0x102eecc)
 ItemInstance::getEnchantsFromUserData() const
+0x100757cf4(0x102ef44)
+ItemInstance::saveEnchantsToUserData(ItemEnchants const&)
+0x100757e30(0x102f008)
+ItemInstance::getEnchantValue() const
+0x100757e4c(0x102f01c)
+ItemInstance::isEnchantingBook() const
+0x100757ec0(0x102f08a)
+ItemInstance::isStackable() const
+0x100757f70(0x102f0d8)
+ItemInstance::isDamageableItem() const
+0x100757fa4(0x102f0f0)
+ItemInstance::isDamaged() const
+0x100757ff8(0x102f11a)
+ItemInstance::isStackable(ItemInstance const*, ItemInstance const*)
+0x1007580e4(0x102f18a)
+ItemInstance::isStackedByData() const
+0x1007580f4(0x102f192)
+ItemInstance::getDamageValue() const
+0x1007580fc(0x102f198)
+ItemInstance::setAuxValue(short)
+0x100758104(0x102f19c)
+ItemInstance::getMaxDamage() const
+0x100758114(0x102f1a4)
+ItemInstance::hurtAndBreak(int, Mob*)
+0x10075833c(0x102f3b4)
+ItemInstance::hurtEnemy(Mob*, Mob*)
+0x1007583a0(0x102f3dc)
+ItemInstance::mineBlock(BlockID, int, int, int, Mob*)
+0x1007583fc(0x102f40a)
+ItemInstance::getAttackDamage()
+0x10075840c(0x102f412)
+ItemInstance::canDestroySpecial(Block*)
+0x10075841c(0x102f41c)
+ItemInstance::interactEnemy(Mob*, Player*)
+0x100758444(0x102f434)
+ItemInstance::matches(ItemInstance const*, ItemInstance const*)
+0x1007584d4(0x102f472)
+ItemInstance::matches(ItemInstance const*) const
 0x100758530(0x102f54a)
 ItemInstance::sameItemAndAux(ItemInstance const*) const
 0x1007585b4(0x102f59c)
@@ -1499,16 +1563,66 @@ ItemInstance::getName() const
 ItemInstance::hasCustomHoverName() const
 0x1007586a4(0x102f650)
 ItemInstance::getCustomName() const
+0x100758740(0x102f72c)
+ItemInstance::getEffectName() const
+0x100758758(0x102f73c)
+ItemInstance::getFormattedHovertext(Level&, bool) const
+0x1007587c8(0x102f7cc)
+ItemInstance::getIdAux() const
 0x1007587dc(0x102f7dc)
 ItemInstance::getIdAuxEnchanted() const
+0x100758834(0x102f81c)
+ItemInstance::toString() const
 0x100758b0c(0x102fb40)
 ItemInstance::clone(ItemInstance const*)
 0x100758ba8(0x102fb8c)
 ItemInstance::cloneSafe(ItemInstance const*)
+0x100758c90(0x102fc30)
+ItemInstance::getColor() const
 0x100758ca8(0x102fc40)
 ItemInstance::save()
+0x100758eac(0x102ffc0)
+ItemInstance::load(CompoundTag const&)
+0x1007595c0(0x1030908)
+ItemInstance::operator!=(ItemInstance const&) const
+0x100759620(0x1030930)
+ItemInstance::operator==(ItemInstance const&) const
+0x10075967c(0x1030954)
+ItemInstance::fromTag(CompoundTag const&)
 0x100759748(0x10309d8)
 ItemInstance::getIcon(int, bool) const
+0x100759780(0x10309f6)
+ItemInstance::releaseUsing(Player*, int)
+0x1007597a8(0x1030a0e)
+ItemInstance::getMaxUseDuration() const
+0x1007597b4(0x1030a14)
+ItemInstance::getUseAnimation() const
+0x1007597c0(0x1030a1c)
+ItemInstance::useTimeDepleted(Level*, Player*)
+0x1007597e8(0x1030a34)
+ItemInstance::isArmorItem(ItemInstance const*)
+0x100759820(0x1030a4c)
+ItemInstance::isHorseArmorItem(ItemInstance const*)
+0x100759890(0x1030aac)
+ItemInstance::isWearableItem(ItemInstance const*)
+0x100759910(0x1030b00)
+ItemInstance::isPotionItem(ItemInstance const*)
+0x100759a30(0x1030ca4)
+ItemInstance::isItem(ItemInstance const*)
+0x100759a4c(0x1030cb6)
+ItemInstance::isLiquidClipItem()
+0x100759a80(0x1030cd0)
+ItemInstance::_getHoverFormattingPrefix() const
+0x100759be4(0x1030e4c)
+ItemInstance::getHoverName() const
+0x100759d48(0x103110c)
+ItemInstance::setCustomName(std::string const&)
+0x100759ef8(0x1031320)
+ItemInstance::resetHoverName()
+0x10075a024(0x10313f8)
+ItemInstance::getBaseRepairCost() const
+0x10075a074(0x1031430)
+ItemInstance::setRepairCost(int)
 ------------------------------
 0x100765b28(0xfb73d4)
 Potion::getPotionId() const
