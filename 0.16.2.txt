@@ -3589,6 +3589,8 @@ Item::Tier::IRON
 Item::Tier::DIAMOND
 0x1012af288(0x1c80630)
 Item::Tier::GOLD
+0x1012af2a0(0x1c80644)
+Item::mCreativeList
 ##############################
 .data.rel.ro:01B7423C ; `vtable for'Item
 .data.rel.ro:01B7423C _ZTV4Item       DCB    0                ; DATA XREF: Item::~Item()+Co
