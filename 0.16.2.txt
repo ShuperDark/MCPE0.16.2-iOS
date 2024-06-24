@@ -5610,8 +5610,24 @@ Block::getLightEmission(BlockID)
 Block::lookupByName(std::string const&, bool)
 0x1007da280(0x106b11c)
 Block::getDebugText(std::vector<std::string, std::allocator<std::string> >&)
+0x1012d1848(0x1c82f70)
+Block::BLOCK_DESCRIPTION_PREFIX
 0x1012d1860(0x1c82f78)
 Block::mBlocks
+0x1012d2060(0x1c83378)
+Block::mOwnedBlocks
+0x1012d2078(0x1c83384)
+Block::mBlockLookupMap
+0x1012d20a0(0x1c833a0)
+Block::mLightBlock
+0x1012d21a0(0x1c834a0)
+Block::mLightEmission
+0x1012d22a0(0x1c835a0)
+Block::mSolid
+0x1012d23a0(0x1c836a0)
+Block::mTranslucency
+0x1012d27a0(0x1c83aa0)
+Block::mShouldTick
 ------------------------------
 0x1007d0b04(0x1053810)
 BaseRailBlock::Rail::Rail(BlockSource&, BlockPos const&)
