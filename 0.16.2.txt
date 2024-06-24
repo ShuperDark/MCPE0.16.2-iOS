@@ -3569,6 +3569,12 @@ Item::getEnchantValue() const
 Item::isComplex() const
 0x100747a90(0x10229e0)
 Item::lookupByName(std::string const&, bool)
+0x1012ad830(0x1c7f3e8)
+Item::mRandom
+0x1012ae200(0x1c7fdb8)
+Item::mItemTextureAtlas
+0x1012ae210(0x1c7fdc0)
+Item::mItemLookupMap
 0x1012ae238(0x1c7fde0)
 Item::mItems
 ##############################
