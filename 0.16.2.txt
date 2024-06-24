@@ -6787,6 +6787,8 @@ BlockGraphics::getTextureUVCoordinateSet(std::string const&, int)
 BlockGraphics::getSoundType() const
 0x10126a100(0x1c1cf28)
 BlockGraphics::mBlocks
+0x10126a900(0x1c1d328)
+BlockGraphics::mOwnedBlocks
 ------------------------------
 0x10004d538(0x1635e58)
 Json::Value::asString(std::string const&) const
