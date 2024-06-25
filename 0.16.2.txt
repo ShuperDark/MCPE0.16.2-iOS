@@ -1194,6 +1194,8 @@ Level::setLevelId(std::string)
 Level::getClientResourcePackManager() const
 0x1007ab96c(0x10def88)
 Level::getServerResourcePackManager() const
+0x1012b0b40(0x1c8b590)
+Level::tickingChunksOffset
 ##############################
 .data.rel.ro:01B87400 ; `vtable for'Level
 .data.rel.ro:01B87400 _ZTV5Level      DCB    0                ; DATA XREF: Level::Level(SoundPlayer &,std::unique_ptr<LevelStorage,std::default_delete<LevelStorage>>,std::string const&,LevelSettings const&,bool,MinecraftEventing &,ResourcePackManager &)+40o
