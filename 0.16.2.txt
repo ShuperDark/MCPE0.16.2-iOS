@@ -1153,6 +1153,13 @@ Level::takeEntity(EntityUniqueID)
 Level::getRuntimeEntity(EntityRuntimeID, bool) const
 0x1007a8ba8(0x10dc19c)
 Level::removeEntityReferences(Entity&, bool)
+0x1007a8d8c(0x10dc326)
+Level::queueEntityRemoval(std::unique_ptr<Entity, std::default_delete<Entity> >&&, bool)
+0x007a8dfc(0x10dc368)
+Level::registerTemporaryPointer(_TickPtr&)
+0x1007a8e28(0x10dc3e2)
+Level::unregisterTemporaryPointer(_TickPtr&)
+
 0x1007a8ec4(0x10dc516)
 Level::addListener(LevelListener&)
 0x1007a8f38(0x10dc5c8)
