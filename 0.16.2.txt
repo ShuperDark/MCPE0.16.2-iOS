@@ -1139,7 +1139,12 @@ Level::addEntity(BlockSource&, std::unique_ptr<Entity, std::default_delete<Entit
 Level::getNextRuntimeID()
 0x1007a8088(0x10db794)
 Level::addPlayer(std::unique_ptr<Player, std::default_delete<Player> >)
-
+0x1007a8468(0x10dbb28)
+Level::getNewPlayerId() const
+0x1007a8620(0x10dbc20)
+Level::getEntities(DimensionId, EntityType, AABB const&, std::vector<Entity*, std::allocator<Entity*> >&, bool)
+0x1007a8884(0x10dbf7a)
+Level::forceRemoveEntity(Entity&)
 0x1007a8920(0x10dbfc0)
 Level::fetchEntity(EntityUniqueID, bool) const
 0x1007a8978(0x10dbff6)
