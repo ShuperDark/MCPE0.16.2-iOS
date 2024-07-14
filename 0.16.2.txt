@@ -7280,6 +7280,13 @@ LiquidBlockDynamic::_getSlopeDistance(BlockSource&, BlockPos const&, int, int)
 0x100812460(0x10a9700)
 LiquidBlockDynamic::onPlace(BlockSource&, BlockPos const&)
 ------------------------------
+0x100812540(0x10a975c)
+LiquidBlockStatic::LiquidBlockStatic(std::string const&, int, BlockID, Material const&)
+0x1008125bc(0x10a97a8)
+LiquidBlockStatic::neighborChanged(BlockSource&, BlockPos const&, BlockPos const&)
+0x10081267c(0x10a986a)
+LiquidBlockStatic::tick(BlockSource&, BlockPos const&, Random&)
+------------------------------
 0x1007bd3a0(0x1184cc8)
 Weather::Weather(Dimension&)
 0x1007bd57c(0x1184e24)
