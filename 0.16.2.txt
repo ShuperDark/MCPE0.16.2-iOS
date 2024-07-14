@@ -7493,10 +7493,20 @@ CommandParser::getCommand(std::string const&, unsigned char) const
 0x10054cba0(0xda23d4)
 CommandParser::getCommand(std::string const&, unsigned char, std::shared_ptr<Command>&) const
 ------------------------------
+0x10053f510(0xd90f34)
+Command::Command(std::string const&, CommandPermissionLevel, std::string const&)
+0x10053f57c(0xd90fcc)
+Command::Command(Command&&, unsigned char)
 0x10053f62c(0xd9102c)
 Command::setType(unsigned char, CommandType)
+0x10053f638(0xd91034)
+Command::addCommandOverload(std::shared_ptr<CommandOverload>)
 0x10053f90c(0xd91494)
 Command::getCommandOverload(std::string const&)
+0x10053f9fc(0xd91500)
+Command::getRequiredPermissions() const
+0x10053fa04(0xd91504)
+Command::stringToParameterType(std::string const&)
 ------------------------------
 0x100543c5c(0xd96314)
 CommandOverload::getName() const
