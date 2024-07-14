@@ -7488,6 +7488,15 @@ MinecraftCommands::registerSingleStepCommand(std::string const&, int, std::strin
 0x10056f070(0xdbab84)
 MinecraftCommands::registerMultiStepCommand(std::string const&, int, std::string const&, CommandType const&, unsigned char, std::function<MCRESULT (CommandOrigin const&, CommandPropertyBag const&, CommandPropertyBag&)>)
 ------------------------------
+0x1005450d8(0xd970e0)
+CommandParser::_loadParameters(Json::Value const&, unsigned char&)
+0x1005458ec(0xd97e30)
+CommandParser::CommandParser(Minecraft*)
+0x100546398(0xd98818)
+CommandParser::loadCommandsFromFile(std::string const&, bool, bool)
+0x100546510(0xd98bb0)
+CommandParser::loadCommandsFromString(std::string const&, bool, bool)
+
 0x10054cb94(0xda23bc)
 CommandParser::getCommand(std::string const&, unsigned char) const
 0x10054cba0(0xda23d4)
