@@ -8217,6 +8217,8 @@ Explosion::setMaxResistance(float)
 MobEffect::getId() const
 0x10064bacc(0xed1590)
 MobEffect::getColor() const
+0x1012acac8(0x1c72c00)
+MobEffect::mMobEffects
 ------------------------------
 0x10064d470(0xed2a9c)
 MobEffectInstance::MobEffectInstance(int)
