@@ -8338,6 +8338,9 @@ MobEffectInstance::areAllEffectsAmbient(std::vector<MobEffectInstance, std::allo
 0x100071c54(0x79ca84)
 ClientCommands::setupStandard(MinecraftCommands&, LocalPlayer&, mce::TextureGroup&, LevelArchiver&, GameMode&)
 ------------------------------
+0x100572730(0xdbfb9c)
+ServerCommands::setupStandardServer(Minecraft&, std::string const&, std::string const&)
+------------------------------
 0x10056ef28(0xdbaaf4)
 MinecraftCommands::loadCommandsFromFile(std::string const&, bool, bool)
 0x10056ef38(0xdbab00)
