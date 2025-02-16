@@ -7044,9 +7044,9 @@ BlockTickingQueue::isInstaticking() const
 GameRules::getBool(std::string const&) const
 ------------------------------
 0x1003829c8(0xb5e480)
-BlockGraphics::setTextureItem(std::string const&, std::string const&, std::string const&, std::string const&, std::string const&, std::string const&)
+BlockGraphics::setTextureItem(std::string const&, std::string const&, std::string const&, std::string const&, std::string const&, std::string const&) //par1:top, par2:bottom, par3:north, par4:south, par5:west, par6:east
 0x100382f0c(0xb5ee58)
-BlockGraphics::setCarriedTextureItem(std::string const&, std::string const&, std::string const&)
+BlockGraphics::setCarriedTextureItem(std::string const&, std::string const&, std::string const&) //par1:top, par2:bottom, par3:all sides
 0x10038365c(0xb5fc60)
 BlockGraphics::setBlockShape(BlockGraphics&, Json::Value const&)
 0x100384358(0xb60954)
