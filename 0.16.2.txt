@@ -6492,6 +6492,19 @@ RailBlock::RailBlock(std::string const&, int)
 0x10081a93c(0x10b0cc0)
 RailBlock::getVariant(int) const
 ------------------------------
+0x10081d5e8(0x10b2ca8)
+RotatedPillarBlock::RotatedPillarBlock(std::string const&, int, Material const&)
+0x10081d618(0x10b2ccc)
+RotatedPillarBlock::asItemInstance(BlockSource&, BlockPos const&, int) const
+0x10081d62c(0x10b2cde)
+RotatedPillarBlock::getVariant(int) const
+0x10081d634(0x10b2ce4)
+RotatedPillarBlock::getType(int)
+0x10081d63c(0x10b2cea)
+RotatedPillarBlock::getMappedFace(signed char, int) const
+0x10081d698(0x10b2d24)
+RotatedPillarBlock::getPlacementDataValue(Mob&, BlockPos const&, signed char, Vec3 const&, int)
+------------------------------
 0x10081d714(0x10b2d60)
 SandBlock::SandBlock(std::string const&, int)
 0x10081d77c(0x10b2d9c)
